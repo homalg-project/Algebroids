@@ -1,0 +1,66 @@
+  
+  
+  [1XIndex[101X
+  
+  [2X\/[102X, for IsQuiverAlgebraElement, IsAlgebroid 1.5-9 
+      for IsQuiverVertex, IsAlgebroid 1.5-7 
+  [2XAddAntipode[102X, for IsAlgebroid, IsRecord 2.4-2 
+  [2XAddBialgebroidStructure[102X, for IsAlgebroid, IsRecord, IsRecord 2.4-1 
+  [2XAlgebroid[102X, for IsHomalgRing, IsQuiver 1.5-1 
+      for IsPathAlgebra, IsList 1.5-1 
+      for IsQuiverAlgebra 1.5-1 
+      for IsQuiverAlgebra, IsBool 1.5-3 
+  [2XAlgebroidOverOppositeAlgebra[102X, for IsAlgebroid 1.3-11 
+  [2XAntipode[102X, for IsAlgebroid 1.3-12 
+  [2XApplyToQuiverAlgebraElement[102X, for IsCapFunctor, IsQuiverAlgebraElement 1.4-1 
+      for IsFunction, IsFunction, IsCapCategory, IsQuiverAlgebraElement, IsBool 1.4-1 
+  [2XAssignSetOfGeneratingMorphisms[102X, for IsAlgebroid, IsString 1.3-9 
+  [2XAssignSetOfObjects[102X, for IsAlgebroid, IsString 1.3-4 
+  [2XCapFunctor[102X, for IsAlgebroid, IsList, IsList, IsCapCategory 1.5-4 
+      for IsAlgebroid, IsList, IsList, IsCapCategory, IsBool 1.5-4 
+      for IsAlgebroid, IsRecord, IsRecord 1.5-4 
+      for IsAlgebroid, IsRecord, IsRecord, IsBool 1.5-4 
+  [2XComultiplication[102X, for IsAlgebroid 2.3-2 
+  [2XCounit[102X, for IsAlgebroid 2.3-1 
+  [2XDescentToZDefinedByBasisPaths[102X, for IsAlgebroid 1.5-2 
+  [2XElementaryTensor[102X, for IsCapCategoryMorphismInAlgebroid, IsCapCategoryObjectInAlgebroid, IsAlgebroid 1.3-21 
+      for IsCapCategoryObjectInAlgebroid, IsCapCategoryMorphismInAlgebroid, IsAlgebroid 1.3-20 
+      for IsCapCategoryObjectInAlgebroid, IsCapCategoryObjectInAlgebroid, IsAlgebroid 1.3-19 
+  [2XIsAlgebraAsCategory[102X, for IsAlgebroid 1.1-5 
+  [2XIsAlgebroid[102X, for IsCapCategory 1.1-3 
+  [2XIsAlgebroidMorphism[102X, for IsCapFunctor 1.1-4 
+  [2XIsBialgebroid[102X, for IsAlgebroid 2.1-1 
+  [2XIsCapCategoryMorphismInAlgebroid[102X, for IsCapCategoryMorphism 1.1-2 
+  [2XIsCapCategoryObjectInAlgebroid[102X, for IsCapCategoryObject 1.1-1 
+  [2XIsCategoryOfAlgebroidsMorphism[102X, for IsCapCategoryMorphism 1.1-7 
+  [2XIsCategoryOfAlgebroidsObject[102X, for IsCapCategoryObject 1.1-6 
+  [2XIsCoassociative[102X, for IsAlgebroid 1.2-6 
+      for IsCategoryOfAlgebroidsObject 1.2-7 
+  [2XIsCocommutative[102X, for IsBialgebroid 2.2-1 
+  [2XIsCommutative[102X, for IsAlgebroid 1.2-2 
+      for IsCategoryOfAlgebroidsObject 1.2-3 
+  [2XIsCounitary[102X, for IsAlgebroid 1.2-4 
+      for IsCategoryOfAlgebroidsObject 1.2-5 
+  [2XIsFinitelyPresentedCategory[102X, for IsCapCategory 1.2-1 
+  [2XIsHopfAlgebroid[102X, for IsBialgebroid 2.2-2 
+  [2XMorphismInAlgebroid[102X, for IsAlgebroid, IsQuiverAlgebraElement 1.5-8 
+      for IsCapCategoryObjectInAlgebroid, IsQuiverAlgebraElement, IsCapCategoryObjectInAlgebroid 1.5-8 
+  [2XNaturalTransformation[102X, for IsRecord, IsCapFunctor, IsCapFunctor 1.5-5 
+  [2XObjectInAlgebroid[102X, for IsAlgebroid, IsQuiverVertex 1.5-6 
+  [2XParity[102X, for IsAlgebroid 1.3-16 
+  [2XPOW[102X, for IsAlgebroid, IsInt 1.3-17 
+  [2XRelationsOfAlgebroid[102X, for IsAlgebroid 1.3-10 
+  [2XSetOfGeneratingMorphisms[102X, for IsAlgebroid 1.3-5 
+      for IsAlgebroid, IsCapCategoryObjectInAlgebroid, IsCapCategoryObjectInAlgebroid 1.3-6 
+      for IsAlgebroid, IsInt, IsInt 1.3-8 
+      for IsCapCategoryObjectInAlgebroid, IsCapCategoryObjectInAlgebroid 1.3-7 
+  [2XSetOfObjects[102X, for IsAlgebroid 1.3-3 
+  [2XTwist[102X, for IsAlgebroid, IsAlgebroid 1.3-18 
+  [2XUnderlyingAlgebra[102X, for IsAlgebroid 1.3-15 
+  [2XUnderlyingQuiver[102X, for IsAlgebroid 1.3-1 
+  [2XUnderlyingQuiverAlgebra[102X, for IsAlgebroid 1.3-2 
+  [2XUnderlyingQuiverAlgebraElement[102X, for IsCapCategoryMorphismInAlgebroid 1.3-14 
+  [2XUnderlyingVertex[102X, for IsCapCategoryObjectInAlgebroid 1.3-13 
+  
+  
+  -------------------------------------------------------
