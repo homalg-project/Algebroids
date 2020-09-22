@@ -43,6 +43,8 @@
       for IsCategoryOfAlgebroidsObject 1.2-5 
   [2XIsFinitelyPresentedCategory[102X, for IsCapCategory 1.2-1 
   [2XIsHopfAlgebroid[102X, for IsBialgebroid 2.2-2 
+  [2XLaTeXStringOp[102X, for IsCapCategoryMorphismInAlgebroid 1.4-3 
+      for IsCapCategoryObjectInAlgebroid 1.4-2 
   [2XMorphismInAlgebroid[102X, for IsAlgebroid, IsQuiverAlgebraElement 1.5-8 
       for IsCapCategoryObjectInAlgebroid, IsQuiverAlgebraElement, IsCapCategoryObjectInAlgebroid 1.5-8 
   [2XNaturalTransformation[102X, for IsRecord, IsCapFunctor, IsCapFunctor 1.5-5 

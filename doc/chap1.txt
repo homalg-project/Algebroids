@@ -274,6 +274,18 @@
   [33X[0;0YApply  the  functor  [3XF[103X  (e.g., defined by the functions [3Ximg_of_objs_func[103X and
   [3Ximgs_of_generating_mors_func[103X) to the quiver algebra element [3Xp[103X.[133X
   
+  [1X1.4-2 LaTeXStringOp[101X
+  
+  [33X[1;0Y[29X[2XLaTeXStringOp[102X( [3Xo[103X ) [32X operation[133X
+  
+  [33X[0;0YThe ouput is the LaTeX string of the object [3Xo[103X. Returns a string[133X
+  
+  [1X1.4-3 LaTeXStringOp[101X
+  
+  [33X[1;0Y[29X[2XLaTeXStringOp[102X( [3Xm[103X ) [32X operation[133X
+  
+  [33X[0;0YThe ouput is the LaTeX string of the morphism [3Xm[103X. Returns a string[133X
+  
   
   [1X1.5 [33X[0;0YConstructors[133X[101X
   
