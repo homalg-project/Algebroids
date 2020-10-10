@@ -106,14 +106,14 @@
   [1X1.3-1 UnderlyingQuiver[101X
   
   [33X[1;0Y[29X[2XUnderlyingQuiver[102X( [3XA[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya [5XQPA[105X quiver[133X
+  [6XReturns:[106X  [33X[0;10Ya UNKNOWNEntity(QPA) quiver[133X
   
   [33X[0;0YThe quiver underlying the algebroid [3XA[103X.[133X
   
   [1X1.3-2 UnderlyingQuiverAlgebra[101X
   
   [33X[1;0Y[29X[2XUnderlyingQuiverAlgebra[102X( [3XA[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya [5XQPA[105X path algebra[133X
+  [6XReturns:[106X  [33X[0;10Ya UNKNOWNEntity(QPA) path algebra[133X
   
   [33X[0;0YThe  quiver  algebra (=path algebra with relations) underlying the algebroid
   [3XA[103X.[133X
@@ -177,7 +177,7 @@
   [1X1.3-10 RelationsOfAlgebroid[101X
   
   [33X[1;0Y[29X[2XRelationsOfAlgebroid[102X( [3XA[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya [5XQPA[105X path algebra[133X
+  [6XReturns:[106X  [33X[0;10Ya UNKNOWNEntity(QPA) path algebra[133X
   
   [33X[0;0YThe  relations  of  the  algebroid  [3XA[103X  corresponding  to [10XRelationsOfAlgebra(
   UnderlyingQuiverAlgebra( [3XA[103X[10X ) )[110X.[133X
@@ -199,14 +199,14 @@
   [1X1.3-13 UnderlyingVertex[101X
   
   [33X[1;0Y[29X[2XUnderlyingVertex[102X( [3Xobj[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya vertex in a [5XQPA[105X quiver[133X
+  [6XReturns:[106X  [33X[0;10Ya vertex in a UNKNOWNEntity(QPA) quiver[133X
   
   [33X[0;0YThe vertex of the quiver underlying the object [3Xobj[103X in an algebroid.[133X
   
   [1X1.3-14 UnderlyingQuiverAlgebraElement[101X
   
   [33X[1;0Y[29X[2XUnderlyingQuiverAlgebraElement[102X( [3Xmor[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Yan element in a [5XQPA[105X path algebra[133X
+  [6XReturns:[106X  [33X[0;10Yan element in a UNKNOWNEntity(QPA) path algebra[133X
   
   [33X[0;0YThe quiver algebra element underlying the morphism [3Xmor[103X in an algebroid.[133X
   
