@@ -7,10 +7,10 @@
                                     quivers [101X
   
   
-                                   2020.09.08
+                                   2020.10-01
   
   
-                                8 September 2020
+                                22 October 2020
   
   
                                 Mohamed Barakat
@@ -25,9 +25,9 @@
   
   Mohamed Barakat
       Email:    [7Xmailto:mohamed.barakat@uni-siegen.de[107X
-      Homepage: [7Xhttps://mohamed-barakat.github.io[107X
+      Homepage: [7Xhttps://mohamed-barakat.github.io/[107X
       Address:  [33X[0;14YWalter-Flex-Str. 3[133X
-                [33X[0;14Y57072 Siegen[133X
+                [33X[0;14Y57068 Siegen[133X
                 [33X[0;14YGermany[133X
   
   
