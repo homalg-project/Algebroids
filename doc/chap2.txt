@@ -2,7 +2,7 @@
   [1X2 [33X[0;0YBialgebroids as algebroids with more structure[133X[101X
   
   
-  [1X2.1 [33X[0;0YCategories[133X[101X
+  [1X2.1 [33X[0;0YGAP categories[133X[101X
   
   [1X2.1-1 IsBialgebroid[101X
   
