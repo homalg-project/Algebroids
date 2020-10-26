@@ -33,7 +33,6 @@
       for IsFpCategory, IsRecord, IsRecord, IsBool 3.5-3 
   [2XCategory[102X, for IsQuiver 1.5-1 
       for IsQuiver, IsList 1.5-1 
-      for IsQuiverAlgebra 1.5-1 
   [2XCategoryOfAlgebroids[102X, for IsHomalgRing, IsString 4.4-1 
   [2XCategoryOfAlgebroidsMorphism[102X, for IsAlgebroidMorphism 4.4-4 
       for IsCategoryOfAlgebroidsObject, IsAlgebroidMorphism, IsCategoryOfAlgebroidsObject 4.4-3 

@@ -261,13 +261,12 @@
   
   [1X1.5-1 Category[101X
   
-  [33X[1;0Y[29X[2XCategory[102X( [3XA[103X ) [32X attribute[133X
   [33X[1;0Y[29X[2XCategory[102X( [3Xq[103X ) [32X attribute[133X
   [33X[1;0Y[29X[2XCategory[102X( [3Xq[103X, [3XL[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
   
-  [33X[0;0YConstruct   the   finitely   presented   category  associated  to  the  path
-  [23X\mathbb{Q}[123X-algebra [3XA[103X of the quiver [23Xq[123X modulo the relations [3XL[103X.[133X
+  [33X[0;0YConstruct  the  finitely  presented  category  generated  by  the  quiver [3Xq[103X,
+  possibly modulo the relations [3XL[103X.[133X
   
   [1X1.5-2 ObjectInFpCategory[101X
   
