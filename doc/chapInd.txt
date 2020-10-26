@@ -2,6 +2,7 @@
   
   [1XIndex[101X
   
+  [2X[][102X, for IsHomalgRing, IsFpCategory 3.5-1 
   [2X\*[102X, for IsAlgebroid, IsAlgebroid 3.4-4 
       for IsFpCategory, IsFpCategory 1.4-2 
   [2X\/[102X, for IsPath, IsFpCategory 1.5-4 
@@ -9,7 +10,8 @@
       for IsQuiverVertex, IsAlgebroid 3.5-6 
   [2XAddAntipode[102X, for IsAlgebroid, IsRecord 5.4-2 
   [2XAddBialgebroidStructure[102X, for IsAlgebroid, IsRecord, IsRecord 5.4-1 
-  [2XAlgebroid[102X, for IsHomalgRing, IsQuiver 3.5-1 
+  [2XAlgebroid[102X, for IsHomalgRing, IsFpCategory 3.5-1 
+      for IsHomalgRing, IsQuiver 3.5-1 
       for IsPathAlgebra, IsList 3.5-1 
       for IsQuiverAlgebra 3.5-1 
   [2XAlgebroidOverOppositeAlgebra[102X, for IsAlgebroid 3.3-11 
