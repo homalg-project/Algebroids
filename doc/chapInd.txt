@@ -14,7 +14,6 @@
       for IsHomalgRing, IsQuiver 3.5-1 
       for IsPathAlgebra, IsList 3.5-1 
       for IsQuiverAlgebra 3.5-1 
-  [2XAlgebroidOverOppositeAlgebra[102X, for IsAlgebroid 3.3-11 
   [2XAntipode[102X, for IsAlgebroid 3.3-12 
       for IsFpCategory 1.3-12 
   [2XApplyToQuiverAlgebraElement[102X, for IsCapFunctor, IsQuiverAlgebraElement 3.4-2 
@@ -39,7 +38,6 @@
   [2XCategoryOfAlgebroidsMorphism[102X, for IsAlgebroidMorphism 4.4-4 
       for IsCategoryOfAlgebroidsObject, IsAlgebroidMorphism, IsCategoryOfAlgebroidsObject 4.4-3 
   [2XCategoryOfAlgebroidsObject[102X, for IsAlgebroid 4.4-2 
-  [2XCategoryOverOppositeAlgebra[102X, for IsFpCategory 1.3-11 
   [2XComultiplication[102X, for IsAlgebroid 5.3-2 
   [2XCounit[102X, for IsAlgebroid 5.3-1 
   [2XDecomposeQuiverAlgebraElement[102X, for IsQuiverAlgebraElement 3.4-1 
@@ -86,6 +84,8 @@
   [2XNaturalTransformation[102X, for IsRecord, IsCapFunctor, IsCapFunctor 3.5-4 
   [2XObjectInAlgebroid[102X, for IsAlgebroid, IsQuiverVertex 3.5-5 
   [2XObjectInFpCategory[102X, for IsFpCategory, IsQuiverVertex 1.5-2 
+  [2XOppositeAlgebroidOverOppositeQuiverAlgebra[102X, for IsAlgebroid 3.3-11 
+  [2XOppositeCategoryOverOppositeQuiver[102X, for IsFpCategory 1.3-11 
   [2XParity[102X, for IsAlgebroid 3.3-16 
       for IsFpCategory 1.3-16 
   [2XPOW[102X, for IsAlgebroid, IsInt 3.3-17 

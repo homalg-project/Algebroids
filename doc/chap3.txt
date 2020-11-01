@@ -153,9 +153,9 @@
   [33X[0;0YThe  relations  of  the  algebroid  [3XA[103X  corresponding  to [10XRelationsOfAlgebra(
   UnderlyingQuiverAlgebra( [3XA[103X[10X ) )[110X.[133X
   
-  [1X3.3-11 AlgebroidOverOppositeAlgebra[101X
+  [1X3.3-11 OppositeAlgebroidOverOppositeQuiverAlgebra[101X
   
-  [33X[1;0Y[29X[2XAlgebroidOverOppositeAlgebra[102X( [3XA[103X ) [32X attribute[133X
+  [33X[1;0Y[29X[2XOppositeAlgebroidOverOppositeQuiverAlgebra[102X( [3XA[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
   
   [33X[0;0YThe algebroid defined by the opposite of the underlying quiver algebra.[133X
