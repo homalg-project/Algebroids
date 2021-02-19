@@ -7,10 +7,10 @@
                                     quivers [101X
   
   
-                                   2020.12-01
+                                   2021.02-02
   
   
-                                4 December 2020
+                                19 February 2021
   
   
                                 Mohamed Barakat
@@ -104,7 +104,7 @@
       1.4-6 LaTeXStringOp
       1.4-7 LaTeXStringOp
     1.5 [33X[0;0YConstructors[133X
-      1.5-1 Category
+      1.5-1 FreeCategory
       1.5-2 ObjectInFpCategory
       1.5-3 MorphismInFpCategory
       1.5-4 \/

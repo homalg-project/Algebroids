@@ -259,9 +259,9 @@
   
   [1X1.5 [33X[0;0YConstructors[133X[101X
   
-  [1X1.5-1 Category[101X
+  [1X1.5-1 FreeCategory[101X
   
-  [33X[1;0Y[29X[2XCategory[102X( [3Xq[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XFreeCategory[102X( [3Xq[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XCategory[102X( [3Xq[103X, [3XL[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
   
