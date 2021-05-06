@@ -2,6 +2,7 @@
   
   [1XIndex[101X
   
+  [2X/[102X, for IsFpCategory, IsList 1.5-1 
   [2X[][102X, for IsHomalgRing, IsFpCategory 3.5-1 
   [2X\*[102X, for IsAlgebroid, IsAlgebroid 3.4-4 
       for IsFpCategory, IsFpCategory 1.4-2 
