@@ -740,8 +740,8 @@
     [4X[25Xgap>[125X [27Xalpha := 2 * A_Z.a;;[127X[104X
     [4X[25Xgap>[125X [27Xid := IdentityMorphism( A_Z.4 );;[127X[104X
     [4X[25Xgap>[125X [27Xgamma := PreCompose( A_Z.b, A_Z.c );;[127X[104X
-    [4X[25Xgap>[125X [27Xsol := SolveLinearSystemInAbCategory( [ [ alpha ] ], [ [ id ] ], [ gamma ] );[127X[104X
-    [4X[28Xfail[128X[104X
+    [4X[25Xgap>[125X [27Xsol := MereExistenceOfSolutionOfLinearSystemInAbCategory( [ [ alpha ] ], [ [ id ] ], [ gamma ] );[127X[104X
+    [4X[28Xfalse[128X[104X
   [4X[32X[104X
   
   [33X[0;0YNo solution exists over the integers.[133X

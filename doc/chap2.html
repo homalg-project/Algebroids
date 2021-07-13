@@ -844,8 +844,8 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">alpha := 2 * A_Z.a;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">id := IdentityMorphism( A_Z.4 );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">gamma := PreCompose( A_Z.b, A_Z.c );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">sol := SolveLinearSystemInAbCategory( [ [ alpha ] ], [ [ id ] ], [ gamma ] );</span>
-fail
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">sol := MereExistenceOfSolutionOfLinearSystemInAbCategory( [ [ alpha ] ], [ [ id ] ], [ gamma ] );</span>
+false
 </pre></div>
 
 <p>No solution exists over the integers.</p>
