@@ -800,7 +800,7 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Length( maps ) = 4;</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ForAll( [ 0 .. 3 ], k -&gt;</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">        RankOfObject( HomomorphismStructureOnObjects( objs[1], objs[1 + k] ) )</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">        Dimension( HomomorphismStructureOnObjects( objs[1], objs[1 + k] ) )</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">        = Binomial( 4 + k - 1, k )</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">);</span>
 true

@@ -695,7 +695,7 @@
     [4X[25Xgap>[125X [27XLength( maps ) = 4;[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XForAll( [ 0 .. 3 ], k ->[127X[104X
-    [4X[25X>[125X [27X        RankOfObject( HomomorphismStructureOnObjects( objs[1], objs[1 + k] ) )[127X[104X
+    [4X[25X>[125X [27X        Dimension( HomomorphismStructureOnObjects( objs[1], objs[1 + k] ) )[127X[104X
     [4X[25X>[125X [27X        = Binomial( 4 + k - 1, k )[127X[104X
     [4X[25X>[125X [27X);[127X[104X
     [4X[28Xtrue[128X[104X
