@@ -7,10 +7,10 @@
                                     quivers [101X
   
   
-                                   2021.08-01
+                                   2021.08-02
   
   
-                                 26 August 2021
+                                 27 August 2021
   
   
                                 Mohamed Barakat
@@ -145,7 +145,7 @@
       3.3-8 SetOfGeneratingMorphisms
       3.3-9 AssignSetOfGeneratingMorphisms
       3.3-10 RelationsOfAlgebroid
-      3.3-11 OppositeAlgebroidOverOppositeQuiverAlgebra
+      3.3-11 OppositeAlgebroid
       3.3-12 Antipode
       3.3-13 UnderlyingVertex
       3.3-14 UnderlyingQuiverAlgebraElement
