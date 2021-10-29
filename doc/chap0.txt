@@ -7,10 +7,10 @@
                                     quivers [101X
   
   
-                                   2021.10-04
+                                   2021.10-05
   
   
-                                20 October 2021
+                                29 October 2021
   
   
                                 Mohamed Barakat
@@ -20,6 +20,8 @@
                                 Sebastian Posur
   
                                   Kamal Saleh
+  
+                                Fabian Zickgraf
   
   
   
@@ -56,6 +58,14 @@
                 [33X[0;14YUniversität Siegen[133X
                 [33X[0;14YWalter-Flex-Straße 3[133X
                 [33X[0;14Y57072 Siegen[133X
+                [33X[0;14YGermany[133X
+  
+  
+  Fabian Zickgraf
+      Email:    [7Xmailto:fabian.zickgraf@uni-siegen.de[107X
+      Homepage: [7Xhttps://algebra.mathematik.uni-siegen.de/zickgraf[107X
+      Address:  [33X[0;14YWalter-Flex-Str. 3[133X
+                [33X[0;14Y57068 Siegen[133X
                 [33X[0;14YGermany[133X
   
   
