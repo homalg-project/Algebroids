@@ -7,10 +7,10 @@
                                     quivers [101X
   
   
-                                   2021.10-05
+                                   2021.11-01
   
   
-                                29 October 2021
+                                16 November 2021
   
   
                                 Mohamed Barakat
@@ -147,24 +147,23 @@
     3.3 [33X[0;0YAttributes[133X
       3.3-1 UnderlyingQuiver
       3.3-2 UnderlyingQuiverAlgebra
-      3.3-3 ZeroOfUnderlyingQuiverAlgebra
-      3.3-4 BasisPathsByVertexIndex
-      3.3-5 HomStructureOnBasisPaths
-      3.3-6 SetOfObjects
-      3.3-7 AssignSetOfObjects
+      3.3-3 BasisPathsByVertexIndex
+      3.3-4 HomStructureOnBasisPaths
+      3.3-5 SetOfObjects
+      3.3-6 AssignSetOfObjects
+      3.3-7 SetOfGeneratingMorphisms
       3.3-8 SetOfGeneratingMorphisms
       3.3-9 SetOfGeneratingMorphisms
       3.3-10 SetOfGeneratingMorphisms
-      3.3-11 SetOfGeneratingMorphisms
-      3.3-12 AssignSetOfGeneratingMorphisms
-      3.3-13 RelationsOfAlgebroid
-      3.3-14 OppositeAlgebroid
-      3.3-15 Antipode
-      3.3-16 UnderlyingVertex
-      3.3-17 UnderlyingQuiverAlgebraElement
-      3.3-18 UnderlyingAlgebra
-      3.3-19 Parity
-      3.3-20 POW
+      3.3-11 AssignSetOfGeneratingMorphisms
+      3.3-12 RelationsOfAlgebroid
+      3.3-13 OppositeAlgebroid
+      3.3-14 Antipode
+      3.3-15 UnderlyingVertex
+      3.3-16 UnderlyingQuiverAlgebraElement
+      3.3-17 UnderlyingAlgebra
+      3.3-18 Parity
+      3.3-19 POW
     3.4 [33X[0;0YOperations[133X
       3.4-1 DecomposeQuiverAlgebraElement
       3.4-2 ApplyToQuiverAlgebraElement
