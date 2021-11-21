@@ -155,9 +155,9 @@
   [33X[0;0YThe  relations  of  the  finitely  presented  category  [3XC[103X  corresponding  to
   [10XRelationsOfAlgebra( UnderlyingQuiverAlgebra( [3XC[103X[10X ) )[110X.[133X
   
-  [1X1.3-11 OppositeCategoryOverOppositeQuiver[101X
+  [1X1.3-11 OppositeFpCategory[101X
   
-  [33X[1;0Y[29X[2XOppositeCategoryOverOppositeQuiver[102X( [3XC[103X ) [32X attribute[133X
+  [33X[1;0Y[29X[2XOppositeFpCategory[102X( [3XC[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya CAP category[133X
   
   [33X[0;0YThe  finitely  presented  category defined by the opposite of the underlying

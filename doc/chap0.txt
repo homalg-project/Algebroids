@@ -7,10 +7,10 @@
                                     quivers [101X
   
   
-                                   2021.11-01
+                                   2021.11-02
   
   
-                                16 November 2021
+                                21 November 2021
   
   
                                 Mohamed Barakat
@@ -98,7 +98,7 @@
       1.3-8 SetOfGeneratingMorphisms
       1.3-9 AssignSetOfGeneratingMorphisms
       1.3-10 RelationsOfFpCategory
-      1.3-11 OppositeCategoryOverOppositeQuiver
+      1.3-11 OppositeFpCategory
       1.3-12 Antipode
       1.3-13 UnderlyingVertex
       1.3-14 UnderlyingQuiverAlgebraElement
