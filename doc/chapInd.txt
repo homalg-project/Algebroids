@@ -44,22 +44,18 @@
   [2XCounit[102X, for IsAlgebroid 5.3-1 
   [2XDecomposeQuiverAlgebraElement[102X, for IsQuiverAlgebraElement 3.4-1 
   [2XDescentToZDefinedByBasisPaths[102X, for IsAlgebroid 3.5-3 
-  [2XElementaryTensor[102X, for IsCapCategoryMorphismInAlgebroid, IsCapCategoryObjectInAlgebroid, IsAlgebroid 3.4-7 
-      for IsCapCategoryMorphismInFpCategory, IsCapCategoryObjectInFpCategory, IsFpCategory 1.4-5 
-      for IsCapCategoryObjectInAlgebroid, IsCapCategoryMorphismInAlgebroid, IsAlgebroid 3.4-6 
-      for IsCapCategoryObjectInAlgebroid, IsCapCategoryObjectInAlgebroid, IsAlgebroid 3.4-5 
-      for IsCapCategoryObjectInFpCategory, IsCapCategoryMorphismInFpCategory, IsFpCategory 1.4-4 
-      for IsCapCategoryObjectInFpCategory, IsCapCategoryObjectInFpCategory, IsFpCategory 1.4-3 
+  [2XElementaryTensor[102X, for IsMorphismInAlgebroid, IsObjectInAlgebroid, IsAlgebroid 3.4-7 
+      for IsMorphismInFpCategory, IsObjectInFpCategory, IsFpCategory 1.4-5 
+      for IsObjectInAlgebroid, IsMorphismInAlgebroid, IsAlgebroid 3.4-6 
+      for IsObjectInAlgebroid, IsObjectInAlgebroid, IsAlgebroid 3.4-5 
+      for IsObjectInFpCategory, IsMorphismInFpCategory, IsFpCategory 1.4-4 
+      for IsObjectInFpCategory, IsObjectInFpCategory, IsFpCategory 1.4-3 
   [2XFreeCategory[102X, for IsQuiver 1.5-1 
   [2XHomStructureOnBasisPaths[102X, for IsAlgebroid 3.3-4 
   [2XIsAlgebraAsCategory[102X, for IsAlgebroid 3.1-4 
   [2XIsAlgebroid[102X, for IsCapCategory 3.1-3 
   [2XIsAlgebroidMorphism[102X, for IsCapFunctor 3.1-5 
   [2XIsBialgebroid[102X, for IsAlgebroid 5.1-1 
-  [2XIsCapCategoryMorphismInAlgebroid[102X, for IsCapCategoryMorphism 3.1-2 
-  [2XIsCapCategoryMorphismInFpCategory[102X, for IsCapCategoryMorphism 1.1-2 
-  [2XIsCapCategoryObjectInAlgebroid[102X, for IsCapCategoryObject 3.1-1 
-  [2XIsCapCategoryObjectInFpCategory[102X, for IsCapCategoryObject 1.1-1 
   [2XIsCategoryOfAlgebroidsMorphism[102X, for IsCapCategoryMorphism 4.1-2 
   [2XIsCategoryOfAlgebroidsObject[102X, for IsCapCategoryObject 4.1-1 
   [2XIsCoassociative[102X, for IsAlgebroid 3.2-4 
@@ -77,14 +73,18 @@
   [2XIsFpCategoryMorphism[102X, for IsCapFunctor 1.1-5 
   [2XIsHopfAlgebroid[102X, for IsBialgebroid 5.2-2 
   [2XIsMonoidAsCategory[102X, for IsFpCategory 1.1-4 
-  [2XLaTeXStringOp[102X, for IsCapCategoryMorphismInAlgebroid 3.4-9 
-      for IsCapCategoryMorphismInFpCategory 1.4-7 
-      for IsCapCategoryObjectInAlgebroid 3.4-8 
-      for IsCapCategoryObjectInFpCategory 1.4-6 
+  [2XIsMorphismInAlgebroid[102X, for IsCapCategoryMorphism 3.1-2 
+  [2XIsMorphismInFpCategory[102X, for IsCapCategoryMorphism 1.1-2 
+  [2XIsObjectInAlgebroid[102X, for IsCapCategoryObject 3.1-1 
+  [2XIsObjectInFpCategory[102X, for IsCapCategoryObject 1.1-1 
+  [2XLaTeXStringOp[102X, for IsMorphismInAlgebroid 3.4-9 
+      for IsMorphismInFpCategory 1.4-7 
+      for IsObjectInAlgebroid 3.4-8 
+      for IsObjectInFpCategory 1.4-6 
   [2XMorphismInAlgebroid[102X, for IsAlgebroid, IsQuiverAlgebraElement 3.5-8 
-      for IsCapCategoryObjectInAlgebroid, IsQuiverAlgebraElement, IsCapCategoryObjectInAlgebroid 3.5-8 
-  [2XMorphismInFpCategory[102X, for IsCapCategoryObjectInFpCategory, IsPath, IsCapCategoryObjectInFpCategory 1.5-3 
-      for IsFpCategory, IsPath 1.5-3 
+      for IsObjectInAlgebroid, IsQuiverAlgebraElement, IsObjectInAlgebroid 3.5-8 
+  [2XMorphismInFpCategory[102X, for IsFpCategory, IsPath 1.5-3 
+      for IsObjectInFpCategory, IsPath, IsObjectInFpCategory 1.5-3 
   [2XNaturalTransformation[102X, for IsRecord, IsCapFunctor, IsCapFunctor 3.5-5 
   [2XObjectInAlgebroid[102X, for IsAlgebroid, IsQuiverVertex 3.5-6 
   [2XObjectInFpCategory[102X, for IsFpCategory, IsQuiverVertex 1.5-2 
@@ -98,13 +98,13 @@
   [2XRelationsOfAlgebroid[102X, for IsAlgebroid 3.3-12 
   [2XRelationsOfFpCategory[102X, for IsFpCategory 1.3-10 
   [2XSetOfGeneratingMorphisms[102X, for IsAlgebroid 3.3-7 
-      for IsAlgebroid, IsCapCategoryObjectInAlgebroid, IsCapCategoryObjectInAlgebroid 3.3-8 
       for IsAlgebroid, IsInt, IsInt 3.3-10 
-      for IsCapCategoryObjectInAlgebroid, IsCapCategoryObjectInAlgebroid 3.3-9 
-      for IsCapCategoryObjectInFpCategory, IsCapCategoryObjectInFpCategory 1.3-7 
+      for IsAlgebroid, IsObjectInAlgebroid, IsObjectInAlgebroid 3.3-8 
       for IsFpCategory 1.3-5 
-      for IsFpCategory, IsCapCategoryObjectInFpCategory, IsCapCategoryObjectInFpCategory 1.3-6 
       for IsFpCategory, IsInt, IsInt 1.3-8 
+      for IsFpCategory, IsObjectInFpCategory, IsObjectInFpCategory 1.3-6 
+      for IsObjectInAlgebroid, IsObjectInAlgebroid 3.3-9 
+      for IsObjectInFpCategory, IsObjectInFpCategory 1.3-7 
   [2XSetOfObjects[102X, for IsAlgebroid 3.3-5 
       for IsFpCategory 1.3-3 
   [2XTrivialAlgebroid[102X, for IsHomalgRing, IsString 3.4-3 
@@ -116,10 +116,10 @@
       for IsFpCategory 1.3-1 
   [2XUnderlyingQuiverAlgebra[102X, for IsAlgebroid 3.3-2 
       for IsFpCategory 1.3-2 
-  [2XUnderlyingQuiverAlgebraElement[102X, for IsCapCategoryMorphismInAlgebroid 3.3-16 
-      for IsCapCategoryMorphismInFpCategory 1.3-14 
-  [2XUnderlyingVertex[102X, for IsCapCategoryObjectInAlgebroid 3.3-15 
-      for IsCapCategoryObjectInFpCategory 1.3-13 
+  [2XUnderlyingQuiverAlgebraElement[102X, for IsMorphismInAlgebroid 3.3-16 
+      for IsMorphismInFpCategory 1.3-14 
+  [2XUnderlyingVertex[102X, for IsObjectInAlgebroid 3.3-15 
+      for IsObjectInFpCategory 1.3-13 
   
   
   -------------------------------------------------------
