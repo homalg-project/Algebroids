@@ -68,7 +68,8 @@
   [2XIsCounitary[102X, for IsAlgebroid 3.2-3 
       for IsCategoryOfAlgebroidsObject 4.2-2 
       for IsFpCategory 1.2-3 
-  [2XIsFinitelyPresentedCategory[102X, for IsCapCategory 1.2-1  3.2-1 
+  [2XIsFinitelyPresentedCategory[102X, for IsCapCategory 1.2-1 
+  [2XIsFinitelyPresentedLinearCategory[102X, for IsCapCategory 3.2-1 
   [2XIsFpCategory[102X, for IsCapCategory 1.1-3 
   [2XIsFpCategoryMorphism[102X, for IsCapFunctor 1.1-5 
   [2XIsHopfAlgebroid[102X, for IsBialgebroid 5.2-2 

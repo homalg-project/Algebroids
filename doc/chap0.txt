@@ -7,7 +7,7 @@
                                     quivers [101X
   
   
-                                   2021.12-03
+                                   2021.12-04
   
   
                                 9 December 2021
@@ -140,7 +140,7 @@
       3.1-4 IsAlgebraAsCategory
       3.1-5 IsAlgebroidMorphism
     3.2 [33X[0;0YProperties[133X
-      3.2-1 IsFinitelyPresentedCategory
+      3.2-1 IsFinitelyPresentedLinearCategory
       3.2-2 IsCommutative
       3.2-3 IsCounitary
       3.2-4 IsCoassociative
