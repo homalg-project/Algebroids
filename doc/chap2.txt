@@ -263,37 +263,48 @@
   [33X[0;0YDelegates to [10XMorphismInFpCategory[110X( [3Xpath[103X ).[133X
   
   
-  [1X2.5 [33X[0;0YGAP categories[133X[101X
+  [1X2.5 [33X[0;0YGlobal functions[133X[101X
   
-  [1X2.5-1 IsObjectInFpCategory[101X
+  [1X2.5-1 SimplicialCategoryTruncatedInDegree[101X
+  
+  [33X[1;0Y[29X[2XSimplicialCategoryTruncatedInDegree[102X( [3Xn[103X ) [32X function[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
+  
+  [33X[0;0YThe  full  subcategory of the simplicial category [23X\Delta[123X on the objects [23X[0],
+  \ldots, [n][123X.[133X
+  
+  
+  [1X2.6 [33X[0;0YGAP categories[133X[101X
+  
+  [1X2.6-1 IsObjectInFpCategory[101X
   
   [33X[1;0Y[29X[2XIsObjectInFpCategory[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of objects in an algebroid.[133X
   
-  [1X2.5-2 IsMorphismInFpCategory[101X
+  [1X2.6-2 IsMorphismInFpCategory[101X
   
   [33X[1;0Y[29X[2XIsMorphismInFpCategory[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of morphisms in an algebroid.[133X
   
-  [1X2.5-3 IsFpCategory[101X
+  [1X2.6-3 IsFpCategory[101X
   
   [33X[1;0Y[29X[2XIsFpCategory[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of finitely presented categories.[133X
   
-  [1X2.5-4 IsMonoidAsCategory[101X
+  [1X2.6-4 IsMonoidAsCategory[101X
   
   [33X[1;0Y[29X[2XIsMonoidAsCategory[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of algebras.[133X
   
-  [1X2.5-5 IsFpCategoryMorphism[101X
+  [1X2.6-5 IsFpCategoryMorphism[101X
   
   [33X[1;0Y[29X[2XIsFpCategoryMorphism[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
