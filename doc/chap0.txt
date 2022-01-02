@@ -7,10 +7,10 @@
                                     quivers [101X
   
   
-                                   2021.12-11
+                                   2022.01-01
   
   
-                                29 December 2021
+                                 2 January 2022
   
   
                                 Mohamed Barakat
@@ -115,6 +115,7 @@
       2.2-16 UnderlyingAlgebra
       2.2-17 Parity
       2.2-18 POW
+      2.2-19 NerveTruncatedInDegree2AsFunctor
     2.3 [33X[0;0YOperations[133X
       2.3-1 TrivialCategory
       2.3-2 \*

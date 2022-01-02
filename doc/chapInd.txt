@@ -88,6 +88,7 @@
   [2XMorphismInFpCategory[102X, for IsFpCategory, IsPath 2.4-3 
       for IsObjectInFpCategory, IsPath, IsObjectInFpCategory 2.4-3 
   [2XNaturalTransformation[102X, for IsRecord, IsCapFunctor, IsCapFunctor 3.4-5 
+  [2XNerveTruncatedInDegree2AsFunctor[102X, for IsFpCategory 2.2-19 
   [2XObjectInAlgebroid[102X, for IsAlgebroid, IsQuiverVertex 3.4-6 
   [2XObjectInFpCategory[102X, for IsFpCategory, IsQuiverVertex 2.4-2 
   [2XOppositeAlgebroid[102X, for IsAlgebroid 3.2-14 
