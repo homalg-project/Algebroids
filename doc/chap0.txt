@@ -7,7 +7,7 @@
                                     quivers [101X
   
   
-                                   2022.01-04
+                                   2022.01-06
   
   
                                  8 January 2022
@@ -115,8 +115,10 @@
       2.2-16 UnderlyingAlgebra
       2.2-17 Parity
       2.2-18 POW
-      2.2-19 YonedaCompositionAsNaturalEpimorphism
-      2.2-20 NerveTruncatedInDegree2AsFunctor
+      2.2-19 YonedaProjectionAsNaturalEpimorphism
+      2.2-20 YonedaCompositionAsNaturalEpimorphism
+      2.2-21 NerveTruncatedInDegree2AsFunctor
+      2.2-22 SieveFunctor
     2.3 [33X[0;0YOperations[133X
       2.3-1 TrivialCategory
       2.3-2 \*
