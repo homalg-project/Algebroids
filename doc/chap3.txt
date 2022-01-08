@@ -328,10 +328,11 @@
   [1X3.4-5 NaturalTransformation[101X
   
   [33X[1;0Y[29X[2XNaturalTransformation[102X( [3Xeta[103X, [3XF[103X, [3XG[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XNaturalTransformation[102X( [3XF[103X, [3Xeta[103X, [3XG[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X natural transformation[133X
   
-  [33X[0;0YConstruct, using the record of images [3Xeta[103X, a natural transformation from the
-  functor [3XF[103X to the parallel functor [3XG[103X.[133X
+  [33X[0;0YConstruct,   using   the   record   (or  list)  of  images  [3Xeta[103X,  a  natural
+  transformation from the functor [3XF[103X to the parallel functor [3XG[103X.[133X
   
   [1X3.4-6 ObjectInAlgebroid[101X
   
