@@ -7,10 +7,10 @@
                                     quivers [101X
   
   
-                                   2022.01-06
+                                   2022.01-07
   
   
-                                 8 January 2022
+                                 9 January 2022
   
   
                                 Mohamed Barakat
@@ -118,7 +118,8 @@
       2.2-19 YonedaProjectionAsNaturalEpimorphism
       2.2-20 YonedaCompositionAsNaturalEpimorphism
       2.2-21 NerveTruncatedInDegree2AsFunctor
-      2.2-22 SieveFunctor
+      2.2-22 TruthMorphismOfTrueToSieveFunctor
+      2.2-23 SieveFunctor
     2.3 [33X[0;0YOperations[133X
       2.3-1 TrivialCategory
       2.3-2 \*

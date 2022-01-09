@@ -111,11 +111,12 @@
       for IsObjectInFpCategory, IsObjectInFpCategory 2.2-8 
   [2XSetOfObjects[102X, for IsAlgebroid 3.2-6 
       for IsFpCategory 2.2-4 
-  [2XSieveFunctor[102X, for IsFpCategory 2.2-22 
+  [2XSieveFunctor[102X, for IsFpCategory 2.2-23 
   [2XSimplicialCategoryTruncatedInDegree[102X 2.5-1 
   [2XSize[102X, for IsFpCategory 2.2-3 
   [2XTrivialAlgebroid[102X, for IsHomalgRing, IsString 3.3-3 
   [2XTrivialCategory[102X, for IsString 2.3-1 
+  [2XTruthMorphismOfTrueToSieveFunctor[102X, for IsFpCategory 2.2-22 
   [2XTwist[102X, for IsAlgebroid, IsAlgebroid 4.3-1 
   [2XUnderlyingAlgebra[102X, for IsAlgebroid 3.2-18 
       for IsFpCategory 2.2-16 
