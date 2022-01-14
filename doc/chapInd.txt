@@ -87,7 +87,7 @@
       for IsObjectInFpCategory, IsPath, IsObjectInFpCategory 2.4-3 
   [2XNaturalTransformation[102X, for IsCapFunctor, IsList, IsCapFunctor 3.4-5 
       for IsRecord, IsCapFunctor, IsCapFunctor 3.4-5 
-  [2XNerveTruncatedInDegree2AsFunctor[102X, for IsFpCategory 2.2-21 
+  [2XNerveTruncatedInDegree2AsFunctor[102X, for IsFpCategory 2.2-19 
   [2XObjectInAlgebroid[102X, for IsAlgebroid, IsQuiverVertex 3.4-6 
   [2XObjectInFpCategory[102X, for IsFpCategory, IsQuiverVertex 2.4-2 
   [2XOppositeAlgebroid[102X, for IsAlgebroid 3.2-14 
@@ -126,8 +126,8 @@
       for IsMorphismInFpCategory 2.2-15 
   [2XUnderlyingVertex[102X, for IsObjectInAlgebroid 3.2-16 
       for IsObjectInFpCategory 2.2-14 
-  [2XYonedaCompositionAsNaturalEpimorphism[102X, for IsCapCategory 2.2-20 
-  [2XYonedaProjectionAsNaturalEpimorphism[102X, for IsCapCategory 2.2-19 
+  [2XYonedaCompositionAsNaturalEpimorphism[102X, for IsCapCategory 2.2-21 
+  [2XYonedaProjectionAsNaturalEpimorphism[102X, for IsCapCategory 2.2-20 
   
   
   -------------------------------------------------------
