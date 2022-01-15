@@ -27,10 +27,12 @@
   [2XAssignSetOfObjects[102X, for IsAlgebroid, IsString 3.2-7 
       for IsFpCategory, IsString 2.2-5 
   [2XBasisPathsByVertexIndex[102X, for IsAlgebroid 3.2-4 
-  [2XCapFunctor[102X, for IsAlgebroid, IsList, IsList, IsCapCategory 3.4-4 
+  [2XCapFunctor[102X, for IsAlgebroid, IsCapCategoryObject 3.4-4 
+      for IsAlgebroid, IsList, IsList, IsCapCategory 3.4-4 
       for IsAlgebroid, IsList, IsList, IsCapCategory, IsBool 3.4-4 
       for IsAlgebroid, IsRecord, IsRecord 3.4-4 
       for IsAlgebroid, IsRecord, IsRecord, IsBool 3.4-4 
+      for IsFpCategory, IsCapCategoryObject 3.4-4 
       for IsFpCategory, IsList, IsList, IsCapCategory 3.4-4 
       for IsFpCategory, IsList, IsList, IsCapCategory, IsBool 3.4-4 
       for IsFpCategory, IsRecord, IsRecord 3.4-4 
@@ -109,12 +111,12 @@
       for IsObjectInFpCategory, IsObjectInFpCategory 2.2-8 
   [2XSetOfObjects[102X, for IsAlgebroid 3.2-6 
       for IsFpCategory 2.2-4 
-  [2XSieveFunctor[102X, for IsFpCategory 2.2-23 
+  [2XSieveFunctor[102X, for IsFpCategory 2.2-24 
   [2XSimplicialCategoryTruncatedInDegree[102X 2.5-1 
   [2XSize[102X, for IsFpCategory 2.2-3 
   [2XTrivialAlgebroid[102X, for IsHomalgRing, IsString 3.3-3 
   [2XTrivialCategory[102X, for IsString 2.3-1 
-  [2XTruthMorphismOfTrueToSieveFunctor[102X, for IsFpCategory 2.2-22 
+  [2XTruthMorphismOfTrueToSieveFunctor[102X, for IsFpCategory 2.2-23 
   [2XTwist[102X, for IsAlgebroid, IsAlgebroid 4.3-1 
   [2XUnderlyingAlgebra[102X, for IsAlgebroid 3.2-18 
       for IsFpCategory 2.2-16 
@@ -126,8 +128,9 @@
       for IsMorphismInFpCategory 2.2-15 
   [2XUnderlyingVertex[102X, for IsObjectInAlgebroid 3.2-16 
       for IsObjectInFpCategory 2.2-14 
-  [2XYonedaCompositionAsNaturalEpimorphism[102X, for IsCapCategory 2.2-21 
-  [2XYonedaProjectionAsNaturalEpimorphism[102X, for IsCapCategory 2.2-20 
+  [2XYonedaCompositionAsNaturalEpimorphism[102X, for IsCapCategory 2.2-22 
+  [2XYonedaProjectionAsNaturalEpimorphism[102X, for IsCapCategory 2.2-21 
+  [2XYonedaSourceFibrationAsNaturalTransformation[102X, for IsCapCategory 2.2-20 
   
   
   -------------------------------------------------------
