@@ -129,8 +129,8 @@
   [2XUnderlyingVertex[102X, for IsObjectInAlgebroid 3.2-16 
       for IsObjectInFpCategory 2.2-14 
   [2XYonedaCompositionAsNaturalEpimorphism[102X, for IsCapCategory 2.2-22 
+  [2XYonedaFibrationAsNaturalTransformation[102X, for IsCapCategory 2.2-20 
   [2XYonedaProjectionAsNaturalEpimorphism[102X, for IsCapCategory 2.2-21 
-  [2XYonedaSourceFibrationAsNaturalTransformation[102X, for IsCapCategory 2.2-20 
   
   
   -------------------------------------------------------

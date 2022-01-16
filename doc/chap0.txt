@@ -7,7 +7,7 @@
                                     quivers [101X
   
   
-                                   2022.01-16
+                                   2022.01-17
   
   
                                 16 January 2022
@@ -115,7 +115,7 @@
       2.2-17 Parity
       2.2-18 POW
       2.2-19 NerveTruncatedInDegree2AsFunctor
-      2.2-20 YonedaSourceFibrationAsNaturalTransformation
+      2.2-20 YonedaFibrationAsNaturalTransformation
       2.2-21 YonedaProjectionAsNaturalEpimorphism
       2.2-22 YonedaCompositionAsNaturalEpimorphism
       2.2-23 TruthMorphismOfTrueToSieveFunctor
