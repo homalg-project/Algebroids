@@ -39,6 +39,10 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A_bar := QuotientOfPathAlgebra( A, [ A.abc ] );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "Algebroids", "gap/CompilerLogic.gi" );</span>
 true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput"># only valid for the construction above</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput"># FIXME: IsInt should be IsRat, but specializations of types are not yet supported by CompilerForCAP</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">CapJitAddTypeSignature( "CoefficientsOfPaths", [ IsList, IsPathAlgebraElement ], rec( filter := IsList, element_type := rec( filter := IsInt ) ) );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CapJitAddTypeSignature( "CoefficientsOfPaths", [ IsList, IsQuotientOfPathAlgebraElement ], rec( filter := IsList, element_type := rec( filter := IsInt ) ) );</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">precompile_AdditiveClosureOfAlgebroid :=</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">  function( Rq, over_Z, path_algebra, ring )</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">    CapJitPrecompileCategoryAndCompareResult(</span>
