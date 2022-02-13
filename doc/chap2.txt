@@ -487,15 +487,23 @@
   
   [1X2.3 [33X[0;0YOperations[133X[101X
   
-  [1X2.3-1 TrivialCategory[101X
+  [1X2.3-1 Opposite[101X
+  
+  [33X[1;0Y[29X[2XOpposite[102X( [3XC[103X, [3Xc[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya cell in a finitely presented category[133X
+  
+  [33X[0;0YReturn  the  cell  [3Xc[103X  in  a  finitely  presented category [22XC[122X = [10XCapCategory[110X([3Xc[103X)
+  interpreted as a cell in [10XOppositeFpCategory[110X([22XC[122X).[133X
+  
+  [1X2.3-2 TrivialCategory[101X
   
   [33X[1;0Y[29X[2XTrivialCategory[102X( [3Xstr[103X ) [32X operation[133X
   
-  [1X2.3-2 \*[101X
+  [1X2.3-3 \*[101X
   
   [33X[1;0Y[29X[2X\*[102X( [3XC[103X, [3XD[103X ) [32X operation[133X
   
-  [1X2.3-3 ElementaryTensor[101X
+  [1X2.3-4 ElementaryTensor[101X
   
   [33X[1;0Y[29X[2XElementaryTensor[102X( [3Xa[103X, [3Xb[103X, [3XT[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
@@ -504,7 +512,7 @@
   finitely  presented  category  B and the tensor product [3XT[103X of A and B, return
   the tensor product of a and b in T.[133X
   
-  [1X2.3-4 ElementaryTensor[101X
+  [1X2.3-5 ElementaryTensor[101X
   
   [33X[1;0Y[29X[2XElementaryTensor[102X( [3Xa[103X, [3Xg[103X, [3XT[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
@@ -513,7 +521,7 @@
   finitely  presented  category  B and the tensor product [3XT[103X of A and B, return
   the tensor product of a and g in T.[133X
   
-  [1X2.3-5 ElementaryTensor[101X
+  [1X2.3-6 ElementaryTensor[101X
   
   [33X[1;0Y[29X[2XElementaryTensor[102X( [3Xf[103X, [3Xb[103X, [3XT[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
@@ -522,13 +530,13 @@
   finitely  presented  category  B and the tensor product [3XT[103X of A and B, return
   the tensor product of f and b in T.[133X
   
-  [1X2.3-6 LaTeXStringOp[101X
+  [1X2.3-7 LaTeXStringOp[101X
   
   [33X[1;0Y[29X[2XLaTeXStringOp[102X( [3Xo[103X ) [32X operation[133X
   
   [33X[0;0YThe ouput is the LaTeX string of the object [3Xo[103X. Returns a string[133X
   
-  [1X2.3-7 LaTeXStringOp[101X
+  [1X2.3-8 LaTeXStringOp[101X
   
   [33X[1;0Y[29X[2XLaTeXStringOp[102X( [3Xm[103X ) [32X operation[133X
   
@@ -587,35 +595,42 @@
   
   [1X2.6 [33X[0;0YGAP categories[133X[101X
   
-  [1X2.6-1 IsObjectInFpCategory[101X
+  [1X2.6-1 IsCellInFpCategory[101X
+  
+  [33X[1;0Y[29X[2XIsCellInFpCategory[102X( [3Xarg[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
+  
+  [33X[0;0YThe [5XGAP[105X category of cells in a finitely presented category.[133X
+  
+  [1X2.6-2 IsObjectInFpCategory[101X
   
   [33X[1;0Y[29X[2XIsObjectInFpCategory[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of objects in a finitely presented category.[133X
   
-  [1X2.6-2 IsMorphismInFpCategory[101X
+  [1X2.6-3 IsMorphismInFpCategory[101X
   
   [33X[1;0Y[29X[2XIsMorphismInFpCategory[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of morphisms in a finitely presented category.[133X
   
-  [1X2.6-3 IsFpCategory[101X
+  [1X2.6-4 IsFpCategory[101X
   
   [33X[1;0Y[29X[2XIsFpCategory[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of finitely presented categories.[133X
   
-  [1X2.6-4 IsMonoidAsCategory[101X
+  [1X2.6-5 IsMonoidAsCategory[101X
   
   [33X[1;0Y[29X[2XIsMonoidAsCategory[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of algebras.[133X
   
-  [1X2.6-5 IsFpCategoryMorphism[101X
+  [1X2.6-6 IsFpCategoryMorphism[101X
   
   [33X[1;0Y[29X[2XIsFpCategoryMorphism[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X

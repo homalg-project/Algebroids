@@ -190,11 +190,19 @@
   
   [1X3.3 [33X[0;0YOperations[133X[101X
   
-  [1X3.3-1 DecomposeQuiverAlgebraElement[101X
+  [1X3.3-1 Opposite[101X
+  
+  [33X[1;0Y[29X[2XOpposite[102X( [3XB[103X, [3Xc[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya cell in a finitely presented category[133X
+  
+  [33X[0;0YReturn  the  cell [3Xc[103X in an algebroid [22XB[122X = [10XCapCategory[110X([3Xc[103X) interpreted as a cell
+  in [10XOppositeAlgebroid[110X([22XB[122X).[133X
+  
+  [1X3.3-2 DecomposeQuiverAlgebraElement[101X
   
   [33X[1;0Y[29X[2XDecomposeQuiverAlgebraElement[102X( [3Xe[103X ) [32X operation[133X
   
-  [1X3.3-2 ApplyToQuiverAlgebraElement[101X
+  [1X3.3-3 ApplyToQuiverAlgebraElement[101X
   
   [33X[1;0Y[29X[2XApplyToQuiverAlgebraElement[102X( [3Ximg_of_objs_func[103X, [3Ximgs_of_generating_mors_func[103X, [3Xpath[103X, [3Xcovariant[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XApplyToQuiverAlgebraElement[102X( [3XF[103X, [3Xpath[103X ) [32X operation[133X
@@ -203,15 +211,15 @@
   [33X[0;0YApply  the  functor  [3XF[103X  (e.g., defined by the functions [3Ximg_of_objs_func[103X and
   [3Ximgs_of_generating_mors_func[103X) to the quiver algebra element [3Xp[103X.[133X
   
-  [1X3.3-3 TrivialAlgebroid[101X
+  [1X3.3-4 TrivialAlgebroid[101X
   
   [33X[1;0Y[29X[2XTrivialAlgebroid[102X( [3Xk[103X, [3Xstr[103X ) [32X operation[133X
   
-  [1X3.3-4 \*[101X
+  [1X3.3-5 \*[101X
   
   [33X[1;0Y[29X[2X\*[102X( [3XA[103X, [3XB[103X ) [32X operation[133X
   
-  [1X3.3-5 ElementaryTensor[101X
+  [1X3.3-6 ElementaryTensor[101X
   
   [33X[1;0Y[29X[2XElementaryTensor[102X( [3Xa[103X, [3Xb[103X, [3XT[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
@@ -219,7 +227,7 @@
   [33X[0;0YGiven  an  object  [3Xa[103X in an algebroid A and an object [3Xb[103X in an algebroid B and
   the tensor product [3XT[103X of A and B, return the tensor product of a and b in T.[133X
   
-  [1X3.3-6 ElementaryTensor[101X
+  [1X3.3-7 ElementaryTensor[101X
   
   [33X[1;0Y[29X[2XElementaryTensor[102X( [3Xa[103X, [3Xg[103X, [3XT[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
@@ -227,7 +235,7 @@
   [33X[0;0YGiven  an  object [3Xa[103X in an algebroid A and a morphism [3Xg[103X in an algebroid B and
   the tensor product [3XT[103X of A and B, return the tensor product of a and g in T.[133X
   
-  [1X3.3-7 ElementaryTensor[101X
+  [1X3.3-8 ElementaryTensor[101X
   
   [33X[1;0Y[29X[2XElementaryTensor[102X( [3Xf[103X, [3Xb[103X, [3XT[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
@@ -235,13 +243,13 @@
   [33X[0;0YGiven  a  morphism [3Xf[103X in an algebroid A and an object [3Xb[103X in an algebroid B and
   the tensor product [3XT[103X of A and B, return the tensor product of f and b in T.[133X
   
-  [1X3.3-8 LaTeXStringOp[101X
+  [1X3.3-9 LaTeXStringOp[101X
   
   [33X[1;0Y[29X[2XLaTeXStringOp[102X( [3Xo[103X ) [32X operation[133X
   
   [33X[0;0YThe ouput is the LaTeX string of the object [3Xo[103X. Returns a string[133X
   
-  [1X3.3-9 LaTeXStringOp[101X
+  [1X3.3-10 LaTeXStringOp[101X
   
   [33X[1;0Y[29X[2XLaTeXStringOp[102X( [3Xm[103X ) [32X operation[133X
   
@@ -379,35 +387,42 @@
   
   [1X3.5 [33X[0;0YGAP categories[133X[101X
   
-  [1X3.5-1 IsObjectInAlgebroid[101X
+  [1X3.5-1 IsCellInAlgebroid[101X
+  
+  [33X[1;0Y[29X[2XIsCellInAlgebroid[102X( [3Xarg[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
+  
+  [33X[0;0YThe [5XGAP[105X category of cells in an algebroid.[133X
+  
+  [1X3.5-2 IsObjectInAlgebroid[101X
   
   [33X[1;0Y[29X[2XIsObjectInAlgebroid[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of objects in an algebroid.[133X
   
-  [1X3.5-2 IsMorphismInAlgebroid[101X
+  [1X3.5-3 IsMorphismInAlgebroid[101X
   
   [33X[1;0Y[29X[2XIsMorphismInAlgebroid[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of morphisms in an algebroid.[133X
   
-  [1X3.5-3 IsAlgebroid[101X
+  [1X3.5-4 IsAlgebroid[101X
   
   [33X[1;0Y[29X[2XIsAlgebroid[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of algebroids.[133X
   
-  [1X3.5-4 IsAlgebraAsCategory[101X
+  [1X3.5-5 IsAlgebraAsCategory[101X
   
   [33X[1;0Y[29X[2XIsAlgebraAsCategory[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of algebras.[133X
   
-  [1X3.5-5 IsAlgebroidMorphism[101X
+  [1X3.5-6 IsAlgebroidMorphism[101X
   
   [33X[1;0Y[29X[2XIsAlgebroidMorphism[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
