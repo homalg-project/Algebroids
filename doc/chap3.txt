@@ -243,18 +243,6 @@
   [33X[0;0YGiven  a  morphism [3Xf[103X in an algebroid A and an object [3Xb[103X in an algebroid B and
   the tensor product [3XT[103X of A and B, return the tensor product of f and b in T.[133X
   
-  [1X3.3-9 LaTeXStringOp[101X
-  
-  [33X[1;0Y[29X[2XLaTeXStringOp[102X( [3Xo[103X ) [32X operation[133X
-  
-  [33X[0;0YThe ouput is the LaTeX string of the object [3Xo[103X. Returns a string[133X
-  
-  [1X3.3-10 LaTeXStringOp[101X
-  
-  [33X[1;0Y[29X[2XLaTeXStringOp[102X( [3Xm[103X ) [32X operation[133X
-  
-  [33X[0;0YThe ouput is the LaTeX string of the morphism [3Xm[103X. Returns a string[133X
-  
   
   [1X3.4 [33X[0;0YConstructors[133X[101X
   

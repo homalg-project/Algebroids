@@ -81,10 +81,6 @@
   [2XIsMorphismInFpCategory[102X, for IsCellInFpCategory and IsCapCategoryMorphism 2.6-3 
   [2XIsObjectInAlgebroid[102X, for IsCellInAlgebroid and IsCapCategoryObject 3.5-2 
   [2XIsObjectInFpCategory[102X, for IsCellInFpCategory and IsCapCategoryObject 2.6-2 
-  [2XLaTeXStringOp[102X, for IsMorphismInAlgebroid 3.3-10 
-      for IsMorphismInFpCategory 2.3-8 
-      for IsObjectInAlgebroid 3.3-9 
-      for IsObjectInFpCategory 2.3-7 
   [2XMorphismInAlgebroid[102X, for IsAlgebroid, IsQuiverAlgebraElement 3.4-8 
       for IsObjectInAlgebroid, IsQuiverAlgebraElement, IsObjectInAlgebroid 3.4-8 
   [2XMorphismInFpCategory[102X, for IsFpCategory, IsPath 2.4-3 
