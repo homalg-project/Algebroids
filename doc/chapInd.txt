@@ -46,6 +46,7 @@
   [2XComultiplication[102X, for IsAlgebroid 5.2-2 
   [2XCounit[102X, for IsAlgebroid 5.2-1 
   [2XDecomposeQuiverAlgebraElement[102X, for IsQuiverAlgebraElement 3.3-2 
+  [2XDefiningPairOfAQuiver[102X, for IsQuiver 7.1-1 
   [2XDescentToZDefinedByBasisPaths[102X, for IsAlgebroid 3.4-3 
   [2XDimension[102X, for IsAlgebroid 3.2-3 
   [2XElementaryTensor[102X, for IsMorphismInAlgebroid, IsObjectInAlgebroid, IsAlgebroid 3.3-8 

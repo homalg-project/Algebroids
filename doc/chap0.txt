@@ -7,7 +7,7 @@
                                     quivers [101X
   
   
-                                   2022.09-08
+                                   2022.09-09
   
   
                                20 September 2022
@@ -226,6 +226,9 @@
     5.4 [33X[0;0YGAP categories[133X
       5.4-1 IsBialgebroid
   6 [33X[0;0YPrecompilation[133X
+  7 [33X[0;0YTools[133X
+    7.1 [33X[0;0YTools for quivers[133X
+      7.1-1 DefiningPairOfAQuiver
   
   
   [32X
