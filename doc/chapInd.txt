@@ -12,7 +12,8 @@
       for IsQuiverVertex, IsAlgebroid 3.4-7 
   [2XAddAntipode[102X, for IsAlgebroid, IsRecord 5.3-2 
   [2XAddBialgebroidStructure[102X, for IsAlgebroid, IsRecord, IsRecord 5.3-1 
-  [2XAlgebroid[102X, for IsHomalgRing, IsFpCategory 3.4-1 
+  [2XAlgebroid[102X, for IsFpCategory, IsCapCategory 3.4-1 
+      for IsHomalgRing, IsFpCategory 3.4-1 
       for IsHomalgRing, IsQuiver 3.4-1 
       for IsQuiverAlgebra 3.4-1 
       for IsQuiverAlgebra, IsList 3.4-1 

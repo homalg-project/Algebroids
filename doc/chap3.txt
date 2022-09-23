@@ -251,6 +251,7 @@
   [33X[1;0Y[29X[2XAlgebroid[102X( [3XRq[103X ) [32X attribute[133X
   [33X[1;0Y[29X[2XAlgebroid[102X( [3XRq[103X, [3XL[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XAlgebroid[102X( [3XR[103X, [3Xq[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XAlgebroid[102X( [3XC[103X, [3XH[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XAlgebroid[102X( [3XR[103X, [3XC[103X ) [32X operation[133X
   [33X[1;0Y[29X[2X[][102X( [3XR[103X, [3XC[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
