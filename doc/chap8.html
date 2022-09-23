@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>GAP (Algebroids) - Chapter 8: Examples and Tests</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="GAPDoc2HTML" />
+<link rel="stylesheet" type="text/css" href="manual.css" />
+<script src="manual.js" type="text/javascript"></script>
+<script type="text/javascript">overwriteStyle();</script>
+</head>
+<body class="chap8"  onload="jscontent()">
+
+
+<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chap7.html">7</a>  <a href="chap8.html">8</a>  <a href="chapInd.html">Ind</a>  </div>
+
+<div class="chlinkprevnexttop">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap7.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chapInd.html">[Next Chapter]</a>&nbsp;  </div>
+
+<p id="mathjaxlink" class="pcenter"><a href="chap8_mj.html">[MathJax on]</a></p>
+<p><a id="X7967FE8E7BBDF485" name="X7967FE8E7BBDF485"></a></p>
+<div class="ChapSects"><a href="chap8.html#X7967FE8E7BBDF485">8 <span class="Heading">Examples and Tests</span></a>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap8.html#X789F85FE86E91A84">8.1 <span class="Heading">AdelmanCategory( AdditiveClosure( Algebroid ) ) vs. AdelmanCategory( QuiverRows )</span></a>
+</span>
+</div>
+</div>
+
+<h3>8 <span class="Heading">Examples and Tests</span></h3>
+
+<p><a id="X789F85FE86E91A84" name="X789F85FE86E91A84"></a></p>
+
+<h4>8.1 <span class="Heading">AdelmanCategory( AdditiveClosure( Algebroid ) ) vs. AdelmanCategory( QuiverRows )</span></h4>
+
+
+<div class="example"><pre>
+#@if ValueOption( "no_precompiled_code" ) = fail
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "FreydCategoriesForCAP", false );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "Algebroids", false );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "FreydCategoriesForCAP", "examples/SubobjectLatticeFunctions.g" );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">quiver := RightQuiver( "Q(5)[a:1-&gt;2,b:2-&gt;3,c:1-&gt;4,d:4-&gt;5]" );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">QQ := HomalgFieldOfRationals();;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">B := PathAlgebra( QQ, quiver );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">aoid := Algebroid( B, true : overhead := false );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">RowsB := AdditiveClosure( aoid : overhead := false );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Adel := AdelmanCategory( RowsB : overhead := false );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">QuiverRowsB := QuiverRowsDescentToZDefinedByBasisPaths( B : overhead := false );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">QuiverAdel := AdelmanCategory( QuiverRowsB : overhead := false );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">a := B.a/aoid/RowsB/Adel;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">b := B.b/aoid/RowsB/Adel;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c := B.c/aoid/RowsB/Adel;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">d := B.d/aoid/RowsB/Adel;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x := KernelEmbedding( a );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y := KernelEmbedding( PreCompose( a, b ) );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">z := KernelEmbedding( c );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">w := KernelEmbedding(  PreCompose( c, d ) );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">gens := [ x, y, z, w ];;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">start := Runtime( );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( Size( GenerateSubobjects( gens ) ) );</span>
+18
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">runtime := Runtime( ) - start;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">a := B.a/QuiverRowsB/QuiverAdel;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">b := B.b/QuiverRowsB/QuiverAdel;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c := B.c/QuiverRowsB/QuiverAdel;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">d := B.d/QuiverRowsB/QuiverAdel;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x := KernelEmbedding( a );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y := KernelEmbedding( PreCompose( a, b ) );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">z := KernelEmbedding( c );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">w := KernelEmbedding(  PreCompose( c, d ) );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">gens := [ x, y, z, w ];;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">start := Runtime( );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( Size( GenerateSubobjects( gens ) ) );</span>
+18
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">runtime_quiver := Runtime( ) - start;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">if runtime &gt;= runtime_quiver * 6 / 10 then Display( true ); else Display( runtime ); Display( runtime_quiver ); fi;</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">if runtime &lt;= runtime_quiver * 7 / 10 then Display( true ); else Display( runtime ); Display( runtime_quiver ); fi;</span>
+true
+#@fi
+</pre></div>
+
+
+<div class="chlinkprevnextbot">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap7.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chapInd.html">[Next Chapter]</a>&nbsp;  </div>
+
+
+<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chap7.html">7</a>  <a href="chap8.html">8</a>  <a href="chapInd.html">Ind</a>  </div>
+
+<hr />
+<p class="foot">generated by <a href="http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc">GAPDoc2HTML</a></p>
+</body>
+</html>

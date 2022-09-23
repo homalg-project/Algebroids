@@ -7,7 +7,7 @@
                                     quivers [101X
   
   
-                                   2022.09-16
+                                   2022.09-17
   
   
                                23 September 2022
@@ -229,6 +229,9 @@
   7 [33X[0;0YTools[133X
     7.1 [33X[0;0YTools for quivers[133X
       7.1-1 DefiningPairOfAQuiver
+  8 [33X[0;0YExamples and Tests[133X
+    8.1 [33X[0;0YAdelmanCategory( AdditiveClosure( Algebroid ) ) vs. AdelmanCategory(
+    QuiverRows )[133X
   
   
   [32X

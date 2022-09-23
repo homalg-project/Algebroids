@@ -1,0 +1,56 @@
+  
+  [1X8 [33X[0;0YExamples and Tests[133X[101X
+  
+  
+  [1X8.1  [33X[0;0YAdelmanCategory(  AdditiveClosure(  Algebroid  ) ) vs. AdelmanCategory([101X
+  [1XQuiverRows )[133X[101X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[28X#@if ValueOption( "no_precompiled_code" ) = fail[128X[104X
+    [4X[25Xgap>[125X [27XLoadPackage( "FreydCategoriesForCAP", false );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XLoadPackage( "Algebroids", false );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XReadPackage( "FreydCategoriesForCAP", "examples/SubobjectLatticeFunctions.g" );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27Xquiver := RightQuiver( "Q(5)[a:1->2,b:2->3,c:1->4,d:4->5]" );;[127X[104X
+    [4X[25Xgap>[125X [27XQQ := HomalgFieldOfRationals();;[127X[104X
+    [4X[25Xgap>[125X [27XB := PathAlgebra( QQ, quiver );;[127X[104X
+    [4X[25Xgap>[125X [27Xaoid := Algebroid( B, true : overhead := false );;[127X[104X
+    [4X[25Xgap>[125X [27XRowsB := AdditiveClosure( aoid : overhead := false );;[127X[104X
+    [4X[25Xgap>[125X [27XAdel := AdelmanCategory( RowsB : overhead := false );;[127X[104X
+    [4X[25Xgap>[125X [27XQuiverRowsB := QuiverRowsDescentToZDefinedByBasisPaths( B : overhead := false );;[127X[104X
+    [4X[25Xgap>[125X [27XQuiverAdel := AdelmanCategory( QuiverRowsB : overhead := false );;[127X[104X
+    [4X[25Xgap>[125X [27Xa := B.a/aoid/RowsB/Adel;;[127X[104X
+    [4X[25Xgap>[125X [27Xb := B.b/aoid/RowsB/Adel;;[127X[104X
+    [4X[25Xgap>[125X [27Xc := B.c/aoid/RowsB/Adel;;[127X[104X
+    [4X[25Xgap>[125X [27Xd := B.d/aoid/RowsB/Adel;;[127X[104X
+    [4X[25Xgap>[125X [27Xx := KernelEmbedding( a );;[127X[104X
+    [4X[25Xgap>[125X [27Xy := KernelEmbedding( PreCompose( a, b ) );;[127X[104X
+    [4X[25Xgap>[125X [27Xz := KernelEmbedding( c );;[127X[104X
+    [4X[25Xgap>[125X [27Xw := KernelEmbedding(  PreCompose( c, d ) );;[127X[104X
+    [4X[25Xgap>[125X [27Xgens := [ x, y, z, w ];;[127X[104X
+    [4X[25Xgap>[125X [27Xstart := Runtime( );;[127X[104X
+    [4X[25Xgap>[125X [27XDisplay( Size( GenerateSubobjects( gens ) ) );[127X[104X
+    [4X[28X18[128X[104X
+    [4X[25Xgap>[125X [27Xruntime := Runtime( ) - start;;[127X[104X
+    [4X[25Xgap>[125X [27Xa := B.a/QuiverRowsB/QuiverAdel;;[127X[104X
+    [4X[25Xgap>[125X [27Xb := B.b/QuiverRowsB/QuiverAdel;;[127X[104X
+    [4X[25Xgap>[125X [27Xc := B.c/QuiverRowsB/QuiverAdel;;[127X[104X
+    [4X[25Xgap>[125X [27Xd := B.d/QuiverRowsB/QuiverAdel;;[127X[104X
+    [4X[25Xgap>[125X [27Xx := KernelEmbedding( a );;[127X[104X
+    [4X[25Xgap>[125X [27Xy := KernelEmbedding( PreCompose( a, b ) );;[127X[104X
+    [4X[25Xgap>[125X [27Xz := KernelEmbedding( c );;[127X[104X
+    [4X[25Xgap>[125X [27Xw := KernelEmbedding(  PreCompose( c, d ) );;[127X[104X
+    [4X[25Xgap>[125X [27Xgens := [ x, y, z, w ];;[127X[104X
+    [4X[25Xgap>[125X [27Xstart := Runtime( );;[127X[104X
+    [4X[25Xgap>[125X [27XDisplay( Size( GenerateSubobjects( gens ) ) );[127X[104X
+    [4X[28X18[128X[104X
+    [4X[25Xgap>[125X [27Xruntime_quiver := Runtime( ) - start;;[127X[104X
+    [4X[25Xgap>[125X [27Xif runtime >= runtime_quiver * 6 / 10 then Display( true ); else Display( runtime ); Display( runtime_quiver ); fi;[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27Xif runtime <= runtime_quiver * 7 / 10 then Display( true ); else Display( runtime ); Display( runtime_quiver ); fi;[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[28X#@fi[128X[104X
+  [4X[32X[104X
+  
