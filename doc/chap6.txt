@@ -96,8 +96,8 @@
     [4X[25Xgap>[125X [27Xprecompile_AdelmanCategoryOfAdditiveClosureOfAlgebroid := function( Rq, over_Z, path_algebra, ring )[127X[104X
     [4X[25X>[125X [27X    CapJitPrecompileCategoryAndCompareResult([127X[104X
     [4X[25X>[125X [27X        EvalString( ReplacedString( """Rq -> AdelmanCategory( AdditiveClosure( Algebroid([127X[104X
-    [4X[25X>[125X [27X            Rq, over_Z : FinalizeCategory := true, no_precompiled_code := false[127X[104X
-    [4X[25X>[125X [27X        ) : FinalizeCategory := true, no_precompiled_code := false ) )""", "over_Z", String( over_Z ) ) ),[127X[104X
+    [4X[25X>[125X [27X            Rq, over_Z : FinalizeCategory := true[127X[104X
+    [4X[25X>[125X [27X        ) : FinalizeCategory := true ) )""", "over_Z", String( over_Z ) ) ),[127X[104X
     [4X[25X>[125X [27X        [ Rq ],[127X[104X
     [4X[25X>[125X [27X        "Algebroids",[127X[104X
     [4X[25X>[125X [27X        Concatenation([127X[104X

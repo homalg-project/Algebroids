@@ -122,8 +122,8 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">precompile_AdelmanCategoryOfAdditiveClosureOfAlgebroid := function( Rq, over_Z, path_algebra, ring )</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">    CapJitPrecompileCategoryAndCompareResult(</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">        EvalString( ReplacedString( """Rq -&gt; AdelmanCategory( AdditiveClosure( Algebroid(</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">            Rq, over_Z : FinalizeCategory := true, no_precompiled_code := false</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">        ) : FinalizeCategory := true, no_precompiled_code := false ) )""", "over_Z", String( over_Z ) ) ),</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">            Rq, over_Z : FinalizeCategory := true</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">        ) : FinalizeCategory := true ) )""", "over_Z", String( over_Z ) ) ),</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">        [ Rq ],</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">        "Algebroids",</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">        Concatenation(</span>
