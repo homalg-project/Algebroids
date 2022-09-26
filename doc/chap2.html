@@ -62,12 +62,12 @@
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap2.html#X7DE8E16C7C2D387B">2.3 <span class="Heading">Operations</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X7BC8B686821379E4">2.3-1 Opposite</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X854DFAED82305BDA">2.3-2 TrivialCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X80E7B9BC8257615C"><code>2.3-3 \*</code></a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X83E46DDE78558CB7">2.3-4 ElementaryTensor</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X823BC7F7839FC278">2.3-5 ElementaryTensor</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X85645984879F87F9">2.3-6 ElementaryTensor</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X854DFAED82305BDA">2.3-1 TrivialCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X80E7B9BC8257615C"><code>2.3-2 \*</code></a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X83E46DDE78558CB7">2.3-3 ElementaryTensor</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X823BC7F7839FC278">2.3-4 ElementaryTensor</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X85645984879F87F9">2.3-5 ElementaryTensor</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X7E37F76C84884F6E">2.3-6 QuiverVertexAsIdentityPath</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap2.html#X86EC0F0A78ECBC10">2.4 <span class="Heading">Constructors</span></a>
 </span>
@@ -624,28 +624,19 @@ Functor from FreeCategory( RightQuiver( "q_op(1)[a:1-&gt;1]" ) ) / [ a*a*a = a*a
 
 <h4>2.3 <span class="Heading">Operations</span></h4>
 
-<p><a id="X7BC8B686821379E4" name="X7BC8B686821379E4"></a></p>
-
-<h5>2.3-1 Opposite</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Opposite</code>( <var class="Arg">C</var>, <var class="Arg">c</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>Returns: a cell in a finitely presented category</p>
-
-<p>Return the cell <var class="Arg">c</var> in a finitely presented category <span class="SimpleMath">C</span> = <code class="code">CapCategory</code>(<var class="Arg">c</var>) interpreted as a cell in <code class="code">OppositeFpCategory</code>(<span class="SimpleMath">C</span>).</p>
-
 <p><a id="X854DFAED82305BDA" name="X854DFAED82305BDA"></a></p>
 
-<h5>2.3-2 TrivialCategory</h5>
+<h5>2.3-1 TrivialCategory</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; TrivialCategory</code>( <var class="Arg">str</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p><a id="X80E7B9BC8257615C" name="X80E7B9BC8257615C"></a></p>
 
-<h5><code>2.3-3 \*</code></h5>
+<h5><code>2.3-2 \*</code></h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; \*</code>( <var class="Arg">C</var>, <var class="Arg">D</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p><a id="X83E46DDE78558CB7" name="X83E46DDE78558CB7"></a></p>
 
-<h5>2.3-4 ElementaryTensor</h5>
+<h5>2.3-3 ElementaryTensor</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ElementaryTensor</code>( <var class="Arg">a</var>, <var class="Arg">b</var>, <var class="Arg">T</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: a morphism in a <strong class="pkg">CAP</strong> category</p>
@@ -654,7 +645,7 @@ Functor from FreeCategory( RightQuiver( "q_op(1)[a:1-&gt;1]" ) ) / [ a*a*a = a*a
 
 <p><a id="X823BC7F7839FC278" name="X823BC7F7839FC278"></a></p>
 
-<h5>2.3-5 ElementaryTensor</h5>
+<h5>2.3-4 ElementaryTensor</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ElementaryTensor</code>( <var class="Arg">a</var>, <var class="Arg">g</var>, <var class="Arg">T</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: a morphism in a <strong class="pkg">CAP</strong> category</p>
@@ -663,12 +654,21 @@ Functor from FreeCategory( RightQuiver( "q_op(1)[a:1-&gt;1]" ) ) / [ a*a*a = a*a
 
 <p><a id="X85645984879F87F9" name="X85645984879F87F9"></a></p>
 
-<h5>2.3-6 ElementaryTensor</h5>
+<h5>2.3-5 ElementaryTensor</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ElementaryTensor</code>( <var class="Arg">f</var>, <var class="Arg">b</var>, <var class="Arg">T</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: a morphism in a <strong class="pkg">CAP</strong> category</p>
 
 <p>Given a morphism <var class="Arg">f</var> in a finitely presented category A and an object <var class="Arg">b</var> in a finitely presented category B and the tensor product <var class="Arg">T</var> of A and B, return the tensor product of f and b in T.</p>
+
+<p><a id="X7E37F76C84884F6E" name="X7E37F76C84884F6E"></a></p>
+
+<h5>2.3-6 QuiverVertexAsIdentityPath</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; QuiverVertexAsIdentityPath</code>( <var class="Arg">vertex</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p>Returns: a path</p>
+
+<p>Simply returns <var class="Arg">vertex</var>, but with the semantics of being an identity path.</p>
 
 <p><a id="X86EC0F0A78ECBC10" name="X86EC0F0A78ECBC10"></a></p>
 

@@ -5,8 +5,8 @@
   [2X/[102X, for IsAlgebroid, IsList 3.4-2 
       for IsFpCategory, IsList 2.4-1 
   [2X[][102X, for IsHomalgRing, IsFpCategory 3.4-1 
-  [2X\*[102X, for IsAlgebroid, IsAlgebroid 3.3-5 
-      for IsFpCategory, IsFpCategory 2.3-3 
+  [2X\*[102X, for IsAlgebroid, IsAlgebroid 3.3-4 
+      for IsFpCategory, IsFpCategory 2.3-2 
   [2X\/[102X, for IsPath, IsFpCategory 2.4-4 
       for IsQuiverAlgebraElement, IsAlgebroid 3.4-9 
       for IsQuiverVertex, IsAlgebroid 3.4-7 
@@ -19,8 +19,8 @@
       for IsQuiverAlgebra, IsList 3.4-1 
   [2XAntipode[102X, for IsAlgebroid 3.2-15 
       for IsFpCategory 2.2-15 
-  [2XApplyToQuiverAlgebraElement[102X, for IsCapFunctor, IsQuiverAlgebraElement 3.3-3 
-      for IsFunction, IsFunction, IsCapCategory, IsQuiverAlgebraElement, IsBool 3.3-3 
+  [2XApplyToQuiverAlgebraElement[102X, for IsCapFunctor, IsQuiverAlgebraElement 3.3-2 
+      for IsFunction, IsFunction, IsCapCategory, IsQuiverAlgebraElement, IsBool 3.3-2 
   [2XAsCapCategory[102X, for IsCategoryOfAlgebroidsObject 4.2-1 
   [2XAsCapFunctor[102X, for IsCategoryOfAlgebroidsMorphism 4.2-2 
   [2XAssignSetOfGeneratingMorphisms[102X, for IsAlgebroid, IsString 3.2-12 
@@ -46,16 +46,16 @@
   [2XCategoryOfAlgebroidsObject[102X, for IsAlgebroid 4.4-2 
   [2XComultiplication[102X, for IsAlgebroid 5.2-2 
   [2XCounit[102X, for IsAlgebroid 5.2-1 
-  [2XDecomposeQuiverAlgebraElement[102X, for IsQuiverAlgebraElement 3.3-2 
+  [2XDecomposeQuiverAlgebraElement[102X, for IsQuiverAlgebraElement 3.3-1 
   [2XDefiningPairOfAQuiver[102X, for IsQuiver 7.1-1 
   [2XDescentToZDefinedByBasisPaths[102X, for IsAlgebroid 3.4-3 
   [2XDimension[102X, for IsAlgebroid 3.2-3 
-  [2XElementaryTensor[102X, for IsMorphismInAlgebroid, IsObjectInAlgebroid, IsAlgebroid 3.3-8 
-      for IsMorphismInFpCategory, IsObjectInFpCategory, IsFpCategory 2.3-6 
-      for IsObjectInAlgebroid, IsMorphismInAlgebroid, IsAlgebroid 3.3-7 
-      for IsObjectInAlgebroid, IsObjectInAlgebroid, IsAlgebroid 3.3-6 
-      for IsObjectInFpCategory, IsMorphismInFpCategory, IsFpCategory 2.3-5 
-      for IsObjectInFpCategory, IsObjectInFpCategory, IsFpCategory 2.3-4 
+  [2XElementaryTensor[102X, for IsMorphismInAlgebroid, IsObjectInAlgebroid, IsAlgebroid 3.3-7 
+      for IsMorphismInFpCategory, IsObjectInFpCategory, IsFpCategory 2.3-5 
+      for IsObjectInAlgebroid, IsMorphismInAlgebroid, IsAlgebroid 3.3-6 
+      for IsObjectInAlgebroid, IsObjectInAlgebroid, IsAlgebroid 3.3-5 
+      for IsObjectInFpCategory, IsMorphismInFpCategory, IsFpCategory 2.3-4 
+      for IsObjectInFpCategory, IsObjectInFpCategory, IsFpCategory 2.3-3 
   [2XFreeCategory[102X, for IsQuiver 2.4-1 
   [2XHomStructureOnBasisPaths[102X, for IsAlgebroid 3.2-5 
       for IsFpCategory 2.2-5 
@@ -93,8 +93,6 @@
   [2XNerveTruncatedInDegree2AsFunctor[102X, for IsFpCategory 2.2-21 
   [2XObjectInAlgebroid[102X, for IsAlgebroid, IsQuiverVertex 3.4-6 
   [2XObjectInFpCategory[102X, for IsFpCategory, IsQuiverVertex 2.4-2 
-  [2XOpposite[102X, for IsAlgebroid, IsCellInAlgebroid 3.3-1 
-      for IsFpCategory, IsCellInFpCategory 2.3-1 
   [2XOppositeAlgebroid[102X, for IsAlgebroid 3.2-14 
   [2XOppositeFpCategory[102X, for IsFpCategory 2.2-14 
   [2XParity[102X, for IsAlgebroid 3.2-19 
@@ -102,6 +100,7 @@
   [2XPOW[102X, for IsAlgebroid, IsInt 3.2-20 
       for IsCapCategoryMorphism, IsInt 3.4-10 
       for IsFpCategory, IsInt 2.2-20 
+  [2XQuiverVertexAsIdentityPath[102X, for IsQuiverVertex 2.3-6 
   [2XRelationsOfAlgebroid[102X, for IsAlgebroid 3.2-13 
   [2XRelationsOfFpCategory[102X, for IsFpCategory 2.2-13 
   [2XSetOfGeneratingMorphisms[102X, for IsAlgebroid 3.2-8 
@@ -117,8 +116,8 @@
   [2XSieveFunctor[102X, for IsFpCategory 2.2-26 
   [2XSimplicialCategoryTruncatedInDegree[102X 2.5-1 
   [2XSize[102X, for IsFpCategory 2.2-3 
-  [2XTrivialAlgebroid[102X, for IsHomalgRing, IsString 3.3-4 
-  [2XTrivialCategory[102X, for IsString 2.3-2 
+  [2XTrivialAlgebroid[102X, for IsHomalgRing, IsString 3.3-3 
+  [2XTrivialCategory[102X, for IsString 2.3-1 
   [2XTruthMorphismOfTrueToSieveFunctor[102X, for IsFpCategory 2.2-25 
   [2XTwist[102X, for IsAlgebroid, IsAlgebroid 4.3-1 
   [2XUnderlyingAlgebra[102X, for IsAlgebroid 3.2-18 

@@ -9,15 +9,13 @@
     [4X[25Xgap>[125X [27XQQ := HomalgFieldOfRationals( );;[127X[104X
     [4X[25Xgap>[125X [27Xsnake_quiver := RightQuiver( "q(4)[a:1->2,b:2->3,c:3->4]" );;[127X[104X
     [4X[25Xgap>[125X [27XA := PathAlgebra( QQ, snake_quiver );;[127X[104X
-    [4X[25Xgap>[125X [27XA_bar := QuotientOfPathAlgebra( A, [ A.abc ] );;[127X[104X
     [4X[25Xgap>[125X [27XReadPackage( "Algebroids", "gap/CompilerLogic.gi" );[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27X# only valid for the construction above[127X[104X
     [4X[25X>[125X [27X# FIXME: IsInt should be IsRat, but specializations of types are not yet supported by CompilerForCAP[127X[104X
-    [4X[25X>[125X [27XCapJitAddTypeSignature( "CoefficientsOfPaths", [ IsList, IsPathAlgebraElement ], rec( filter := IsList, element_type := rec( filter := IsInt ) ) );[127X[104X
-    [4X[25Xgap>[125X [27XCapJitAddTypeSignature( "CoefficientsOfPaths", [ IsList, IsQuotientOfPathAlgebraElement ], rec( filter := IsList, element_type := rec( filter := IsInt ) ) );[127X[104X
+    [4X[25X>[125X [27XCapJitAddTypeSignature( "CoefficientsOfPaths", [ IsList, IsQuiverAlgebraElement ], rec( filter := IsList, element_type := rec( filter := IsInt ) ) );[127X[104X
     [4X[25Xgap>[125X [27Xprecompile_AdditiveClosureOfAlgebroid :=[127X[104X
-    [4X[25X>[125X [27X  function( Rq, over_Z, path_algebra, ring )[127X[104X
+    [4X[25X>[125X [27X  function( Rq, over_Z, ring )[127X[104X
     [4X[25X>[125X [27X    CapJitPrecompileCategoryAndCompareResult([127X[104X
     [4X[25X>[125X [27X        EvalString( ReplacedString( """Rq -> AdditiveClosure( Algebroid([127X[104X
     [4X[25X>[125X [27X            Rq, over_Z : FinalizeCategory := true[127X[104X
@@ -25,23 +23,15 @@
     [4X[25X>[125X [27X        [ Rq ],[127X[104X
     [4X[25X>[125X [27X        "Algebroids",[127X[104X
     [4X[25X>[125X [27X        Concatenation([127X[104X
-    [4X[25X>[125X [27X            "AdditiveClosureOfAlgebroidOfFiniteDimensional",[127X[104X
-    [4X[25X>[125X [27X            path_algebra,[127X[104X
-    [4X[25X>[125X [27X            "OfRightQuiverOver",[127X[104X
+    [4X[25X>[125X [27X            "AdditiveClosureOfAlgebroidOfFiniteDimensionalQuiverAlgebraOfRightQuiverOver",[127X[104X
     [4X[25X>[125X [27X            ring,[127X[104X
     [4X[25X>[125X [27X            "Precompiled"[127X[104X
     [4X[25X>[125X [27X        ) :[127X[104X
     [4X[25X>[125X [27X        operations := "primitive"[127X[104X
     [4X[25X>[125X [27X    ); end;;[127X[104X
-    [4X[25Xgap>[125X [27Xprecompile_AdditiveClosureOfAlgebroid([127X[104X
-    [4X[25X>[125X [27X        A, false, "PathAlgebra", "Field" );[127X[104X
-    [4X[25Xgap>[125X [27Xprecompile_AdditiveClosureOfAlgebroid([127X[104X
-    [4X[25X>[125X [27X        A_bar, false, "QuotientOfPathAlgebra", "Field" );[127X[104X
-    [4X[25Xgap>[125X [27Xprecompile_AdditiveClosureOfAlgebroid([127X[104X
-    [4X[25X>[125X [27X        A, true, "PathAlgebra", "Z" );[127X[104X
-    [4X[25Xgap>[125X [27Xprecompile_AdditiveClosureOfAlgebroid([127X[104X
-    [4X[25X>[125X [27X        A_bar, true, "QuotientOfPathAlgebra", "Z" );[127X[104X
-    [4X[25Xgap>[125X [27XAdditiveClosureOfAlgebroidOfFiniteDimensionalPathAlgebraOfRightQuiverOverFieldPrecompiled( A );[127X[104X
+    [4X[25Xgap>[125X [27Xprecompile_AdditiveClosureOfAlgebroid( A, false, "Field" );[127X[104X
+    [4X[25Xgap>[125X [27Xprecompile_AdditiveClosureOfAlgebroid( A, true, "Z" );[127X[104X
+    [4X[25Xgap>[125X [27XAdditiveClosureOfAlgebroidOfFiniteDimensionalQuiverAlgebraOfRightQuiverOverFieldPrecompiled( A );[127X[104X
     [4X[28XAdditive closure( Algebroid( Q, FreeCategory( RightQuiver([128X[104X
     [4X[28X"q(4)[a:1->2,b:2->3,c:3->4]" ) ) ) )[128X[104X
   [4X[32X[104X
@@ -57,19 +47,7 @@
     [4X[25Xgap>[125X [27X( ValueOption( "no_precompiled_code" ) = true and argument_name = "cat" ) or[127X[104X
     [4X[25X>[125X [27X  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );[127X[104X
     [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27Xcat := AdditiveClosure( Algebroid( A_bar, false ) );;[127X[104X
-    [4X[25Xgap>[125X [27Xargument_name := NamesLocalVariablesFunction([127X[104X
-    [4X[25X>[125X [27X                         Last( cat!.added_functions.ZeroObject )[1] )[1];;[127X[104X
-    [4X[25Xgap>[125X [27X( ValueOption( "no_precompiled_code" ) = true and argument_name = "cat" ) or[127X[104X
-    [4X[25X>[125X [27X  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );[127X[104X
-    [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27Xcat := AdditiveClosure( Algebroid( A, true ) );;[127X[104X
-    [4X[25Xgap>[125X [27Xargument_name := NamesLocalVariablesFunction([127X[104X
-    [4X[25X>[125X [27X                         Last( cat!.added_functions.ZeroObject )[1] )[1];;[127X[104X
-    [4X[25Xgap>[125X [27X( ValueOption( "no_precompiled_code" ) = true and argument_name = "cat" ) or[127X[104X
-    [4X[25X>[125X [27X  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27Xcat := AdditiveClosure( Algebroid( A_bar, true ) );;[127X[104X
     [4X[25Xgap>[125X [27Xargument_name := NamesLocalVariablesFunction([127X[104X
     [4X[25X>[125X [27X                         Last( cat!.added_functions.ZeroObject )[1] )[1];;[127X[104X
     [4X[25Xgap>[125X [27X( ValueOption( "no_precompiled_code" ) = true and argument_name = "cat" ) or[127X[104X
@@ -85,15 +63,13 @@
     [4X[25Xgap>[125X [27XQQ := HomalgFieldOfRationals( );;[127X[104X
     [4X[25Xgap>[125X [27Xsnake_quiver := RightQuiver( "q(4)[a:1->2,b:2->3,c:3->4]" );;[127X[104X
     [4X[25Xgap>[125X [27XA := PathAlgebra( QQ, snake_quiver );;[127X[104X
-    [4X[25Xgap>[125X [27XA_bar := QuotientOfPathAlgebra( A, [ A.abc ] );;[127X[104X
     [4X[25Xgap>[125X [27XReadPackage( "Algebroids", "gap/CompilerLogic.gi" );[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27X# only valid for the construction above[127X[104X
     [4X[25X>[125X [27X# FIXME: IsInt should be IsRat, but specializations of types are not yet supported by CompilerForCAP[127X[104X
     [4X[25X>[125X [27X# this might already have been added by PrecompileAdditiveClosureOfAlgebroid.g[127X[104X
-    [4X[25X>[125X [27Xif not IsBound( CAP_JIT_INTERNAL_TYPE_SIGNATURES.CoefficientsOfPaths ) then CapJitAddTypeSignature( "CoefficientsOfPaths", [ IsList, IsPathAlgebraElement ], rec( filter := IsList, element_type := rec( filter := IsInt ) ) ); fi;[127X[104X
-    [4X[25Xgap>[125X [27X#CapJitAddTypeSignature( "CoefficientsOfPaths", [ IsList, IsQuotientOfPathAlgebraElement ], rec( filter := IsList, element_type := rec( filter := IsInt ) ) ); fi;[127X[104X
-    [4X[25Xgap>[125X [27Xprecompile_AdelmanCategoryOfAdditiveClosureOfAlgebroid := function( Rq, over_Z, path_algebra, ring )[127X[104X
+    [4X[25X>[125X [27Xif not IsBound( CAP_JIT_INTERNAL_TYPE_SIGNATURES.CoefficientsOfPaths ) then CapJitAddTypeSignature( "CoefficientsOfPaths", [ IsList, IsQuiverAlgebraElement ], rec( filter := IsList, element_type := rec( filter := IsInt ) ) ); fi;[127X[104X
+    [4X[25Xgap>[125X [27Xprecompile_AdelmanCategoryOfAdditiveClosureOfAlgebroid := function( Rq, over_Z, ring )[127X[104X
     [4X[25X>[125X [27X    CapJitPrecompileCategoryAndCompareResult([127X[104X
     [4X[25X>[125X [27X        EvalString( ReplacedString( """Rq -> AdelmanCategory( AdditiveClosure( Algebroid([127X[104X
     [4X[25X>[125X [27X            Rq, over_Z : FinalizeCategory := true[127X[104X
@@ -101,9 +77,7 @@
     [4X[25X>[125X [27X        [ Rq ],[127X[104X
     [4X[25X>[125X [27X        "Algebroids",[127X[104X
     [4X[25X>[125X [27X        Concatenation([127X[104X
-    [4X[25X>[125X [27X            "AdelmanCategoryOfAdditiveClosureOfAlgebroidOfFiniteDimensional",[127X[104X
-    [4X[25X>[125X [27X            path_algebra,[127X[104X
-    [4X[25X>[125X [27X            "OfRightQuiverOver",[127X[104X
+    [4X[25X>[125X [27X            "AdelmanCategoryOfAdditiveClosureOfAlgebroidOfFiniteDimensionalQuiverAlgebraOfRightQuiverOver",[127X[104X
     [4X[25X>[125X [27X            ring,[127X[104X
     [4X[25X>[125X [27X            "Precompiled"[127X[104X
     [4X[25X>[125X [27X        ) :[127X[104X
@@ -114,12 +88,32 @@
     [4X[25X>[125X [27X            "IsEqualAsSubobjects",[127X[104X
     [4X[25X>[125X [27X        ][127X[104X
     [4X[25X>[125X [27X    ); end;;[127X[104X
-    [4X[25Xgap>[125X [27X#precompile_AdelmanCategoryOfAdditiveClosureOfAlgebroid( A, false, "PathAlgebra", "Field" );[127X[104X
-    [4X[25Xgap>[125X [27X#precompile_AdelmanCategoryOfAdditiveClosureOfAlgebroid( A_bar, false, "QuotientOfPathAlgebra", "Field" );[127X[104X
-    [4X[25Xgap>[125X [27Xprecompile_AdelmanCategoryOfAdditiveClosureOfAlgebroid( A, true, "PathAlgebra", "Z" );[127X[104X
-    [4X[25Xgap>[125X [27X#precompile_AdelmanCategoryOfAdditiveClosureOfAlgebroid( A_bar, true, "QuotientOfPathAlgebra", "Z" );[127X[104X
-    [4X[25Xgap>[125X [27XAdelmanCategoryOfAdditiveClosureOfAlgebroidOfFiniteDimensionalPathAlgebraOfRightQuiverOverZPrecompiled( A );[127X[104X
+    [4X[25Xgap>[125X [27Xprecompile_AdelmanCategoryOfAdditiveClosureOfAlgebroid( A, false, "Field" );[127X[104X
+    [4X[25Xgap>[125X [27Xprecompile_AdelmanCategoryOfAdditiveClosureOfAlgebroid( A, true, "Z" );[127X[104X
+    [4X[25Xgap>[125X [27XAdelmanCategoryOfAdditiveClosureOfAlgebroidOfFiniteDimensionalQuiverAlgebraOfRightQuiverOverFieldPrecompiled( A );[127X[104X
+    [4X[28XAdelman category( Additive closure( Algebroid( Q, FreeCategory([128X[104X
+    [4X[28XRightQuiver( "q(4)[a:1->2,b:2->3,c:3->4]" ) ) ) ) )[128X[104X
+    [4X[25Xgap>[125X [27XAdelmanCategoryOfAdditiveClosureOfAlgebroidOfFiniteDimensionalQuiverAlgebraOfRightQuiverOverZPrecompiled( A );[127X[104X
     [4X[28XAdelman category( Additive closure( Algebroid( Z, FreeCategory([128X[104X
     [4X[28XRightQuiver( "q(4)[a:1->2,b:2->3,c:3->4]" ) ) ) ) )[128X[104X
+  [4X[32X[104X
+  
+  [33X[0;0YCheck  that  the  compiled code is loaded automatically for this, we use the
+  name  of  the first argument of [10XIsZeroForMorphisms[110X: for non-compiled code it
+  is "cat", while for compiled code it is "cat_1"[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27Xcat := AdelmanCategory( AdditiveClosure( Algebroid( A, false ) ) );;[127X[104X
+    [4X[25Xgap>[125X [27Xargument_name := NamesLocalVariablesFunction([127X[104X
+    [4X[25X>[125X [27X                         Last( cat!.added_functions.IsZeroForMorphisms )[1] )[1];;[127X[104X
+    [4X[25Xgap>[125X [27X( ValueOption( "no_precompiled_code" ) = true and argument_name = "cat" ) or[127X[104X
+    [4X[25X>[125X [27X  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27Xcat := AdelmanCategory( AdditiveClosure( Algebroid( A, true ) ) );;[127X[104X
+    [4X[25Xgap>[125X [27Xargument_name := NamesLocalVariablesFunction([127X[104X
+    [4X[25X>[125X [27X                         Last( cat!.added_functions.IsZeroForMorphisms )[1] )[1];;[127X[104X
+    [4X[25Xgap>[125X [27X( ValueOption( "no_precompiled_code" ) = true and argument_name = "cat" ) or[127X[104X
+    [4X[25X>[125X [27X  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );[127X[104X
+    [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
