@@ -255,16 +255,14 @@
   [33X[1;0Y[29X[2XAlgebroid[102X( [3XC[103X, [3XH[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XAlgebroid[102X( [3XR[103X, [3XC[103X ) [32X operation[133X
   [33X[1;0Y[29X[2X[][102X( [3XR[103X, [3XC[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XQuotientCategory[102X( [3XA[103X, [3XL[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2X/[102X( [3XA[103X, [3XL[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
   
   [33X[0;0YConstruct  the algebroid associated to the path [23XR[123X-algebra [3XRq[103X of the quiver [23Xq[123X
   modulo the relations [3XL[103X as an [23XR[123X-linear category.[133X
   
-  [1X3.4-2 /[101X
-  
-  [33X[1;0Y[29X[2X/[102X( [3XA[103X, [3XL[103X ) [32X operation[133X
-  
-  [1X3.4-3 DescentToZDefinedByBasisPaths[101X
+  [1X3.4-2 DescentToZDefinedByBasisPaths[101X
   
   [33X[1;0Y[29X[2XDescentToZDefinedByBasisPaths[102X( [3XA[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
@@ -283,7 +281,7 @@
   vertices  as  [23XA[123X,  a [23X\mathbb{Z}[123X-basis of paths given by [23XB[123X, and composition is
   carried out using the rules defined by [23XT[123X.[133X
   
-  [1X3.4-4 CapFunctor[101X
+  [1X3.4-3 CapFunctor[101X
   
   [33X[1;0Y[29X[2XCapFunctor[102X( [3XA[103X, [3Ximages_of_objects[103X, [3Ximages_of_generating_morphisms[103X, [3XB[103X, [3Xcovariant[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XCapFunctor[102X( [3XA[103X, [3Ximages_of_objects[103X, [3Ximages_of_generating_morphisms[103X, [3XB[103X ) [32X operation[133X
@@ -326,7 +324,7 @@
   then  the  output is the constant functor having [3Xobj[103X as the value on objects
   and [10XIdentityMorphism[110X([3Xobj[103X) as the value on morphisms.[133X
   
-  [1X3.4-5 NaturalTransformation[101X
+  [1X3.4-4 NaturalTransformation[101X
   
   [33X[1;0Y[29X[2XNaturalTransformation[102X( [3Xeta[103X, [3XF[103X, [3XG[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XNaturalTransformation[102X( [3XF[103X, [3Xeta[103X, [3XG[103X ) [32X operation[133X
@@ -335,7 +333,7 @@
   [33X[0;0YConstruct,   using   the   record   (or  list)  of  images  [3Xeta[103X,  a  natural
   transformation from the functor [3XF[103X to the parallel functor [3XG[103X.[133X
   
-  [1X3.4-6 ObjectInAlgebroid[101X
+  [1X3.4-5 ObjectInAlgebroid[101X
   
   [33X[1;0Y[29X[2XObjectInAlgebroid[102X( [3XA[103X, [3XV[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Yan object in a [5XCAP[105X category[133X
@@ -343,14 +341,14 @@
   [33X[0;0YThe  constructor  of  objects  in  an  algebroid  [3XA[103X  given a vertex [3XV[103X in the
   underlying quiver.[133X
   
-  [1X3.4-7 \/[101X
+  [1X3.4-6 \/[101X
   
   [33X[1;0Y[29X[2X\/[102X( [3XV[103X, [3XA[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Yan object in a [5XCAP[105X category[133X
   
   [33X[0;0YDelegates to [10XObjectInAlgebroid[110X( [3XA[103X, [3XV[103X ).[133X
   
-  [1X3.4-8 MorphismInAlgebroid[101X
+  [1X3.4-7 MorphismInAlgebroid[101X
   
   [33X[1;0Y[29X[2XMorphismInAlgebroid[102X( [3XS[103X, [3Xpath[103X, [3XT[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XMorphismInAlgebroid[102X( [3XA[103X, [3Xpath[103X ) [32X operation[133X
@@ -360,14 +358,14 @@
   target [3XT[103X, and the underlying quiver algebra element [3Xpath[103X. If neither [3XS[103X nor [3XT[103X
   are provided they are read off from [3Xpath[103X.[133X
   
-  [1X3.4-9 \/[101X
+  [1X3.4-8 \/[101X
   
   [33X[1;0Y[29X[2X\/[102X( [3Xpath[103X, [3XA[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
   
   [33X[0;0YDelegates to [10XMorphismInAlgebroid[110X( [3Xpath[103X ).[133X
   
-  [1X3.4-10 POW[101X
+  [1X3.4-9 POW[101X
   
   [33X[1;0Y[29X[2XPOW[102X( [3Xphi[103X, [3Xi[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya CAP morphism[133X
