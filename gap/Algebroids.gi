@@ -745,7 +745,11 @@ InstallGlobalFunction( ADD_FUNCTIONS_FOR_HOM_STRUCTURE_OF_ALGEBROID,
         
     else
         
-        default_range_of_HomStructure := CategoryOfRows( ring );
+        default_range_of_HomStructure := CategoryOfRows( ring : overhead := false );
+        
+        DisableSanityChecks( default_range_of_HomStructure );
+        
+        SetCachingOfCategory( default_range_of_HomStructure, "none" );
         
     fi;
     
