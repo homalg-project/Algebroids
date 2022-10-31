@@ -640,7 +640,15 @@ InstallGlobalFunction( ADD_FUNCTIONS_FOR_HOM_STRUCTURE_OF_ALGEBROID,
     
     vertices := Vertices( quiver );
     
-    basis := BasisPaths( CanonicalBasis( quiver_algebra ) );
+    if HasOppositeAlgebra( quiver_algebra ) and HasCanonicalBasis( OppositeAlgebra( quiver_algebra ) ) and HasBasisPaths( CanonicalBasis( OppositeAlgebra( quiver_algebra ) ) ) then
+      
+      basis := List( BasisPaths( CanonicalBasis( OppositeAlgebra( quiver_algebra ) ) ), OppositePath );
+      
+    else
+      
+      basis := BasisPaths( CanonicalBasis( quiver_algebra ) );
+      
+    fi;
     
     ## prepare the homomorphism structure
     
