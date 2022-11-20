@@ -61,20 +61,10 @@ AdelmanCategoryOfAdditiveClosureOfAlgebroidOfFiniteDimensionalQuiverAlgebraOfRig
 
 #! @Example
 
-cat := AdelmanCategory( AdditiveClosure( Algebroid( A, false ) ) );;
-argument_name := NamesLocalVariablesFunction(
-                         Last( cat!.added_functions.IsZeroForMorphisms )[1] )[1];;
-
-( ValueOption( "no_precompiled_code" ) = true and argument_name = "cat" ) or
-  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );
+AdelmanCategory( AdditiveClosure( Algebroid( A, false ) ) )!.precompiled_functions_added;
 #! true
 
-cat := AdelmanCategory( AdditiveClosure( Algebroid( A, true ) ) );;
-argument_name := NamesLocalVariablesFunction(
-                         Last( cat!.added_functions.IsZeroForMorphisms )[1] )[1];;
-
-( ValueOption( "no_precompiled_code" ) = true and argument_name = "cat" ) or
-  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );
+AdelmanCategory( AdditiveClosure( Algebroid( A, true ) ) )!.precompiled_functions_added;
 #! true
 
 #! @EndExample
