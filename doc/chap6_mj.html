@@ -91,6 +91,8 @@ true
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "CompilerForCAP", false );</span>
 true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "Algebroids", "gap/CompilerLogic.gi" );</span>
+true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">QQ := HomalgFieldOfRationals( );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">snake_quiver := RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := PathAlgebra( QQ, snake_quiver );;</span>
@@ -145,6 +147,46 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">argument_name := NamesLocalVariablesFunction(</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">                         Last( cat!.added_functions.IsZeroForMorphisms )[1] )[1];;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">( ValueOption( "no_precompiled_code" ) = true and argument_name = "cat" ) or</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );</span>
+true
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "Algebroids", false );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "CompilerForCAP", false );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "Algebroids", "gap/CompilerLogic.gi" );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "FinSetsForCAP", "gap/CompilerLogic.gi" );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">free_category_of_quiver := { quiver, sFinSets } -&gt; FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">category_constructor :=</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">  function( quiver )</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">    local sFinSets; sFinSets := CategoryOfSkeletalFinSets( : FinalizeCategory := true ); return CategoryFromNerveData( "CategoryFromNerveData", NerveTruncatedInDegree2Data( FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true ) ) ); end;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">given_arguments := [ RightQuiver( "q(2)[m:1-&gt;2]" ) ];;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">compiled_category_name := "CategoryFromNerveDataPrecompiled";;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">package_name := "Algebroids";;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CapJitPrecompileCategoryAndCompareResult(</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">    category_constructor,</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">    given_arguments,</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">    package_name,</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">    compiled_category_name</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">   : operations := "primitive"</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">);;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CategoryFromNerveDataPrecompiled( given_arguments[1] );</span>
+CategoryFromNerveData
+</pre></div>
+
+<p>Check that the compiled code is loaded automatically for this, we use the name of the first argument of <code class="code">IsZeroForMorphisms</code>: for non-compiled code it is "cat", while for compiled code it is "cat_1"</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">cat := CategoryFromNerveData( "CategoryFromNerveData", NerveTruncatedInDegree2Data( FreeCategory( given_arguments[1] ) ) );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">argument_name := NamesLocalVariablesFunction(</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">    Last( cat!.added_functions.PreCompose )[1] )[1];;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">( ValueOption( "no_precompiled_code" ) = true and argument_name = "C" ) or</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );</span>
 true
 </pre></div>

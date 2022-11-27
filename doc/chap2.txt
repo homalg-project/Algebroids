@@ -569,7 +569,88 @@
   
   [1X2.4 [33X[0;0YConstructors[133X[101X
   
-  [1X2.4-1 FreeCategory[101X
+  [1X2.4-1 CategoryFromNerveData[101X
+  
+  [33X[1;0Y[29X[2XCategoryFromNerveData[102X( [3Xstr[103X, [3Xnerve_data[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
+  
+  [33X[0;0YConstruct a category with name [3Xstr[103X from the given [3Xnerve_data[103X.[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XLoadPackage( "Algebroids" );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XDelta1 := SimplicialCategoryTruncatedInDegree( 1 );[127X[104X
+    [4X[28XFreeCategory( RightQuiver( "Delta(C0,C1)[id:C1->C0,s:C0->C1,t:C0->C1]" ) )[128X[104X
+    [4X[28X/ [ s*id = C0, t*id = C0 ][128X[104X
+    [4X[25Xgap>[125X [27XN1 := NerveTruncatedInDegree2Data( Delta1 );;[127X[104X
+    [4X[25Xgap>[125X [27XN1[1];[127X[104X
+    [4X[28X[ |2|, |7|, |26| ][128X[104X
+    [4X[25Xgap>[125X [27XC := CategoryFromNerveData( Name( Delta1 ), N1 );[127X[104X
+    [4X[28XFreeCategory( RightQuiver( "Delta(C0,C1)[id:C1->C0,s:C0->C1,t:C0->C1]" ) )[128X[104X
+    [4X[28X/ [ s*id = C0, t*id = C0 ][128X[104X
+    [4X[25Xgap>[125X [27XC0 := CreateObject( C, 0 );[127X[104X
+    [4X[28X(0)[128X[104X
+    [4X[25Xgap>[125X [27XIsWellDefined( C0 );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XC1 := 1 / C;[127X[104X
+    [4X[28X(1)[128X[104X
+    [4X[25Xgap>[125X [27XIsWellDefined( C1 );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XIsWellDefined( 2 / C );[127X[104X
+    [4X[28Xfalse[128X[104X
+    [4X[25Xgap>[125X [27XidC0 := CreateMorphism( C0, 0, C0 );[127X[104X
+    [4X[28X(0)-[0]->(0)[128X[104X
+    [4X[25Xgap>[125X [27XCreateMorphism( C, 0 ) = idC0;[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XIsOne( idC0 );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27Xid := CreateMorphism( C, 1 );[127X[104X
+    [4X[28X(1)-[1]->(0)[128X[104X
+    [4X[25Xgap>[125X [27Xs := CreateMorphism( C, 2 );[127X[104X
+    [4X[28X(0)-[2]->(1)[128X[104X
+    [4X[25Xgap>[125X [27Xt := CreateMorphism( C, 3 );[127X[104X
+    [4X[28X(0)-[3]->(1)[128X[104X
+    [4X[25Xgap>[125X [27XidC1 := CreateMorphism( C, 4 );[127X[104X
+    [4X[28X(1)-[4]->(1)[128X[104X
+    [4X[25Xgap>[125X [27XIsOne( idC1 );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27Xsigma := CreateMorphism( C, 5 );[127X[104X
+    [4X[28X(1)-[5]->(1)[128X[104X
+    [4X[25Xgap>[125X [27XIsEndomorphism( sigma );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XIsOne( sigma );[127X[104X
+    [4X[28Xfalse[128X[104X
+    [4X[25Xgap>[125X [27Xtau := CreateMorphism( C, 6 );[127X[104X
+    [4X[28X(1)-[6]->(1)[128X[104X
+    [4X[25Xgap>[125X [27XIsEndomorphism( tau );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XIsOne( tau );[127X[104X
+    [4X[28Xfalse[128X[104X
+    [4X[25Xgap>[125X [27XIsWellDefined( CreateMorphism( C1, 7, C1 ) );[127X[104X
+    [4X[28Xfalse[128X[104X
+    [4X[25Xgap>[125X [27XIsOne( PreCompose( s, id ) );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XIsOne( PreCompose( t, id ) );[127X[104X
+    [4X[28Xtrue[128X[104X
+  [4X[32X[104X
+  
+  [1X2.4-2 CreateObject[101X
+  
+  [33X[1;0Y[29X[2XCreateObject[102X( [3XC[103X, [3Xo[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
+  
+  [33X[0;0YConstruct the [3Xo[103X-th object in the category [3XC[103X created from nerve data.[133X
+  
+  [1X2.4-3 CreateMorphism[101X
+  
+  [33X[1;0Y[29X[2XCreateMorphism[102X( [3XC[103X, [3Xm[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XCreateMorphism[102X( [3Xsource[103X, [3Xm[103X, [3Xrange[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
+  
+  [33X[0;0YConstruct  the  [3Xm[103X-th  morphism [3Xsource[103X[23X\to[123X[3Xrange[103X in the category [3XC[103X created from
+  nerve data.[133X
+  
+  [1X2.4-4 FreeCategory[101X
   
   [33X[1;0Y[29X[2XFreeCategory[102X( [3Xq[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XCategory[102X( [3Xq[103X, [3XL[103X ) [32X operation[133X
@@ -580,7 +661,7 @@
   [33X[0;0YConstruct  the  finitely  presented  category  generated  by  the  quiver [3Xq[103X,
   possibly modulo the relations [3XL[103X.[133X
   
-  [1X2.4-2 ObjectInFpCategory[101X
+  [1X2.4-5 ObjectInFpCategory[101X
   
   [33X[1;0Y[29X[2XObjectInFpCategory[102X( [3XA[103X, [3XV[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Yan object in a [5XCAP[105X category[133X
@@ -588,7 +669,7 @@
   [33X[0;0YThe constructor of objects in a finitely presented category [3XC[103X given a vertex
   [3XV[103X in the underlying quiver.[133X
   
-  [1X2.4-3 MorphismInFpCategory[101X
+  [1X2.4-6 MorphismInFpCategory[101X
   
   [33X[1;0Y[29X[2XMorphismInFpCategory[102X( [3XS[103X, [3Xpath[103X, [3XT[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XMorphismInFpCategory[102X( [3XA[103X, [3Xpath[103X ) [32X operation[133X
@@ -599,7 +680,7 @@
   underlying path [3Xpath[103X. If neither [3XS[103X nor [3XT[103X are provided they are read off from
   [3Xpath[103X.[133X
   
-  [1X2.4-4 \/[101X
+  [1X2.4-7 \/[101X
   
   [33X[1;0Y[29X[2X\/[102X( [3Xpath[103X, [3XA[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
@@ -620,35 +701,63 @@
   
   [1X2.6 [33X[0;0YGAP categories[133X[101X
   
-  [1X2.6-1 IsFpCategory[101X
+  [1X2.6-1 IsCategoryFromNerveData[101X
+  
+  [33X[1;0Y[29X[2XIsCategoryFromNerveData[102X( [3Xarg[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
+  
+  [33X[0;0YThe [5XGAP[105X category of categories from nerve data.[133X
+  
+  [1X2.6-2 IsCellInCategoryFromNerveData[101X
+  
+  [33X[1;0Y[29X[2XIsCellInCategoryFromNerveData[102X( [3Xarg[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
+  
+  [33X[0;0YThe [5XGAP[105X category of cells in a category from nerve data.[133X
+  
+  [1X2.6-3 IsObjectInCategoryFromNerveData[101X
+  
+  [33X[1;0Y[29X[2XIsObjectInCategoryFromNerveData[102X( [3Xarg[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
+  
+  [33X[0;0YThe [5XGAP[105X category of objects in a category from nerve data.[133X
+  
+  [1X2.6-4 IsMorphismInCategoryFromNerveData[101X
+  
+  [33X[1;0Y[29X[2XIsMorphismInCategoryFromNerveData[102X( [3Xarg[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
+  
+  [33X[0;0YThe [5XGAP[105X category of morphisms in a category from nerve data.[133X
+  
+  [1X2.6-5 IsFpCategory[101X
   
   [33X[1;0Y[29X[2XIsFpCategory[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of finitely presented categories.[133X
   
-  [1X2.6-2 IsMonoidAsCategory[101X
+  [1X2.6-6 IsMonoidAsCategory[101X
   
   [33X[1;0Y[29X[2XIsMonoidAsCategory[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of algebras.[133X
   
-  [1X2.6-3 IsCellInFpCategory[101X
+  [1X2.6-7 IsCellInFpCategory[101X
   
   [33X[1;0Y[29X[2XIsCellInFpCategory[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of cells in a finitely presented category.[133X
   
-  [1X2.6-4 IsObjectInFpCategory[101X
+  [1X2.6-8 IsObjectInFpCategory[101X
   
   [33X[1;0Y[29X[2XIsObjectInFpCategory[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of objects in a finitely presented category.[133X
   
-  [1X2.6-5 IsMorphismInFpCategory[101X
+  [1X2.6-9 IsMorphismInFpCategory[101X
   
   [33X[1;0Y[29X[2XIsMorphismInFpCategory[102X( [3Xarg[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X

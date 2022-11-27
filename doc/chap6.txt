@@ -62,6 +62,8 @@
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XLoadPackage( "CompilerForCAP", false );[127X[104X
     [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XReadPackage( "Algebroids", "gap/CompilerLogic.gi" );[127X[104X
+    [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XQQ := HomalgFieldOfRationals( );;[127X[104X
     [4X[25Xgap>[125X [27Xsnake_quiver := RightQuiver( "q(4)[a:1->2,b:2->3,c:3->4]" );;[127X[104X
     [4X[25Xgap>[125X [27XA := PathAlgebra( QQ, snake_quiver );;[127X[104X
@@ -117,6 +119,46 @@
     [4X[25Xgap>[125X [27Xargument_name := NamesLocalVariablesFunction([127X[104X
     [4X[25X>[125X [27X                         Last( cat!.added_functions.IsZeroForMorphisms )[1] )[1];;[127X[104X
     [4X[25Xgap>[125X [27X( ValueOption( "no_precompiled_code" ) = true and argument_name = "cat" ) or[127X[104X
+    [4X[25X>[125X [27X  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );[127X[104X
+    [4X[28Xtrue[128X[104X
+  [4X[32X[104X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XLoadPackage( "Algebroids", false );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XLoadPackage( "CompilerForCAP", false );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XReadPackage( "Algebroids", "gap/CompilerLogic.gi" );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XReadPackage( "FinSetsForCAP", "gap/CompilerLogic.gi" );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27Xfree_category_of_quiver := { quiver, sFinSets } -> FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true );;[127X[104X
+    [4X[25Xgap>[125X [27Xcategory_constructor :=[127X[104X
+    [4X[25X>[125X [27X  function( quiver )[127X[104X
+    [4X[25X>[125X [27X    local sFinSets; sFinSets := CategoryOfSkeletalFinSets( : FinalizeCategory := true ); return CategoryFromNerveData( "CategoryFromNerveData", NerveTruncatedInDegree2Data( FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true ) ) ); end;;[127X[104X
+    [4X[25Xgap>[125X [27Xgiven_arguments := [ RightQuiver( "q(2)[m:1->2]" ) ];;[127X[104X
+    [4X[25Xgap>[125X [27Xcompiled_category_name := "CategoryFromNerveDataPrecompiled";;[127X[104X
+    [4X[25Xgap>[125X [27Xpackage_name := "Algebroids";;[127X[104X
+    [4X[25Xgap>[125X [27XCapJitPrecompileCategoryAndCompareResult([127X[104X
+    [4X[25X>[125X [27X    category_constructor,[127X[104X
+    [4X[25X>[125X [27X    given_arguments,[127X[104X
+    [4X[25X>[125X [27X    package_name,[127X[104X
+    [4X[25X>[125X [27X    compiled_category_name[127X[104X
+    [4X[25X>[125X [27X   : operations := "primitive"[127X[104X
+    [4X[25X>[125X [27X);;[127X[104X
+    [4X[25Xgap>[125X [27XCategoryFromNerveDataPrecompiled( given_arguments[1] );[127X[104X
+    [4X[28XCategoryFromNerveData[128X[104X
+  [4X[32X[104X
+  
+  [33X[0;0YCheck  that  the  compiled code is loaded automatically for this, we use the
+  name  of  the first argument of [10XIsZeroForMorphisms[110X: for non-compiled code it
+  is "cat", while for compiled code it is "cat_1"[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27Xcat := CategoryFromNerveData( "CategoryFromNerveData", NerveTruncatedInDegree2Data( FreeCategory( given_arguments[1] ) ) );;[127X[104X
+    [4X[25Xgap>[125X [27Xargument_name := NamesLocalVariablesFunction([127X[104X
+    [4X[25X>[125X [27X    Last( cat!.added_functions.PreCompose )[1] )[1];;[127X[104X
+    [4X[25Xgap>[125X [27X( ValueOption( "no_precompiled_code" ) = true and argument_name = "C" ) or[127X[104X
     [4X[25X>[125X [27X  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );[127X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X

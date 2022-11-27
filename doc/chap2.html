@@ -74,10 +74,13 @@
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap2.html#X86EC0F0A78ECBC10">2.4 <span class="Heading">Constructors</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X7C3141E47EB4F59D">2.4-1 FreeCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X854DC75A79DA46C4">2.4-2 ObjectInFpCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X8420403685872077">2.4-3 MorphismInFpCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X86468CE97B1801F5"><code>2.4-4 \/</code></a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X7BDB0A4C851B3FE7">2.4-1 CategoryFromNerveData</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X7A7ED53F78DF5204">2.4-2 CreateObject</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X824AFBBC85DB6C81">2.4-3 CreateMorphism</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X7C3141E47EB4F59D">2.4-4 FreeCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X854DC75A79DA46C4">2.4-5 ObjectInFpCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X8420403685872077">2.4-6 MorphismInFpCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X86468CE97B1801F5"><code>2.4-7 \/</code></a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap2.html#X8126317783DFCEFE">2.5 <span class="Heading">Global functions</span></a>
 </span>
@@ -87,11 +90,15 @@
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap2.html#X7D03633A7D98026B">2.6 <span class="Heading">GAP categories</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X815F0DAE7F450AB2">2.6-1 IsFpCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X81BD58AB7AFC2E94">2.6-2 IsMonoidAsCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X7FFF25607DBCFB2B">2.6-3 IsCellInFpCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X7B9CF6887BC71EA3">2.6-4 IsObjectInFpCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X84DCB40484FA2BC7">2.6-5 IsMorphismInFpCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X7D7B220A869D7A00">2.6-1 IsCategoryFromNerveData</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X80E25B037FA8E2CD">2.6-2 IsCellInCategoryFromNerveData</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X80DCCB698608DA0D">2.6-3 IsObjectInCategoryFromNerveData</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X7F0A035287869463">2.6-4 IsMorphismInCategoryFromNerveData</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X815F0DAE7F450AB2">2.6-5 IsFpCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X81BD58AB7AFC2E94">2.6-6 IsMonoidAsCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X7FFF25607DBCFB2B">2.6-7 IsCellInFpCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X7B9CF6887BC71EA3">2.6-8 IsObjectInFpCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2.html#X84DCB40484FA2BC7">2.6-9 IsMorphismInFpCategory</a></span>
 </div></div>
 </div>
 
@@ -694,9 +701,96 @@ Functor from FreeCategory( RightQuiver( "q_op(1)[a:1-&gt;1]" ) ) / [ a*a*a = a*a
 
 <h4>2.4 <span class="Heading">Constructors</span></h4>
 
+<p><a id="X7BDB0A4C851B3FE7" name="X7BDB0A4C851B3FE7"></a></p>
+
+<h5>2.4-1 CategoryFromNerveData</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CategoryFromNerveData</code>( <var class="Arg">str</var>, <var class="Arg">nerve_data</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> category</p>
+
+<p>Construct a category with name <var class="Arg">str</var> from the given <var class="Arg">nerve_data</var>.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "Algebroids" );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Delta1 := SimplicialCategoryTruncatedInDegree( 1 );</span>
+FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" ) )
+/ [ s*id = C0, t*id = C0 ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N1 := NerveTruncatedInDegree2Data( Delta1 );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N1[1];</span>
+[ |2|, |7|, |26| ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">C := CategoryFromNerveData( Name( Delta1 ), N1 );</span>
+FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" ) )
+/ [ s*id = C0, t*id = C0 ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">C0 := CreateObject( C, 0 );</span>
+(0)
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsWellDefined( C0 );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">C1 := 1 / C;</span>
+(1)
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsWellDefined( C1 );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsWellDefined( 2 / C );</span>
+false
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">idC0 := CreateMorphism( C0, 0, C0 );</span>
+(0)-[0]-&gt;(0)
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CreateMorphism( C, 0 ) = idC0;</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsOne( idC0 );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">id := CreateMorphism( C, 1 );</span>
+(1)-[1]-&gt;(0)
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">s := CreateMorphism( C, 2 );</span>
+(0)-[2]-&gt;(1)
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">t := CreateMorphism( C, 3 );</span>
+(0)-[3]-&gt;(1)
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">idC1 := CreateMorphism( C, 4 );</span>
+(1)-[4]-&gt;(1)
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsOne( idC1 );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">sigma := CreateMorphism( C, 5 );</span>
+(1)-[5]-&gt;(1)
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsEndomorphism( sigma );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsOne( sigma );</span>
+false
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">tau := CreateMorphism( C, 6 );</span>
+(1)-[6]-&gt;(1)
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsEndomorphism( tau );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsOne( tau );</span>
+false
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsWellDefined( CreateMorphism( C1, 7, C1 ) );</span>
+false
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsOne( PreCompose( s, id ) );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsOne( PreCompose( t, id ) );</span>
+true
+</pre></div>
+
+<p><a id="X7A7ED53F78DF5204" name="X7A7ED53F78DF5204"></a></p>
+
+<h5>2.4-2 CreateObject</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateObject</code>( <var class="Arg">C</var>, <var class="Arg">o</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> category</p>
+
+<p>Construct the <var class="Arg">o</var>-th object in the category <var class="Arg">C</var> created from nerve data.</p>
+
+<p><a id="X824AFBBC85DB6C81" name="X824AFBBC85DB6C81"></a></p>
+
+<h5>2.4-3 CreateMorphism</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateMorphism</code>( <var class="Arg">C</var>, <var class="Arg">m</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateMorphism</code>( <var class="Arg">source</var>, <var class="Arg">m</var>, <var class="Arg">range</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> category</p>
+
+<p>Construct the <var class="Arg">m</var>-th morphism <var class="Arg">source</var><span class="Math">\to</span><var class="Arg">range</var> in the category <var class="Arg">C</var> created from nerve data.</p>
+
 <p><a id="X7C3141E47EB4F59D" name="X7C3141E47EB4F59D"></a></p>
 
-<h5>2.4-1 FreeCategory</h5>
+<h5>2.4-4 FreeCategory</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; FreeCategory</code>( <var class="Arg">q</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Category</code>( <var class="Arg">q</var>, <var class="Arg">L</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
@@ -708,7 +802,7 @@ Functor from FreeCategory( RightQuiver( "q_op(1)[a:1-&gt;1]" ) ) / [ a*a*a = a*a
 
 <p><a id="X854DC75A79DA46C4" name="X854DC75A79DA46C4"></a></p>
 
-<h5>2.4-2 ObjectInFpCategory</h5>
+<h5>2.4-5 ObjectInFpCategory</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ObjectInFpCategory</code>( <var class="Arg">A</var>, <var class="Arg">V</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: an object in a <strong class="pkg">CAP</strong> category</p>
@@ -717,7 +811,7 @@ Functor from FreeCategory( RightQuiver( "q_op(1)[a:1-&gt;1]" ) ) / [ a*a*a = a*a
 
 <p><a id="X8420403685872077" name="X8420403685872077"></a></p>
 
-<h5>2.4-3 MorphismInFpCategory</h5>
+<h5>2.4-6 MorphismInFpCategory</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; MorphismInFpCategory</code>( <var class="Arg">S</var>, <var class="Arg">path</var>, <var class="Arg">T</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; MorphismInFpCategory</code>( <var class="Arg">A</var>, <var class="Arg">path</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
@@ -727,7 +821,7 @@ Functor from FreeCategory( RightQuiver( "q_op(1)[a:1-&gt;1]" ) ) / [ a*a*a = a*a
 
 <p><a id="X86468CE97B1801F5" name="X86468CE97B1801F5"></a></p>
 
-<h5><code>2.4-4 \/</code></h5>
+<h5><code>2.4-7 \/</code></h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; \/</code>( <var class="Arg">path</var>, <var class="Arg">A</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: a morphism in a <strong class="pkg">CAP</strong> category</p>
@@ -751,9 +845,45 @@ Functor from FreeCategory( RightQuiver( "q_op(1)[a:1-&gt;1]" ) ) / [ a*a*a = a*a
 
 <h4>2.6 <span class="Heading">GAP categories</span></h4>
 
+<p><a id="X7D7B220A869D7A00" name="X7D7B220A869D7A00"></a></p>
+
+<h5>2.6-1 IsCategoryFromNerveData</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCategoryFromNerveData</code>( <var class="Arg">arg</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>The <strong class="pkg">GAP</strong> category of categories from nerve data.</p>
+
+<p><a id="X80E25B037FA8E2CD" name="X80E25B037FA8E2CD"></a></p>
+
+<h5>2.6-2 IsCellInCategoryFromNerveData</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCellInCategoryFromNerveData</code>( <var class="Arg">arg</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>The <strong class="pkg">GAP</strong> category of cells in a category from nerve data.</p>
+
+<p><a id="X80DCCB698608DA0D" name="X80DCCB698608DA0D"></a></p>
+
+<h5>2.6-3 IsObjectInCategoryFromNerveData</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsObjectInCategoryFromNerveData</code>( <var class="Arg">arg</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>The <strong class="pkg">GAP</strong> category of objects in a category from nerve data.</p>
+
+<p><a id="X7F0A035287869463" name="X7F0A035287869463"></a></p>
+
+<h5>2.6-4 IsMorphismInCategoryFromNerveData</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsMorphismInCategoryFromNerveData</code>( <var class="Arg">arg</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>The <strong class="pkg">GAP</strong> category of morphisms in a category from nerve data.</p>
+
 <p><a id="X815F0DAE7F450AB2" name="X815F0DAE7F450AB2"></a></p>
 
-<h5>2.6-1 IsFpCategory</h5>
+<h5>2.6-5 IsFpCategory</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsFpCategory</code>( <var class="Arg">arg</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
@@ -762,7 +892,7 @@ Functor from FreeCategory( RightQuiver( "q_op(1)[a:1-&gt;1]" ) ) / [ a*a*a = a*a
 
 <p><a id="X81BD58AB7AFC2E94" name="X81BD58AB7AFC2E94"></a></p>
 
-<h5>2.6-2 IsMonoidAsCategory</h5>
+<h5>2.6-6 IsMonoidAsCategory</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsMonoidAsCategory</code>( <var class="Arg">arg</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
@@ -771,7 +901,7 @@ Functor from FreeCategory( RightQuiver( "q_op(1)[a:1-&gt;1]" ) ) / [ a*a*a = a*a
 
 <p><a id="X7FFF25607DBCFB2B" name="X7FFF25607DBCFB2B"></a></p>
 
-<h5>2.6-3 IsCellInFpCategory</h5>
+<h5>2.6-7 IsCellInFpCategory</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCellInFpCategory</code>( <var class="Arg">arg</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
@@ -780,7 +910,7 @@ Functor from FreeCategory( RightQuiver( "q_op(1)[a:1-&gt;1]" ) ) / [ a*a*a = a*a
 
 <p><a id="X7B9CF6887BC71EA3" name="X7B9CF6887BC71EA3"></a></p>
 
-<h5>2.6-4 IsObjectInFpCategory</h5>
+<h5>2.6-8 IsObjectInFpCategory</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsObjectInFpCategory</code>( <var class="Arg">arg</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
@@ -789,7 +919,7 @@ Functor from FreeCategory( RightQuiver( "q_op(1)[a:1-&gt;1]" ) ) / [ a*a*a = a*a
 
 <p><a id="X84DCB40484FA2BC7" name="X84DCB40484FA2BC7"></a></p>
 
-<h5>2.6-5 IsMorphismInFpCategory</h5>
+<h5>2.6-9 IsMorphismInFpCategory</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsMorphismInFpCategory</code>( <var class="Arg">arg</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
