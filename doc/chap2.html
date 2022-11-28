@@ -723,6 +723,10 @@ FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" 
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">C := CategoryFromNerveData( Name( Delta1 ), N1 );</span>
 FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" ) )
 / [ s*id = C0, t*id = C0 ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">InfoOfInstalledOperationsOfCategory( C );</span>
+16 primitive operations were used to derive 36 operations for this category
+which algorithmically
+* IsEquippedWithHomomorphismStructure
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">C0 := CreateObject( C, 0 );</span>
 (0)
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsWellDefined( C0 );</span>
@@ -763,10 +767,50 @@ true
 false
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsWellDefined( CreateMorphism( C1, 7, C1 ) );</span>
 false
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsOne( PreCompose( s, id ) );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PreCompose( s, id ) = idC0;</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsOne( PreCompose( t, id ) );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PreCompose( t, id ) = idC0;</span>
 true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PreCompose( id, s ) = sigma;</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PreCompose( id, t ) = tau;</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">HomStructure( C0, C0 );</span>
+|1|
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">HomStructure( C1, C1 );</span>
+|3|
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">HomStructure( C0, C1 );</span>
+|2|
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">HomStructure( C1, C0 );</span>
+|1|
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( HomStructure( s ) );</span>
+{ 0 } ⱶ[ 0 ]→ { 0, 1 }
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( HomStructure( t ) );</span>
+{ 0 } ⱶ[ 1 ]→ { 0, 1 }
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">HomStructure( Source( s ), Range( s ), HomStructure( s ) ) = s;</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">HomStructure( Source( t ), Range( t ), HomStructure( t ) ) = t;</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( HomStructure( s, t ) );</span>
+{ 0 } ⱶ[ 1 ]→ { 0, 1 }
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( HomStructure( t, s ) );</span>
+{ 0 } ⱶ[ 0 ]→ { 0, 1 }
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( HomStructure( sigma, tau ) );</span>
+{ 0, 1, 2 } ⱶ[ 2, 2, 2 ]→ { 0, 1, 2 }
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( HomStructure(</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">        PreCompose( Delta1.id, Delta1.s ),</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">        PreCompose( Delta1.id, Delta1.t ) ) );</span>
+{ 0, 1, 2 } ⱶ[ 2, 2, 2 ]→ { 0, 1, 2 }
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( HomStructure( tau, sigma ) );</span>
+{ 0, 1, 2 } ⱶ[ 1, 1, 1 ]→ { 0, 1, 2 }
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( HomStructure(</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">        PreCompose( Delta1.id, Delta1.t ),</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">        PreCompose( Delta1.id, Delta1.s ) ) );</span>
+{ 0, 1, 2 } ⱶ[ 1, 1, 1 ]→ { 0, 1, 2 }
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( HomStructure( tau, idC1 ) );</span>
+{ 0, 1, 2 } ⱶ[ 2, 1, 2 ]→ { 0, 1, 2 }
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( HomStructure( idC1, idC1 ) );</span>
+{ 0, 1, 2 } ⱶ[ 0, 1, 2 ]→ { 0, 1, 2 }
 </pre></div>
 
 <p><a id="X7A7ED53F78DF5204" name="X7A7ED53F78DF5204"></a></p>

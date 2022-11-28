@@ -173,8 +173,8 @@ true
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">    given_arguments,</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">    package_name,</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">    compiled_category_name</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">   : operations := "primitive"</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">);;</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">        : operations := Difference( ListPrimitivelyInstalledOperationsOfCategory( category_constructor( given_arguments[1] : no_precompiled_code := true ) ),</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">                                [ "HomomorphismStructureOnMorphismsWithGivenObjects" ] ) );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CategoryFromNerveDataPrecompiled( given_arguments[1] );</span>
 CategoryFromNerveData
 </pre></div>

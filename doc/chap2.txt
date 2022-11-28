@@ -588,6 +588,10 @@
     [4X[25Xgap>[125X [27XC := CategoryFromNerveData( Name( Delta1 ), N1 );[127X[104X
     [4X[28XFreeCategory( RightQuiver( "Delta(C0,C1)[id:C1->C0,s:C0->C1,t:C0->C1]" ) )[128X[104X
     [4X[28X/ [ s*id = C0, t*id = C0 ][128X[104X
+    [4X[25Xgap>[125X [27XInfoOfInstalledOperationsOfCategory( C );[127X[104X
+    [4X[28X16 primitive operations were used to derive 36 operations for this category[128X[104X
+    [4X[28Xwhich algorithmically[128X[104X
+    [4X[28X* IsEquippedWithHomomorphismStructure[128X[104X
     [4X[25Xgap>[125X [27XC0 := CreateObject( C, 0 );[127X[104X
     [4X[28X(0)[128X[104X
     [4X[25Xgap>[125X [27XIsWellDefined( C0 );[127X[104X
@@ -628,10 +632,50 @@
     [4X[28Xfalse[128X[104X
     [4X[25Xgap>[125X [27XIsWellDefined( CreateMorphism( C1, 7, C1 ) );[127X[104X
     [4X[28Xfalse[128X[104X
-    [4X[25Xgap>[125X [27XIsOne( PreCompose( s, id ) );[127X[104X
+    [4X[25Xgap>[125X [27XPreCompose( s, id ) = idC0;[127X[104X
     [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XIsOne( PreCompose( t, id ) );[127X[104X
+    [4X[25Xgap>[125X [27XPreCompose( t, id ) = idC0;[127X[104X
     [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XPreCompose( id, s ) = sigma;[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XPreCompose( id, t ) = tau;[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XHomStructure( C0, C0 );[127X[104X
+    [4X[28X|1|[128X[104X
+    [4X[25Xgap>[125X [27XHomStructure( C1, C1 );[127X[104X
+    [4X[28X|3|[128X[104X
+    [4X[25Xgap>[125X [27XHomStructure( C0, C1 );[127X[104X
+    [4X[28X|2|[128X[104X
+    [4X[25Xgap>[125X [27XHomStructure( C1, C0 );[127X[104X
+    [4X[28X|1|[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( HomStructure( s ) );[127X[104X
+    [4X[28X{ 0 } ⱶ[ 0 ]→ { 0, 1 }[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( HomStructure( t ) );[127X[104X
+    [4X[28X{ 0 } ⱶ[ 1 ]→ { 0, 1 }[128X[104X
+    [4X[25Xgap>[125X [27XHomStructure( Source( s ), Range( s ), HomStructure( s ) ) = s;[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XHomStructure( Source( t ), Range( t ), HomStructure( t ) ) = t;[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( HomStructure( s, t ) );[127X[104X
+    [4X[28X{ 0 } ⱶ[ 1 ]→ { 0, 1 }[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( HomStructure( t, s ) );[127X[104X
+    [4X[28X{ 0 } ⱶ[ 0 ]→ { 0, 1 }[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( HomStructure( sigma, tau ) );[127X[104X
+    [4X[28X{ 0, 1, 2 } ⱶ[ 2, 2, 2 ]→ { 0, 1, 2 }[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( HomStructure([127X[104X
+    [4X[25X>[125X [27X        PreCompose( Delta1.id, Delta1.s ),[127X[104X
+    [4X[25X>[125X [27X        PreCompose( Delta1.id, Delta1.t ) ) );[127X[104X
+    [4X[28X{ 0, 1, 2 } ⱶ[ 2, 2, 2 ]→ { 0, 1, 2 }[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( HomStructure( tau, sigma ) );[127X[104X
+    [4X[28X{ 0, 1, 2 } ⱶ[ 1, 1, 1 ]→ { 0, 1, 2 }[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( HomStructure([127X[104X
+    [4X[25X>[125X [27X        PreCompose( Delta1.id, Delta1.t ),[127X[104X
+    [4X[25X>[125X [27X        PreCompose( Delta1.id, Delta1.s ) ) );[127X[104X
+    [4X[28X{ 0, 1, 2 } ⱶ[ 1, 1, 1 ]→ { 0, 1, 2 }[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( HomStructure( tau, idC1 ) );[127X[104X
+    [4X[28X{ 0, 1, 2 } ⱶ[ 2, 1, 2 ]→ { 0, 1, 2 }[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( HomStructure( idC1, idC1 ) );[127X[104X
+    [4X[28X{ 0, 1, 2 } ⱶ[ 0, 1, 2 ]→ { 0, 1, 2 }[128X[104X
   [4X[32X[104X
   
   [1X2.4-2 CreateObject[101X
