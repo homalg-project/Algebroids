@@ -7,10 +7,10 @@
                                     quivers [101X
   
   
-                                   2022.11-12
+                                   2022.12-01
   
   
-                                28 November 2022
+                                2 December 2022
   
   
                                 Mohamed Barakat
@@ -97,33 +97,36 @@
       2.1-3 IsCounitary
       2.1-4 IsCoassociative
     2.2 [33X[0;0YAttributes[133X
-      2.2-1 UnderlyingQuiver
-      2.2-2 UnderlyingQuiverAlgebra
-      2.2-3 Size
-      2.2-4 BasisPathsByVertexIndex
-      2.2-5 BasisMorphismsByVertexIndex
-      2.2-6 HomStructureOnBasisPaths
-      2.2-7 SetOfObjects
-      2.2-8 AssignSetOfObjects
-      2.2-9 SetOfGeneratingMorphisms
-      2.2-10 SetOfGeneratingMorphisms
-      2.2-11 SetOfGeneratingMorphisms
+      2.2-1 NerveData
+      2.2-2 SetOfObjects
+      2.2-3 SetOfGeneratingMorphisms
+      2.2-4 UnderlyingQuiver
+      2.2-5 UnderlyingQuiverAlgebra
+      2.2-6 Size
+      2.2-7 BasisPathsByVertexIndex
+      2.2-8 BasisMorphismsByVertexIndex
+      2.2-9 HomStructureOnBasisPaths
+      2.2-10 SetOfObjects
+      2.2-11 AssignSetOfObjects
       2.2-12 SetOfGeneratingMorphisms
-      2.2-13 AssignSetOfGeneratingMorphisms
-      2.2-14 RelationsOfFpCategory
-      2.2-15 OppositeFpCategory
-      2.2-16 Antipode
-      2.2-17 UnderlyingVertex
-      2.2-18 UnderlyingQuiverAlgebraElement
-      2.2-19 UnderlyingAlgebra
-      2.2-20 Parity
-      2.2-21 POW
-      2.2-22 NerveTruncatedInDegree2AsFunctor
-      2.2-23 YonedaFibrationAsNaturalTransformation
-      2.2-24 YonedaProjectionAsNaturalEpimorphism
-      2.2-25 YonedaCompositionAsNaturalEpimorphism
-      2.2-26 TruthMorphismOfTrueToSieveFunctor
-      2.2-27 SieveFunctor
+      2.2-13 SetOfGeneratingMorphisms
+      2.2-14 SetOfGeneratingMorphisms
+      2.2-15 SetOfGeneratingMorphisms
+      2.2-16 AssignSetOfGeneratingMorphisms
+      2.2-17 RelationsOfFpCategory
+      2.2-18 OppositeFpCategory
+      2.2-19 Antipode
+      2.2-20 UnderlyingVertex
+      2.2-21 UnderlyingQuiverAlgebraElement
+      2.2-22 UnderlyingAlgebra
+      2.2-23 Parity
+      2.2-24 POW
+      2.2-25 NerveTruncatedInDegree2AsFunctor
+      2.2-26 YonedaFibrationAsNaturalTransformation
+      2.2-27 YonedaProjectionAsNaturalEpimorphism
+      2.2-28 YonedaCompositionAsNaturalEpimorphism
+      2.2-29 TruthMorphismOfTrueToSieveFunctor
+      2.2-30 SieveFunctor
     2.3 [33X[0;0YOperations[133X
       2.3-1 TrivialCategory
       2.3-2 \*
