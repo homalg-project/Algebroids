@@ -42,7 +42,7 @@
       for IsFpCategory, IsRecord, IsRecord 5.4-3 
       for IsFpCategory, IsRecord, IsRecord, IsBool 5.4-3 
   [2XCategory[102X, for IsQuiver, IsList 2.4-1 
-  [2XCategoryFromDataTables[102X, for IsString, IsList, IsList, IsList 4.2-1 
+  [2XCategoryFromDataTables[102X, for IsString, IsCapCategory, IsList, IsList, IsList 4.2-1 
   [2XCategoryFromNerveData[102X, for IsString, IsList, IsList, IsList 3.2-1 
   [2XCategoryOfAlgebroids[102X, for IsHomalgRing, IsString 6.4-1 
   [2XCategoryOfAlgebroidsMorphism[102X, for IsAlgebroidMorphism 6.4-4 

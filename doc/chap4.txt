@@ -31,10 +31,10 @@
   
   [1X4.2-1 CategoryFromDataTables[101X
   
-  [33X[1;0Y[29X[2XCategoryFromDataTables[102X( [3Xstr[103X, [3Xdata_tables[103X, [3Xindices_of_generating_morphisms[103X, [3Xlabels[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XCategoryFromDataTables[102X( [3Xstr[103X, [3XV[103X, [3Xdata_tables[103X, [3Xindices_of_generating_morphisms[103X, [3Xlabels[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
   
-  [33X[0;0YConstruct a category with name [3Xstr[103X from the given [3Xdata_tables[103X.[133X
+  [33X[0;0YConstruct a [3XV[103X-enriched category with name [3Xstr[103X from the given [3Xdata_tables[103X.[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XLoadPackage( "Algebroids" );[127X[104X
@@ -42,8 +42,12 @@
     [4X[25Xgap>[125X [27XDelta1 := SimplicialCategoryTruncatedInDegree( 1 );[127X[104X
     [4X[28XFreeCategory( RightQuiver( "Delta(C0,C1)[id:C1->C0,s:C0->C1,t:C0->C1]" ) )[128X[104X
     [4X[28X/ [ s*id = C0, t*id = C0 ][128X[104X
-    [4X[25Xgap>[125X [27XC := CategoryFromDataTables( Name( Delta1 ), DataTablesOfCategory( Delta1 ),[127X[104X
-    [4X[25X>[125X [27X             [ 1, 2, 3 ], [ [ "C0", "C1" ], [ "id", "s", "t" ] ] );[127X[104X
+    [4X[25Xgap>[125X [27XC := CategoryFromDataTables( Name( Delta1 ),[127X[104X
+    [4X[25X>[125X [27X             RangeCategoryOfHomomorphismStructure( Delta1 ),[127X[104X
+    [4X[25X>[125X [27X             DataTablesOfCategory( Delta1 ),[127X[104X
+    [4X[25X>[125X [27X             [ 1, 2, 3 ],[127X[104X
+    [4X[25X>[125X [27X             [ [ "C0", "C1" ],[127X[104X
+    [4X[25X>[125X [27X               [ "id", "s", "t" ] ] );[127X[104X
     [4X[28XFreeCategory( RightQuiver( "Delta(C0,C1)[id:C1->C0,s:C0->C1,t:C0->C1]" ) )[128X[104X
     [4X[28X/ [ s*id = C0, t*id = C0 ][128X[104X
     [4X[25Xgap>[125X [27XInfoOfInstalledOperationsOfCategory( C );[127X[104X

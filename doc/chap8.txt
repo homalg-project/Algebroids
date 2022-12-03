@@ -173,7 +173,7 @@
     [4X[25Xgap>[125X [27Xfree_category_of_quiver := { quiver, sFinSets } -> FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true );;[127X[104X
     [4X[25Xgap>[125X [27Xcategory_constructor :=[127X[104X
     [4X[25X>[125X [27X  function( quiver )[127X[104X
-    [4X[25X>[125X [27X    local sFinSets; sFinSets := CategoryOfSkeletalFinSets( : FinalizeCategory := true ); return CategoryFromDataTables( "CategoryFromDataTables", DataTablesOfCategory( FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true ) : FinalizeCategory := true ), [ 0 ], [ [ "a", "b" ], [ "m" ] ] ); end;;[127X[104X
+    [4X[25X>[125X [27X    local sFinSets; sFinSets := CategoryOfSkeletalFinSets( : FinalizeCategory := true ); return CategoryFromDataTables( "CategoryFromDataTables", sFinSets, DataTablesOfCategory( FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true ) : FinalizeCategory := true ), [ 0 ], [ [ "a", "b" ], [ "m" ] ] ); end;;[127X[104X
     [4X[25Xgap>[125X [27Xgiven_arguments := [ RightQuiver( "q(a,b)[m:a->b]" ) ];;[127X[104X
     [4X[25Xgap>[125X [27Xcompiled_category_name := "CategoryFromDataTablesPrecompiled";;[127X[104X
     [4X[25Xgap>[125X [27Xpackage_name := "Algebroids";;[127X[104X
@@ -192,7 +192,7 @@
   is "cat", while for compiled code it is "cat_1"[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27Xcat := CategoryFromDataTables( "CategoryFromDataTables", DataTablesOfCategory( FreeCategory( given_arguments[1] ) ), [ 0 ], [ [ "a", "b" ], [ "m" ] ] );;[127X[104X
+    [4X[25Xgap>[125X [27Xcat := CategoryFromDataTables( "CategoryFromDataTables", SkeletalFinSets, DataTablesOfCategory( FreeCategory( given_arguments[1] ) ), [ 0 ], [ [ "a", "b" ], [ "m" ] ] );;[127X[104X
     [4X[25Xgap>[125X [27Xargument_name := NamesLocalVariablesFunction([127X[104X
     [4X[25X>[125X [27X    Last( cat!.added_functions.PreCompose )[1] )[1];;[127X[104X
     [4X[25Xgap>[125X [27X( ValueOption( "no_precompiled_code" ) = true and argument_name = "C" ) or[127X[104X
