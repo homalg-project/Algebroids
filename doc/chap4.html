@@ -99,16 +99,7 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Delta1 := SimplicialCategoryTruncatedInDegree( 1 );</span>
 FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" ) )
 / [ s*id = C0, t*id = C0 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N1 := NerveTruncatedInDegree2Data( Delta1 );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N1[1];</span>
-[ |2|, |7|, |26| ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">C := CategoryFromNerveData( Name( Delta1 ), N1,</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">             [ 1, 2, 3 ], [ [ "C0", "C1" ], [ "id", "s", "t" ] ] );</span>
-FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" ) )
-/ [ s*id = C0, t*id = C0 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">T1 := DataTablesOfCategory( C );; T1[1];</span>
-[ |2|, |7| ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">C := CategoryFromDataTables( Name( Delta1 ), T1,</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">C := CategoryFromDataTables( Name( Delta1 ), DataTablesOfCategory( Delta1 ),</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">             [ 1, 2, 3 ], [ [ "C0", "C1" ], [ "id", "s", "t" ] ] );</span>
 FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" ) )
 / [ s*id = C0, t*id = C0 ]

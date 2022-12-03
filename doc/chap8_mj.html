@@ -202,7 +202,7 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">free_category_of_quiver := { quiver, sFinSets } -&gt; FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">category_constructor :=</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">  function( quiver )</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">    local sFinSets; sFinSets := CategoryOfSkeletalFinSets( : FinalizeCategory := true ); return CategoryFromDataTables( "CategoryFromDataTables", NerveTruncatedInDegree2Data( FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true ) ), [ 0 ], [ [ "a", "b" ], [ "m" ] ] ); end;;</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">    local sFinSets; sFinSets := CategoryOfSkeletalFinSets( : FinalizeCategory := true ); return CategoryFromDataTables( "CategoryFromDataTables", DataTablesOfCategory( FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true ) : FinalizeCategory := true ), [ 0 ], [ [ "a", "b" ], [ "m" ] ] ); end;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">given_arguments := [ RightQuiver( "q(a,b)[m:a-&gt;b]" ) ];;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">compiled_category_name := "CategoryFromDataTablesPrecompiled";;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">package_name := "Algebroids";;</span>
@@ -220,7 +220,7 @@ CategoryFromDataTables
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">cat := CategoryFromDataTables( "CategoryFromDataTables", NerveTruncatedInDegree2Data( FreeCategory( given_arguments[1] ) ), [ 0 ], [ [ "a", "b" ], [ "m" ] ] );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">cat := CategoryFromDataTables( "CategoryFromDataTables", DataTablesOfCategory( FreeCategory( given_arguments[1] ) ), [ 0 ], [ [ "a", "b" ], [ "m" ] ] );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">argument_name := NamesLocalVariablesFunction(</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">    Last( cat!.added_functions.PreCompose )[1] )[1];;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">( ValueOption( "no_precompiled_code" ) = true and argument_name = "C" ) or</span>
