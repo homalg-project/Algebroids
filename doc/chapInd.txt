@@ -113,7 +113,7 @@
   [2XNaturalTransformation[102X, for IsCapFunctor, IsList, IsCapFunctor 5.4-4 
       for IsRecord, IsCapFunctor, IsCapFunctor 5.4-4 
   [2XNerveData[102X, for IsCategoryFromNerveData 3.1-1 
-  [2XNerveTruncatedInDegree2AsFunctor[102X, for IsFpCategory 2.2-22 
+  [2XNerveTruncatedInDegree2AsFunctor[102X, for IsCapCategory 2.2-22 
   [2XObjectInAlgebroid[102X, for IsAlgebroid, IsQuiverVertex 5.4-5 
   [2XObjectInFpCategory[102X, for IsFpCategory, IsQuiverVertex 2.4-2 
   [2XOppositeAlgebroid[102X, for IsAlgebroid 5.2-15 
