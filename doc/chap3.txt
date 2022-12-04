@@ -11,14 +11,21 @@
   
   [33X[0;0YThe nerve data used to create the category [3XC[103X.[133X
   
-  [1X3.1-2 SetOfObjects[101X
+  [1X3.1-2 DataTablesOfCategory[101X
+  
+  [33X[1;0Y[29X[2XDataTablesOfCategory[102X( [3XC[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya pair of lists[133X
+  
+  [33X[0;0YThe data tables of the category [3XC[103X create from nerve data.[133X
+  
+  [1X3.1-3 SetOfObjects[101X
   
   [33X[1;0Y[29X[2XSetOfObjects[102X( [3XC[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya list[133X
   
   [33X[0;0YThe finite set of objects of the category [3XC[103X created from nerve data.[133X
   
-  [1X3.1-3 SetOfGeneratingMorphisms[101X
+  [1X3.1-4 SetOfGeneratingMorphisms[101X
   
   [33X[1;0Y[29X[2XSetOfGeneratingMorphisms[102X( [3XC[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya list[133X
