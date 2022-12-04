@@ -304,6 +304,8 @@ FreeCategory( RightQuiver( "q(1)[a:1-&gt;1]" ) ) /
 
 
 <div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "Algebroids" );</span>
+true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Delta2 := SimplicialCategoryTruncatedInDegree( 2 );</span>
 FreeCategory( RightQuiver(
   "Delta(C0,C1,C2)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1,
@@ -318,6 +320,14 @@ FreeCategory( RightQuiver(
   [ (mu*is), (C1) ], [ (mu*it), (C1) ] ]
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Size( Delta2 );</span>
 31
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Delta2_op := OppositeFiniteCategory( Delta2 );</span>
+Opposite of
+FreeCategory( RightQuiver(
+  "Delta(C0,C1,C2)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1,
+                   is:C2-&gt;C1,it:C2-&gt;C1,
+                   ps:C1-&gt;C2,pt:C1-&gt;C2,mu:C1-&gt;C2]" ) ) / relations
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsIdenticalObj( OppositeFiniteCategory( Delta2_op ), Delta2 );</span>
+true
 </pre></div>
 
 <p><a id="X7B8327EC7AC3E634" name="X7B8327EC7AC3E634"></a></p>

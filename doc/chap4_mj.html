@@ -28,10 +28,10 @@
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap4_mj.html#X7C701DBF7BAE649A">4.1 <span class="Heading">Attributes</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X86D0A8D5854D2103">4.1-1 DataTablesOfCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X7BDDCA7083D2E861">4.1-2 SetOfObjects</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X7A91928687AEB1CA">4.1-3 SetOfMorphisms</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X7B8083AE82C17C3C">4.1-4 SetOfGeneratingMorphisms</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X7BDDCA7083D2E861">4.1-1 SetOfObjects</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X7A91928687AEB1CA">4.1-2 SetOfMorphisms</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X7B8083AE82C17C3C">4.1-3 SetOfGeneratingMorphisms</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X78817D8B87D00308">4.1-4 OppositeCategoryFromDataTables</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap4_mj.html#X86EC0F0A78ECBC10">4.2 <span class="Heading">Constructors</span></a>
 </span>
@@ -56,18 +56,9 @@
 
 <h4>4.1 <span class="Heading">Attributes</span></h4>
 
-<p><a id="X86D0A8D5854D2103" name="X86D0A8D5854D2103"></a></p>
-
-<h5>4.1-1 DataTablesOfCategory</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; DataTablesOfCategory</code>( <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns: a pair of lists</p>
-
-<p>The data tables used to create the category <var class="Arg">C</var>.</p>
-
 <p><a id="X7BDDCA7083D2E861" name="X7BDDCA7083D2E861"></a></p>
 
-<h5>4.1-2 SetOfObjects</h5>
+<h5>4.1-1 SetOfObjects</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SetOfObjects</code>( <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p>Returns: a list</p>
@@ -76,7 +67,7 @@
 
 <p><a id="X7A91928687AEB1CA" name="X7A91928687AEB1CA"></a></p>
 
-<h5>4.1-3 SetOfMorphisms</h5>
+<h5>4.1-2 SetOfMorphisms</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SetOfMorphisms</code>( <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p>Returns: a list</p>
@@ -85,12 +76,21 @@
 
 <p><a id="X7B8083AE82C17C3C" name="X7B8083AE82C17C3C"></a></p>
 
-<h5>4.1-4 SetOfGeneratingMorphisms</h5>
+<h5>4.1-3 SetOfGeneratingMorphisms</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SetOfGeneratingMorphisms</code>( <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p>Returns: a list</p>
 
 <p>The finite set of morphisms generating the category <var class="Arg">C</var> created from data tables.</p>
+
+<p><a id="X78817D8B87D00308" name="X78817D8B87D00308"></a></p>
+
+<h5>4.1-4 OppositeCategoryFromDataTables</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; OppositeCategoryFromDataTables</code>( <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> category</p>
+
+<p>The opposite category of the category <var class="Arg">C</var> defined by nerve data.</p>
 
 <p><a id="X86EC0F0A78ECBC10" name="X86EC0F0A78ECBC10"></a></p>
 
@@ -120,6 +120,8 @@ FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" 
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">               [ "id", "s", "t" ] ] );</span>
 FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" ) )
 / [ s*id = C0, t*id = C0 ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">NerveTruncatedInDegree2Data( Delta1 ) = NerveTruncatedInDegree2Data( C );</span>
+true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">InfoOfInstalledOperationsOfCategory( C );</span>
 16 primitive operations were used to derive 36 operations for this category
 which algorithmically
@@ -208,6 +210,12 @@ true
 { 0, 1, 2 } ⱶ[ 2, 1, 2 ]→ { 0, 1, 2 }
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( HomStructure( idC1, idC1 ) );</span>
 { 0, 1, 2 } ⱶ[ 0, 1, 2 ]→ { 0, 1, 2 }
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">C_op := OppositeCategoryFromDataTables( C );</span>
+Opposite(
+FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" ) )
+/ [ s*id = C0, t*id = C0 ] )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsIdenticalObj( OppositeCategoryFromDataTables( C_op ), C );</span>
+true
 </pre></div>
 
 <p><a id="X7A6157E483CE5156" name="X7A6157E483CE5156"></a></p>
