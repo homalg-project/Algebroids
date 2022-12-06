@@ -56,6 +56,7 @@
       for IsObjectInCategoryFromNerveData, IsInt, IsObjectInCategoryFromNerveData 4.2-3 
   [2XCreateObject[102X, for IsCategoryFromDataTables, IsInt 4.2-2 
       for IsCategoryFromNerveData, IsInt 3.2-2 
+  [2XDataTables[102X, for IsCapCategory 4.1-1 
   [2XDataTablesOfCategory[102X, for IsCapCategory 9.2-2 
   [2XDecomposeQuiverAlgebraElement[102X, for IsQuiverAlgebraElement 5.3-1 
   [2XDefiningPairOfAQuiver[102X, for IsQuiver 9.1-1 
@@ -113,13 +114,14 @@
       for IsObjectInFpCategory, IsPath, IsObjectInFpCategory 2.4-3 
   [2XNaturalTransformation[102X, for IsCapFunctor, IsList, IsCapFunctor 5.4-4 
       for IsRecord, IsCapFunctor, IsCapFunctor 5.4-4 
+  [2XNerveData[102X, for IsCategoryFromNerveData 3.1-1 
   [2XNerveTruncatedInDegree2AsFunctor[102X, for IsCapCategory 2.2-22 
   [2XNerveTruncatedInDegree2Data[102X, for IsCapCategory 9.2-1 
   [2XObjectInAlgebroid[102X, for IsAlgebroid, IsQuiverVertex 5.4-5 
   [2XObjectInFpCategory[102X, for IsFpCategory, IsQuiverVertex 2.4-2 
   [2XOppositeAlgebroid[102X, for IsAlgebroid 5.2-15 
-  [2XOppositeCategoryFromDataTables[102X, for IsCategoryFromDataTables 4.1-4 
-  [2XOppositeCategoryFromNerveData[102X, for IsCategoryFromNerveData 3.1-3 
+  [2XOppositeCategoryFromDataTables[102X, for IsCategoryFromDataTables 4.1-5 
+  [2XOppositeCategoryFromNerveData[102X, for IsCategoryFromNerveData 3.1-4 
   [2XOppositeFiniteCategory[102X, for IsCapCategory 9.2-3 
   [2XOppositeFpCategory[102X, for IsFpCategory 2.2-15 
   [2XParity[102X, for IsAlgebroid 5.2-20 
@@ -135,17 +137,17 @@
   [2XSetOfGeneratingMorphisms[102X, for IsAlgebroid 5.2-9 
       for IsAlgebroid, IsInt, IsInt 5.2-12 
       for IsAlgebroid, IsObjectInAlgebroid, IsObjectInAlgebroid 5.2-10 
-      for IsCategoryFromDataTables 4.1-3 
-      for IsCategoryFromNerveData 3.1-2 
+      for IsCategoryFromDataTables 4.1-4 
+      for IsCategoryFromNerveData 3.1-3 
       for IsFpCategory 2.2-9 
       for IsFpCategory, IsInt, IsInt 2.2-12 
       for IsFpCategory, IsObjectInFpCategory, IsObjectInFpCategory 2.2-10 
       for IsObjectInAlgebroid, IsObjectInAlgebroid 5.2-11 
       for IsObjectInFpCategory, IsObjectInFpCategory 2.2-11 
-  [2XSetOfMorphisms[102X, for IsCategoryFromDataTables 4.1-2 
+  [2XSetOfMorphisms[102X, for IsCategoryFromDataTables 4.1-3 
   [2XSetOfObjects[102X, for IsAlgebroid 5.2-7 
-      for IsCategoryFromDataTables 4.1-1 
-      for IsCategoryFromNerveData 3.1-1 
+      for IsCategoryFromDataTables 4.1-2 
+      for IsCategoryFromNerveData 3.1-2 
       for IsFpCategory 2.2-7 
   [2XSieveFunctor[102X, for IsFpCategory 2.2-27 
   [2XSimplicialCategoryTruncatedInDegree[102X 2.5-1 

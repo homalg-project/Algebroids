@@ -4,21 +4,29 @@
   
   [1X4.1 [33X[0;0YAttributes[133X[101X
   
-  [1X4.1-1 SetOfObjects[101X
+  [1X4.1-1 DataTables[101X
+  
+  [33X[1;0Y[29X[2XDataTables[102X( [3XC[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya pair of lists[133X
+  
+  [33X[0;0YThe  data  tables  used  to  create the category [3XC[103X. It might differ from the
+  [21Xnormalized[121X output of [10XDataTablesOfCategory[110X( [3XC[103X ).[133X
+  
+  [1X4.1-2 SetOfObjects[101X
   
   [33X[1;0Y[29X[2XSetOfObjects[102X( [3XC[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya list[133X
   
   [33X[0;0YThe finite set of objects of the category [3XC[103X created from data tables.[133X
   
-  [1X4.1-2 SetOfMorphisms[101X
+  [1X4.1-3 SetOfMorphisms[101X
   
   [33X[1;0Y[29X[2XSetOfMorphisms[102X( [3XC[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya list[133X
   
   [33X[0;0YThe finite set of morphisms of the category [3XC[103X created from data tables.[133X
   
-  [1X4.1-3 SetOfGeneratingMorphisms[101X
+  [1X4.1-4 SetOfGeneratingMorphisms[101X
   
   [33X[1;0Y[29X[2XSetOfGeneratingMorphisms[102X( [3XC[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya list[133X
@@ -26,7 +34,7 @@
   [33X[0;0YThe  finite  set  of  morphisms  generating the category [3XC[103X created from data
   tables.[133X
   
-  [1X4.1-4 OppositeCategoryFromDataTables[101X
+  [1X4.1-5 OppositeCategoryFromDataTables[101X
   
   [33X[1;0Y[29X[2XOppositeCategoryFromDataTables[102X( [3XC[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
