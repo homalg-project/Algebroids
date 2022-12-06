@@ -38,7 +38,7 @@
 
 
 <div class="example"><pre>
-#@if ValueOption( "no_precompiled_code" ) = fail
+#@if ValueOption( "no_precompiled_code" ) &lt;&gt; true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "FreydCategoriesForCAP", false );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "Algebroids", false );</span>

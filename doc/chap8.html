@@ -28,6 +28,7 @@
 
 
 <div class="example"><pre>
+#@if ValueOption( "no_precompiled_code" ) &lt;&gt; true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "Algebroids", false );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "CompilerForCAP", false );</span>
@@ -62,28 +63,16 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">AdditiveClosureOfAlgebroidOfFiniteDimensionalQuiverAlgebraOfRightQuiverOverFieldPrecompiled( A );</span>
 Additive closure( Algebroid( Q, FreeCategory( RightQuiver(
 "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) )
-</pre></div>
-
-<p>Check that the compiled code is loaded automatically for this, we use the name of the argument of <code class="code">ZeroObject</code>: for non-compiled code it is "cat", while for compiled code it is "cat_1"</p>
-
-
-<div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">cat := AdditiveClosure( Algebroid( A, false ) );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">argument_name := NamesLocalVariablesFunction(</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">                         Last( cat!.added_functions.ZeroObject )[1] )[1];;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">( ValueOption( "no_precompiled_code" ) = true and argument_name = "cat" ) or</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">AdditiveClosure( Algebroid( A, false ) )!.precompiled_functions_added;</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">cat := AdditiveClosure( Algebroid( A, true ) );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">argument_name := NamesLocalVariablesFunction(</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">                         Last( cat!.added_functions.ZeroObject )[1] )[1];;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">( ValueOption( "no_precompiled_code" ) = true and argument_name = "cat" ) or</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">AdditiveClosure( Algebroid( A, true ) )!.precompiled_functions_added;</span>
 true
+#@fi
 </pre></div>
 
 
 <div class="example"><pre>
+#@if ValueOption( "no_precompiled_code" ) &lt;&gt; true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "Algebroids", false );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "CompilerForCAP", false );</span>
@@ -128,28 +117,16 @@ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) ) )
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">AdelmanCategoryOfAdditiveClosureOfAlgebroidOfFiniteDimensionalQuiverAlgebraOfRightQuiverOverZPrecompiled( A );</span>
 Adelman category( Additive closure( Algebroid( Z, FreeCategory(
 RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) ) )
-</pre></div>
-
-<p>Check that the compiled code is loaded automatically for this, we use the name of the first argument of <code class="code">IsZeroForMorphisms</code>: for non-compiled code it is "cat", while for compiled code it is "cat_1"</p>
-
-
-<div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">cat := AdelmanCategory( AdditiveClosure( Algebroid( A, false ) ) );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">argument_name := NamesLocalVariablesFunction(</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">                         Last( cat!.added_functions.IsZeroForMorphisms )[1] )[1];;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">( ValueOption( "no_precompiled_code" ) = true and argument_name = "cat" ) or</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">AdelmanCategory( AdditiveClosure( Algebroid( A, false ) ) )!.precompiled_functions_added;</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">cat := AdelmanCategory( AdditiveClosure( Algebroid( A, true ) ) );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">argument_name := NamesLocalVariablesFunction(</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">                         Last( cat!.added_functions.IsZeroForMorphisms )[1] )[1];;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">( ValueOption( "no_precompiled_code" ) = true and argument_name = "cat" ) or</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">AdelmanCategory( AdditiveClosure( Algebroid( A, true ) ) )!.precompiled_functions_added;</span>
 true
+#@fi
 </pre></div>
 
 
 <div class="example"><pre>
+#@if ValueOption( "no_precompiled_code" ) &lt;&gt; true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "Algebroids", false );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "CompilerForCAP", false );</span>
@@ -174,22 +151,14 @@ true
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">                                [ "HomomorphismStructureOnMorphismsWithGivenObjects" ] ) );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CategoryFromNerveDataPrecompiled( given_arguments[1] );</span>
 CategoryFromNerveData
-</pre></div>
-
-<p>Check that the compiled code is loaded automatically for this, we use the name of the first argument of <code class="code">IsZeroForMorphisms</code>: for non-compiled code it is "cat", while for compiled code it is "cat_1"</p>
-
-
-<div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">cat := CategoryFromNerveData( "CategoryFromNerveData", NerveTruncatedInDegree2Data( FreeCategory( given_arguments[1] ) ), [ 0 ], [ [ "a", "b" ], [ "m" ] ] );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">argument_name := NamesLocalVariablesFunction(</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">    Last( cat!.added_functions.PreCompose )[1] )[1];;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">( ValueOption( "no_precompiled_code" ) = true and argument_name = "C" ) or</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CategoryFromNerveData( "CategoryFromNerveData", NerveTruncatedInDegree2Data( FreeCategory( given_arguments[1] ) ), [ 0 ], [ [ "a", "b" ], [ "m" ] ] )!.precompiled_functions_added;</span>
 true
+#@fi
 </pre></div>
 
 
 <div class="example"><pre>
+#@if ValueOption( "no_precompiled_code" ) &lt;&gt; true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "Algebroids", false );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "CompilerForCAP", false );</span>
@@ -211,18 +180,9 @@ true
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">        : operations := "primitive" );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CategoryFromDataTablesPrecompiled( given_arguments[1] );</span>
 CategoryFromDataTables
-</pre></div>
-
-<p>Check that the compiled code is loaded automatically for this, we use the name of the first argument of <code class="code">IsZeroForMorphisms</code>: for non-compiled code it is "cat", while for compiled code it is "cat_1"</p>
-
-
-<div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">cat := CategoryFromDataTables( "CategoryFromDataTables", SkeletalFinSets, DataTablesOfCategory( FreeCategory( given_arguments[1] ) ), [ 0 ], [ [ "a", "b" ], [ "m" ] ] );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">argument_name := NamesLocalVariablesFunction(</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">    Last( cat!.added_functions.PreCompose )[1] )[1];;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">( ValueOption( "no_precompiled_code" ) = true and argument_name = "C" ) or</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">  ( ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1" );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CategoryFromDataTables( "CategoryFromDataTables", SkeletalFinSets, DataTablesOfCategory( FreeCategory( given_arguments[1] ) ), [ 0 ], [ [ "a", "b" ], [ "m" ] ] )!.precompiled_functions_added;</span>
 true
+#@fi
 </pre></div>
 
 

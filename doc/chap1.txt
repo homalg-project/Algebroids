@@ -239,11 +239,10 @@
     [4X[25Xgap>[125X [27XSize( Delta2 );[127X[104X
     [4X[28X31[128X[104X
     [4X[25Xgap>[125X [27XDelta2_op := OppositeFiniteCategory( Delta2 );[127X[104X
-    [4X[28XOpposite of[128X[104X
-    [4X[28XFreeCategory( RightQuiver([128X[104X
+    [4X[28XOpposite( FreeCategory( RightQuiver([128X[104X
     [4X[28X  "Delta(C0,C1,C2)[id:C1->C0,s:C0->C1,t:C0->C1,[128X[104X
     [4X[28X                   is:C2->C1,it:C2->C1,[128X[104X
-    [4X[28X                   ps:C1->C2,pt:C1->C2,mu:C1->C2]" ) ) / relations[128X[104X
+    [4X[28X                   ps:C1->C2,pt:C1->C2,mu:C1->C2]" ) ) / relations )[128X[104X
     [4X[25Xgap>[125X [27XIsIdenticalObj( OppositeFiniteCategory( Delta2_op ), Delta2 );[127X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
