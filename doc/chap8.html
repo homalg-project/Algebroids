@@ -36,7 +36,7 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">QQ := HomalgFieldOfRationals( );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">snake_quiver := RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := PathAlgebra( QQ, snake_quiver );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "Algebroids", "gap/CompilerLogic.gi" );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackageOnce( "Algebroids", "gap/CompilerLogic.gi" );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput"># only valid for the construction above</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput"># FIXME: IsInt should be IsRat, but specializations of types are not yet supported by CompilerForCAP</span>
@@ -77,12 +77,12 @@ true
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "CompilerForCAP", false );</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "Algebroids", "gap/CompilerLogic.gi" );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackageOnce( "Algebroids", "gap/CompilerLogic.gi" );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">QQ := HomalgFieldOfRationals( );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">snake_quiver := RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := PathAlgebra( QQ, snake_quiver );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "Algebroids", "gap/CompilerLogic.gi" );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackageOnce( "Algebroids", "gap/CompilerLogic.gi" );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput"># only valid for the construction above</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput"># FIXME: IsInt should be IsRat, but specializations of types are not yet supported by CompilerForCAP</span>
@@ -131,9 +131,9 @@ true
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "CompilerForCAP", false );</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "Algebroids", "gap/CompilerLogic.gi" );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackageOnce( "Algebroids", "gap/CompilerLogic.gi" );</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "FinSetsForCAP", "gap/CompilerLogic.gi" );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackageOnce( "FinSetsForCAP", "gap/CompilerLogic.gi" );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">free_category_of_quiver := { quiver, sFinSets } -&gt; FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">category_constructor :=</span>
@@ -163,7 +163,7 @@ true
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "CompilerForCAP", false );</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "Algebroids", "gap/CompilerLogic.gi" );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackageOnce( "Algebroids", "gap/CompilerLogic.gi" );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">free_category_of_quiver := { quiver, sFinSets } -&gt; FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">category_constructor :=</span>

@@ -11,7 +11,7 @@
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XLoadPackage( "Algebroids", false );[127X[104X
     [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XReadPackage( "FreydCategoriesForCAP", "examples/SubobjectLatticeFunctions.g" );[127X[104X
+    [4X[25Xgap>[125X [27XReadPackageOnce( "FreydCategoriesForCAP", "examples/SubobjectLatticeFunctions.g" );[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27Xquiver := RightQuiver( "Q(5)[a:1->2,b:2->3,c:1->4,d:4->5]" );;[127X[104X
     [4X[25Xgap>[125X [27XQQ := HomalgFieldOfRationals();;[127X[104X

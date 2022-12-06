@@ -10,7 +10,7 @@
     [4X[25Xgap>[125X [27XQQ := HomalgFieldOfRationals( );;[127X[104X
     [4X[25Xgap>[125X [27Xsnake_quiver := RightQuiver( "q(4)[a:1->2,b:2->3,c:3->4]" );;[127X[104X
     [4X[25Xgap>[125X [27XA := PathAlgebra( QQ, snake_quiver );;[127X[104X
-    [4X[25Xgap>[125X [27XReadPackage( "Algebroids", "gap/CompilerLogic.gi" );[127X[104X
+    [4X[25Xgap>[125X [27XReadPackageOnce( "Algebroids", "gap/CompilerLogic.gi" );[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27X# only valid for the construction above[127X[104X
     [4X[25X>[125X [27X# FIXME: IsInt should be IsRat, but specializations of types are not yet supported by CompilerForCAP[127X[104X
@@ -50,12 +50,12 @@
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XLoadPackage( "CompilerForCAP", false );[127X[104X
     [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XReadPackage( "Algebroids", "gap/CompilerLogic.gi" );[127X[104X
+    [4X[25Xgap>[125X [27XReadPackageOnce( "Algebroids", "gap/CompilerLogic.gi" );[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XQQ := HomalgFieldOfRationals( );;[127X[104X
     [4X[25Xgap>[125X [27Xsnake_quiver := RightQuiver( "q(4)[a:1->2,b:2->3,c:3->4]" );;[127X[104X
     [4X[25Xgap>[125X [27XA := PathAlgebra( QQ, snake_quiver );;[127X[104X
-    [4X[25Xgap>[125X [27XReadPackage( "Algebroids", "gap/CompilerLogic.gi" );[127X[104X
+    [4X[25Xgap>[125X [27XReadPackageOnce( "Algebroids", "gap/CompilerLogic.gi" );[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27X# only valid for the construction above[127X[104X
     [4X[25X>[125X [27X# FIXME: IsInt should be IsRat, but specializations of types are not yet supported by CompilerForCAP[127X[104X
@@ -103,9 +103,9 @@
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XLoadPackage( "CompilerForCAP", false );[127X[104X
     [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XReadPackage( "Algebroids", "gap/CompilerLogic.gi" );[127X[104X
+    [4X[25Xgap>[125X [27XReadPackageOnce( "Algebroids", "gap/CompilerLogic.gi" );[127X[104X
     [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XReadPackage( "FinSetsForCAP", "gap/CompilerLogic.gi" );[127X[104X
+    [4X[25Xgap>[125X [27XReadPackageOnce( "FinSetsForCAP", "gap/CompilerLogic.gi" );[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27Xfree_category_of_quiver := { quiver, sFinSets } -> FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true );;[127X[104X
     [4X[25Xgap>[125X [27Xcategory_constructor :=[127X[104X
@@ -134,7 +134,7 @@
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XLoadPackage( "CompilerForCAP", false );[127X[104X
     [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XReadPackage( "Algebroids", "gap/CompilerLogic.gi" );[127X[104X
+    [4X[25Xgap>[125X [27XReadPackageOnce( "Algebroids", "gap/CompilerLogic.gi" );[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27Xfree_category_of_quiver := { quiver, sFinSets } -> FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true );;[127X[104X
     [4X[25Xgap>[125X [27Xcategory_constructor :=[127X[104X
