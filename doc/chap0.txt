@@ -7,10 +7,10 @@
                                     quivers [101X
   
   
-                                   2022.12-20
+                                   2022.12-22
   
   
-                                6 December 2022
+                                19 December 2022
   
   
                                 Mohamed Barakat
@@ -268,8 +268,20 @@
       9.2-2 DataTablesOfCategory
       9.2-3 OppositeFiniteCategory
   10 [33X[0;0YExamples and Tests[133X
-    10.1 [33X[0;0YAdelmanCategory( AdditiveClosure( Algebroid ) ) vs. AdelmanCategory(
+    10.1 [33X[0;0YAdelman 5 lemma[133X
+    10.2 [33X[0;0YBasics of additive closure[133X
+    10.3 [33X[0;0YAdelman category basics for for additive closure of algebroids[133X
+    10.4 [33X[0;0YAdelmanCategory( AdditiveClosure( Algebroid ) ) vs. AdelmanCategory(
     QuiverRows )[133X
+    10.5 [33X[0;0YAdelman category basics[133X
+    10.6 [33X[0;0YAdelman snake lemma[133X
+    10.7 [33X[0;0YExactness conditions[133X
+    10.8 [33X[0;0YQuiver rows bascis[133X
+    10.9 [33X[0;0YQuiver rows over the integers[133X
+    10.10 [33X[0;0YSnake lemma first proof[133X
+    10.11 [33X[0;0YSnake lemma second proof[133X
+    10.12 [33X[0;0YSubobject lattice[133X
+    10.13 [33X[0;0YAdelman category theorem[133X
   
   
   [32X
