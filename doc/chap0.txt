@@ -7,7 +7,7 @@
                                     quivers [101X
   
   
-                                   2022.12-32
+                                   2022.12-34
   
   
                                 24 December 2022
@@ -171,8 +171,9 @@
     4.2 [33X[0;0YConstructors[133X
       4.2-1 CategoryFromDataTables
       4.2-2 CategoryFromDataTables
-      4.2-3 CreateObject
-      4.2-4 CreateMorphism
+      4.2-3 CategoryFromDataTables
+      4.2-4 CreateObject
+      4.2-5 CreateMorphism
     4.3 [33X[0;0YGAP categories[133X
       4.3-1 IsCategoryFromDataTables
       4.3-2 IsCellInCategoryFromDataTables

@@ -42,7 +42,8 @@
       for IsFpCategory, IsRecord, IsRecord 5.4-3 
       for IsFpCategory, IsRecord, IsRecord, IsBool 5.4-3 
   [2XCategory[102X, for IsQuiver, IsList 2.4-1 
-  [2XCategoryFromDataTables[102X, for IsFpCategory 4.2-2 
+  [2XCategoryFromDataTables[102X, for IsCategoryFromNerveData 4.2-3 
+      for IsFpCategory 4.2-2 
       for IsString, IsCapCategory, IsList, IsList, IsList, IsList 4.2-1 
   [2XCategoryFromNerveData[102X, for IsFpCategory 3.2-2 
       for IsString, IsList, IsList, IsList, IsList 3.2-1 
@@ -52,11 +53,11 @@
   [2XCategoryOfAlgebroidsObject[102X, for IsAlgebroid 6.4-2 
   [2XComultiplication[102X, for IsAlgebroid 7.2-2 
   [2XCounit[102X, for IsAlgebroid 7.2-1 
-  [2XCreateMorphism[102X, for IsCategoryFromDataTables, IsInt 4.2-4 
-      for IsCategoryFromNerveData, IsInt 4.2-4 
-      for IsObjectInCategoryFromDataTables, IsInt, IsObjectInCategoryFromDataTables 4.2-4 
-      for IsObjectInCategoryFromNerveData, IsInt, IsObjectInCategoryFromNerveData 4.2-4 
-  [2XCreateObject[102X, for IsCategoryFromDataTables, IsInt 4.2-3 
+  [2XCreateMorphism[102X, for IsCategoryFromDataTables, IsInt 4.2-5 
+      for IsCategoryFromNerveData, IsInt 4.2-5 
+      for IsObjectInCategoryFromDataTables, IsInt, IsObjectInCategoryFromDataTables 4.2-5 
+      for IsObjectInCategoryFromNerveData, IsInt, IsObjectInCategoryFromNerveData 4.2-5 
+  [2XCreateObject[102X, for IsCategoryFromDataTables, IsInt 4.2-4 
       for IsCategoryFromNerveData, IsInt 3.2-3 
   [2XDataTables[102X, for IsCapCategory 4.1-1 
   [2XDataTablesOfCategory[102X, for IsCapCategory 9.2-2 
