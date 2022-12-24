@@ -39,7 +39,7 @@
   
   [1X3.2-1 CategoryFromNerveData[101X
   
-  [33X[1;0Y[29X[2XCategoryFromNerveData[102X( [3Xstr[103X, [3Xnerve_data[103X, [3Xindices_of_generating_morphisms[103X, [3Xlabels[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XCategoryFromNerveData[102X( [3Xstr[103X, [3Xnerve_data[103X, [3Xindices_of_generating_morphisms[103X, [3Xrelations[103X, [3Xlabels[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
   
   [33X[0;0YConstruct  a  category  with  name  [3Xstr[103X from the given [3Xnerve_data[103X (of a f.p.

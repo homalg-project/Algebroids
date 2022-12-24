@@ -107,10 +107,9 @@
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XReadPackageOnce( "FinSetsForCAP", "gap/CompilerLogic.gi" );[127X[104X
     [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27Xfree_category_of_quiver := { quiver, sFinSets } -> FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true );;[127X[104X
     [4X[25Xgap>[125X [27Xcategory_constructor :=[127X[104X
     [4X[25X>[125X [27X  function( quiver )[127X[104X
-    [4X[25X>[125X [27X    local sFinSets; sFinSets := CategoryOfSkeletalFinSets( : FinalizeCategory := true ); return CategoryFromNerveData( "CategoryFromNerveData", NerveTruncatedInDegree2Data( FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true ) ), [ 0 ], [ [ "a", "b" ], [ "m" ] ] ); end;;[127X[104X
+    [4X[25X>[125X [27X    local sFinSets; sFinSets := CategoryOfSkeletalFinSets( : FinalizeCategory := true ); return CategoryFromNerveData( FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true ) ); end;;[127X[104X
     [4X[25Xgap>[125X [27Xgiven_arguments := [ RightQuiver( "q(a,b)[m:a->b]" ) ];;[127X[104X
     [4X[25Xgap>[125X [27Xcompiled_category_name := "CategoryFromNerveDataPrecompiled";;[127X[104X
     [4X[25Xgap>[125X [27Xpackage_name := "Algebroids";;[127X[104X
@@ -122,8 +121,8 @@
     [4X[25X>[125X [27X        : operations := Difference( ListPrimitivelyInstalledOperationsOfCategory( category_constructor( given_arguments[1] : no_precompiled_code := true ) ),[127X[104X
     [4X[25X>[125X [27X                                [ "HomomorphismStructureOnMorphismsWithGivenObjects" ] ) );;[127X[104X
     [4X[25Xgap>[125X [27XCategoryFromNerveDataPrecompiled( given_arguments[1] );[127X[104X
-    [4X[28XCategoryFromNerveData[128X[104X
-    [4X[25Xgap>[125X [27XCategoryFromNerveData( "CategoryFromNerveData", NerveTruncatedInDegree2Data( FreeCategory( given_arguments[1] ) ), [ 0 ], [ [ "a", "b" ], [ "m" ] ] )!.precompiled_functions_added;[127X[104X
+    [4X[28XFreeCategory( RightQuiver( "q(a,b)[m:a->b]" ) )[128X[104X
+    [4X[25Xgap>[125X [27XCategoryFromNerveData( FreeCategory( given_arguments[1] ) )!.precompiled_functions_added;[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[28X#@fi[128X[104X
   [4X[32X[104X
@@ -136,10 +135,9 @@
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XReadPackageOnce( "Algebroids", "gap/CompilerLogic.gi" );[127X[104X
     [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27Xfree_category_of_quiver := { quiver, sFinSets } -> FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true );;[127X[104X
     [4X[25Xgap>[125X [27Xcategory_constructor :=[127X[104X
     [4X[25X>[125X [27X  function( quiver )[127X[104X
-    [4X[25X>[125X [27X    local sFinSets; sFinSets := CategoryOfSkeletalFinSets( : FinalizeCategory := true ); return CategoryFromDataTables( "CategoryFromDataTables", sFinSets, DataTablesOfCategory( FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true ) : FinalizeCategory := true ), [ 0 ], [ [ "a", "b" ], [ "m" ] ] ); end;;[127X[104X
+    [4X[25X>[125X [27X    local sFinSets; sFinSets := CategoryOfSkeletalFinSets( : FinalizeCategory := true ); return CategoryFromDataTables( FreeCategory( quiver : range_of_HomStructure := sFinSets, FinalizeCategory := true ) ); end;;[127X[104X
     [4X[25Xgap>[125X [27Xgiven_arguments := [ RightQuiver( "q(a,b)[m:a->b]" ) ];;[127X[104X
     [4X[25Xgap>[125X [27Xcompiled_category_name := "CategoryFromDataTablesPrecompiled";;[127X[104X
     [4X[25Xgap>[125X [27Xpackage_name := "Algebroids";;[127X[104X
@@ -150,8 +148,8 @@
     [4X[25X>[125X [27X    compiled_category_name[127X[104X
     [4X[25X>[125X [27X        : operations := "primitive" );;[127X[104X
     [4X[25Xgap>[125X [27XCategoryFromDataTablesPrecompiled( given_arguments[1] );[127X[104X
-    [4X[28XCategoryFromDataTables[128X[104X
-    [4X[25Xgap>[125X [27XCategoryFromDataTables( "CategoryFromDataTables", SkeletalFinSets, DataTablesOfCategory( FreeCategory( given_arguments[1] ) ), [ 0 ], [ [ "a", "b" ], [ "m" ] ] )!.precompiled_functions_added;[127X[104X
+    [4X[28XFreeCategory( RightQuiver( "q(a,b)[m:a->b]" ) )[128X[104X
+    [4X[25Xgap>[125X [27XCategoryFromDataTables( FreeCategory( given_arguments[1] ) )!.precompiled_functions_added;[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[28X#@fi[128X[104X
   [4X[32X[104X

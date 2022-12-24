@@ -46,7 +46,7 @@
   
   [1X4.2-1 CategoryFromDataTables[101X
   
-  [33X[1;0Y[29X[2XCategoryFromDataTables[102X( [3Xstr[103X, [3XV[103X, [3Xdata_tables[103X, [3Xindices_of_generating_morphisms[103X, [3Xlabels[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XCategoryFromDataTables[102X( [3Xstr[103X, [3XV[103X, [3Xdata_tables[103X, [3Xindices_of_generating_morphisms[103X, [3Xrelations[103X, [3Xlabels[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
   
   [33X[0;0YConstruct a [3XV[103X-enriched category with name [3Xstr[103X from the given [3Xdata_tables[103X (of
