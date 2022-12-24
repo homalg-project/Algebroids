@@ -27,7 +27,14 @@
   [33X[0;0YThe  finite  set  of  morphisms generating the category [3XC[103X created from nerve
   data.[133X
   
-  [1X3.1-4 OppositeCategoryFromNerveData[101X
+  [1X3.1-4 Size[101X
+  
+  [33X[1;0Y[29X[2XSize[102X( [3XC[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya nonnegative integer[133X
+  
+  [33X[0;0YThe number of morphisms in the category [3XC[103X created from nerve data.[133X
+  
+  [1X3.1-5 OppositeCategoryFromNerveData[101X
   
   [33X[1;0Y[29X[2XOppositeCategoryFromNerveData[102X( [3XC[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
@@ -51,13 +58,14 @@
     [4X[25Xgap>[125X [27XDelta1 := SimplicialCategoryTruncatedInDegree( 1 );[127X[104X
     [4X[28XFreeCategory( RightQuiver( "Delta(C0,C1)[id:C1->C0,s:C0->C1,t:C0->C1]" ) )[128X[104X
     [4X[28X/ [ s*id = C0, t*id = C0 ][128X[104X
-    [4X[25Xgap>[125X [27XN1 := NerveTruncatedInDegree2Data( Delta1 );;[127X[104X
-    [4X[25Xgap>[125X [27XN1[1];[127X[104X
-    [4X[28X[ |2|, |7|, |26| ][128X[104X
+    [4X[25Xgap>[125X [27XSize( Delta1 );[127X[104X
+    [4X[28X7[128X[104X
     [4X[25Xgap>[125X [27XC := CategoryFromNerveData( Delta1 );[127X[104X
     [4X[28XFreeCategory( RightQuiver( "Delta(C0,C1)[id:C1->C0,s:C0->C1,t:C0->C1]" ) )[128X[104X
     [4X[28X/ [ s*id = C0, t*id = C0 ][128X[104X
-    [4X[25Xgap>[125X [27XNerveTruncatedInDegree2Data( C ) = N1;[127X[104X
+    [4X[25Xgap>[125X [27XSize( C );[127X[104X
+    [4X[28X7[128X[104X
+    [4X[25Xgap>[125X [27XNerveTruncatedInDegree2Data( C ) = NerveTruncatedInDegree2Data( Delta1 );[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XDisplay( C );[127X[104X
     [4X[28XA CAP category with name[128X[104X

@@ -31,7 +31,8 @@
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap3_mj.html#X7E3FA58F7A494BA5">3.1-1 NerveData</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap3_mj.html#X7E05C37E7F355D4D">3.1-2 SetOfObjects</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap3_mj.html#X83496CF2824C1AF7">3.1-3 SetOfGeneratingMorphisms</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap3_mj.html#X8286BD957E169BEC">3.1-4 OppositeCategoryFromNerveData</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap3_mj.html#X7F8C00D07A057EC1">3.1-4 Size</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap3_mj.html#X8286BD957E169BEC">3.1-5 OppositeCategoryFromNerveData</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap3_mj.html#X86EC0F0A78ECBC10">3.2 <span class="Heading">Constructors</span></a>
 </span>
@@ -83,9 +84,18 @@
 
 <p>The finite set of morphisms generating the category <var class="Arg">C</var> created from nerve data.</p>
 
+<p><a id="X7F8C00D07A057EC1" name="X7F8C00D07A057EC1"></a></p>
+
+<h5>3.1-4 Size</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Size</code>( <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p>Returns: a nonnegative integer</p>
+
+<p>The number of morphisms in the category <var class="Arg">C</var> created from nerve data.</p>
+
 <p><a id="X8286BD957E169BEC" name="X8286BD957E169BEC"></a></p>
 
-<h5>3.1-4 OppositeCategoryFromNerveData</h5>
+<h5>3.1-5 OppositeCategoryFromNerveData</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; OppositeCategoryFromNerveData</code>( <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> category</p>
@@ -112,13 +122,14 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Delta1 := SimplicialCategoryTruncatedInDegree( 1 );</span>
 FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" ) )
 / [ s*id = C0, t*id = C0 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N1 := NerveTruncatedInDegree2Data( Delta1 );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N1[1];</span>
-[ |2|, |7|, |26| ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Size( Delta1 );</span>
+7
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">C := CategoryFromNerveData( Delta1 );</span>
 FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" ) )
 / [ s*id = C0, t*id = C0 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">NerveTruncatedInDegree2Data( C ) = N1;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Size( C );</span>
+7
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">NerveTruncatedInDegree2Data( C ) = NerveTruncatedInDegree2Data( Delta1 );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( C );</span>
 A CAP category with name

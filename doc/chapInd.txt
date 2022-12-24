@@ -122,8 +122,8 @@
   [2XObjectInAlgebroid[102X, for IsAlgebroid, IsQuiverVertex 5.4-5 
   [2XObjectInFpCategory[102X, for IsFpCategory, IsQuiverVertex 2.4-2 
   [2XOppositeAlgebroid[102X, for IsAlgebroid 5.2-15 
-  [2XOppositeCategoryFromDataTables[102X, for IsCategoryFromDataTables 4.1-5 
-  [2XOppositeCategoryFromNerveData[102X, for IsCategoryFromNerveData 3.1-4 
+  [2XOppositeCategoryFromDataTables[102X, for IsCategoryFromDataTables 4.1-6 
+  [2XOppositeCategoryFromNerveData[102X, for IsCategoryFromNerveData 3.1-5 
   [2XOppositeFiniteCategory[102X, for IsCapCategory 9.2-3 
   [2XOppositeFpCategory[102X, for IsFpCategory 2.2-15 
   [2XParity[102X, for IsAlgebroid 5.2-20 
@@ -153,7 +153,9 @@
       for IsFpCategory 2.2-7 
   [2XSieveFunctor[102X, for IsFpCategory 2.2-27 
   [2XSimplicialCategoryTruncatedInDegree[102X 2.5-1 
-  [2XSize[102X, for IsFpCategory 2.2-3 
+  [2XSize[102X, for IsCategoryFromDataTables 4.1-5 
+      for IsCategoryFromNerveData 3.1-4 
+      for IsFpCategory 2.2-3 
   [2XTrivialAlgebroid[102X, for IsHomalgRing, IsString 5.3-3 
   [2XTrivialCategory[102X, for IsString 2.3-1 
   [2XTruthMorphismOfTrueToSieveFunctor[102X, for IsFpCategory 2.2-26 
