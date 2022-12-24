@@ -37,7 +37,8 @@
 </span>
 <div class="ContSSBlock">
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap3_mj.html#X871B8C7578D9111C">3.2-1 CategoryFromNerveData</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap3_mj.html#X7A7ED53F78DF5204">3.2-2 CreateObject</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap3_mj.html#X877E969678BBE306">3.2-2 CategoryFromNerveData</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap3_mj.html#X7A7ED53F78DF5204">3.2-3 CreateObject</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap3_mj.html#X7D03633A7D98026B">3.3 <span class="Heading">GAP categories</span></a>
 </span>
@@ -102,7 +103,7 @@
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CategoryFromNerveData</code>( <var class="Arg">str</var>, <var class="Arg">nerve_data</var>, <var class="Arg">indices_of_generating_morphisms</var>, <var class="Arg">labels</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> category</p>
 
-<p>Construct a category with name <var class="Arg">str</var> from the given <var class="Arg">nerve_data</var>.</p>
+<p>Construct a category with name <var class="Arg">str</var> from the given <var class="Arg">nerve_data</var> (of a f.p. category <var class="Arg">C</var>).</p>
 
 
 <div class="example"><pre>
@@ -114,13 +115,16 @@ FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" 
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N1 := NerveTruncatedInDegree2Data( Delta1 );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N1[1];</span>
 [ |2|, |7|, |26| ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">C := CategoryFromNerveData( Name( Delta1 ), N1,</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">             [ 1, 2, 3 ], [ [ "C0", "C1" ], [ "id", "s", "t" ] ] );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">C := CategoryFromNerveData( Delta1 );</span>
 FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" ) )
 / [ s*id = C0, t*id = C0 ]
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">NerveTruncatedInDegree2Data( C ) = N1;</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">InfoOfInstalledOperationsOfCategory( C );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( C );</span>
+A CAP category with name
+FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" ) )
+/ [ s*id = C0, t*id = C0 ]:
+
 16 primitive operations were used to derive 50 operations for this category
 which algorithmically
 * IsEquippedWithHomomorphismStructure
@@ -218,9 +222,14 @@ true
 true
 </pre></div>
 
+<p><a id="X877E969678BBE306" name="X877E969678BBE306"></a></p>
+
+<h5>3.2-2 CategoryFromNerveData</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CategoryFromNerveData</code>( <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p><a id="X7A7ED53F78DF5204" name="X7A7ED53F78DF5204"></a></p>
 
-<h5>3.2-2 CreateObject</h5>
+<h5>3.2-3 CreateObject</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateObject</code>( <var class="Arg">C</var>, <var class="Arg">o</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> category</p>

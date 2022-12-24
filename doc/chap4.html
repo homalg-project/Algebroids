@@ -35,8 +35,9 @@
 </span>
 <div class="ContSSBlock">
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X8024180780148024">4.2-1 CategoryFromDataTables</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7A6157E483CE5156">4.2-2 CreateObject</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X789F940282B2FE7C">4.2-3 CreateMorphism</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7BFA46AA7E326524">4.2-2 CategoryFromDataTables</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7A6157E483CE5156">4.2-3 CreateObject</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X789F940282B2FE7C">4.2-4 CreateMorphism</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap4.html#X7D03633A7D98026B">4.3 <span class="Heading">GAP categories</span></a>
 </span>
@@ -110,7 +111,7 @@
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CategoryFromDataTables</code>( <var class="Arg">str</var>, <var class="Arg">V</var>, <var class="Arg">data_tables</var>, <var class="Arg">indices_of_generating_morphisms</var>, <var class="Arg">labels</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> category</p>
 
-<p>Construct a <var class="Arg">V</var>-enriched category with name <var class="Arg">str</var> from the given <var class="Arg">data_tables</var>.</p>
+<p>Construct a <var class="Arg">V</var>-enriched category with name <var class="Arg">str</var> from the given <var class="Arg">data_tables</var> (of a f.p. category <var class="Arg">C</var>).</p>
 
 
 <div class="example"><pre>
@@ -119,17 +120,16 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Delta1 := SimplicialCategoryTruncatedInDegree( 1 );</span>
 FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" ) )
 / [ s*id = C0, t*id = C0 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">C := CategoryFromDataTables( Name( Delta1 ),</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">             RangeCategoryOfHomomorphismStructure( Delta1 ),</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">             DataTablesOfCategory( Delta1 ),</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">             [ 1, 2, 3 ],</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">             [ [ "C0", "C1" ],</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">               [ "id", "s", "t" ] ] );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">C := CategoryFromDataTables( Delta1 );</span>
 FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" ) )
 / [ s*id = C0, t*id = C0 ]
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">NerveTruncatedInDegree2Data( Delta1 ) = NerveTruncatedInDegree2Data( C );</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">InfoOfInstalledOperationsOfCategory( C );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( C );</span>
+A CAP category with name
+FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" ) )
+/ [ s*id = C0, t*id = C0 ]:
+
 16 primitive operations were used to derive 50 operations for this category
 which algorithmically
 * IsEquippedWithHomomorphismStructure
@@ -225,9 +225,14 @@ FreeCategory( RightQuiver( "Delta(C0,C1)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1]" 
 true
 </pre></div>
 
+<p><a id="X7BFA46AA7E326524" name="X7BFA46AA7E326524"></a></p>
+
+<h5>4.2-2 CategoryFromDataTables</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CategoryFromDataTables</code>( <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p><a id="X7A6157E483CE5156" name="X7A6157E483CE5156"></a></p>
 
-<h5>4.2-2 CreateObject</h5>
+<h5>4.2-3 CreateObject</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateObject</code>( <var class="Arg">C</var>, <var class="Arg">o</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> category</p>
@@ -236,7 +241,7 @@ true
 
 <p><a id="X789F940282B2FE7C" name="X789F940282B2FE7C"></a></p>
 
-<h5>4.2-3 CreateMorphism</h5>
+<h5>4.2-4 CreateMorphism</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateMorphism</code>( <var class="Arg">C</var>, <var class="Arg">m</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateMorphism</code>( <var class="Arg">source</var>, <var class="Arg">m</var>, <var class="Arg">range</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>

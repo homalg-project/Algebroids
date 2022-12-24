@@ -7,10 +7,10 @@
                                     quivers [101X
   
   
-                                   2022.12-26
+                                   2022.12-29
   
   
-                                23 December 2022
+                                24 December 2022
   
   
                                 Mohamed Barakat
@@ -152,7 +152,8 @@
       3.1-4 OppositeCategoryFromNerveData
     3.2 [33X[0;0YConstructors[133X
       3.2-1 CategoryFromNerveData
-      3.2-2 CreateObject
+      3.2-2 CategoryFromNerveData
+      3.2-3 CreateObject
     3.3 [33X[0;0YGAP categories[133X
       3.3-1 IsCategoryFromNerveData
       3.3-2 IsCellInCategoryFromNerveData
@@ -167,8 +168,9 @@
       4.1-5 OppositeCategoryFromDataTables
     4.2 [33X[0;0YConstructors[133X
       4.2-1 CategoryFromDataTables
-      4.2-2 CreateObject
-      4.2-3 CreateMorphism
+      4.2-2 CategoryFromDataTables
+      4.2-3 CreateObject
+      4.2-4 CreateMorphism
     4.3 [33X[0;0YGAP categories[133X
       4.3-1 IsCategoryFromDataTables
       4.3-2 IsCellInCategoryFromDataTables
